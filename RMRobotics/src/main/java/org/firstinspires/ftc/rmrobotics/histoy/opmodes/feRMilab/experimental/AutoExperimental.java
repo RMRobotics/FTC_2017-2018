@@ -15,7 +15,6 @@ import com.vuforia.Image;
 import com.vuforia.PIXEL_FORMAT;
 import com.vuforia.Vuforia;
 
-import org.firstinspires.ftc.rmrobotics.core.FeRMiLinear;
 import org.firstinspires.ftc.rmrobotics.util.autonav.AutoNavConfig;
 import org.firstinspires.ftc.rmrobotics.util.autonav.Drive2;
 import org.firstinspires.ftc.rmrobotics.util.autonav.vision.BeaconRecognizer;

@@ -17,9 +17,9 @@ public class Tanku_des extends OpMode {
     private DcMotor wheelBL;
     private DcMotor wheelBR;
     private DcMotor arm;
-    private Servo grabberL;
-    private Servo grabberR;
-    boolean claw = false;
+    private Servo clawL;
+    private Servo clawR;
+    boolean clawState = false;
 
     @Override
     public void init() {
@@ -31,10 +31,10 @@ public class Tanku_des extends OpMode {
         wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
         wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
         wheelBR = hardwareMap.dcMotor.get("arm");
-        grabberL = hardwareMap.servo.get("grabberL");
-        grabberR = hardwareMap.servo.get("grabberR");
-        grabberL.setPosition(0);
-        grabberR.setPosition(0);
+        clawL = hardwareMap.servo.get("grabberL");
+        clawR = hardwareMap.servo.get("grabberR");
+        clawL.setPosition(0);
+        clawR.setPosition(0);
 
     }
 
@@ -60,13 +60,13 @@ public class Tanku_des extends OpMode {
             arm.setPower(50);
         if (gamepad1.left_bumper)
             arm.setPower(-50);
-        if (gamepad1.a && !claw) {
-            grabberL.setPosition(1);
-            grabberR.setPosition(1);
+        if (gamepad1.a && !clawState) {
+            clawL.setPosition(1);
+            clawR.setPosition(1);
         }
-        if (gamepad1.a && claw) {
-            grabberL.setPosition(0);
-            grabberR.setPosition(0);
+        if (gamepad1.a && clawState) {
+            clawL.setPosition(0);
+            clawR.setPosition(0);
         }
     }
 }
