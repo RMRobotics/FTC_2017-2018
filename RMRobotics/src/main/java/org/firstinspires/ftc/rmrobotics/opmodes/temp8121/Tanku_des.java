@@ -23,7 +23,7 @@ public class Tanku_des extends OpMode {
 
     @Override
     public void init() {
-
+//weebaoo
         wheelFL = hardwareMap.dcMotor.get("wheelFL");
         wheelFR = hardwareMap.dcMotor.get("wheelFR");
         wheelBL = hardwareMap.dcMotor.get("wheelBL");
