@@ -14,27 +14,28 @@ import com.qualcomm.robotcore.hardware.Servo;
 public class Tanku_des extends OpMode {
     private DcMotor wheelFL;
     private DcMotor wheelFR;
-    private DcMotor wheelBL;
-    private DcMotor wheelBR;
-    private DcMotor arm;
-    private Servo clawL;
-    private Servo clawR;
-    boolean clawState = false;
+    //private DcMotor wheelBL;
+    //private DcMotor wheelBR;
+    //private DcMotor arm;
+//    private Servo clawL;
+//    private Servo clawR;
+//    boolean clawState = false;
 
     @Override
     public void init() {
 
         wheelFL = hardwareMap.dcMotor.get("wheelFL");
         wheelFR = hardwareMap.dcMotor.get("wheelFR");
-        wheelBL = hardwareMap.dcMotor.get("wheelBL");
-        wheelBR = hardwareMap.dcMotor.get("wheelBR");
+        //wheelBL = hardwareMap.dcMotor.get("wheelBL");
+        //wheelBR = hardwareMap.dcMotor.get("wheelBR");
         wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
-        wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
-        wheelBR = hardwareMap.dcMotor.get("arm");
-        clawL = hardwareMap.servo.get("grabberL");
-        clawR = hardwareMap.servo.get("grabberR");
-        clawL.setPosition(0);
-        clawR.setPosition(0);
+        wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
+        //wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
+        //wheelBR = hardwareMap.dcMotor.get("arm");
+        //clawL = hardwareMap.servo.get("grabberL");
+        //clawR = hardwareMap.servo.get("grabberR");
+        //clawL.setPosition(0);
+        //clawR.setPosition(0);
 
     }
 
@@ -46,27 +47,27 @@ public class Tanku_des extends OpMode {
         if (turn == 0){
             wheelFL.setPower(gamepad1.left_stick_y);
             wheelFR.setPower(gamepad1.left_stick_y);
-            wheelBL.setPower(gamepad1.left_stick_y);
-            wheelBR.setPower(gamepad1.left_stick_y);
+//            wheelBL.setPower(gamepad1.left_stick_y);
+//            wheelBR.setPower(gamepad1.left_stick_y);
         }
         else if(forward == 0)
         {
             wheelFL.setPower(-1*gamepad1.right_stick_x);
             wheelFR.setPower(gamepad1.right_stick_x);
-            wheelBL.setPower(-1*gamepad1.right_stick_x);
-            wheelBR.setPower(gamepad1.right_stick_x);
+//            wheelBL.setPower(-1*gamepad1.right_stick_x);
+//            wheelBR.setPower(gamepad1.right_stick_x);
         }
-        if (gamepad1.right_bumper)
-            arm.setPower(50);
-        if (gamepad1.left_bumper)
-            arm.setPower(-50);
-        if (gamepad1.a && !clawState) {
-            clawL.setPosition(1);
-            clawR.setPosition(1);
-        }
-        if (gamepad1.a && clawState) {
-            clawL.setPosition(0);
-            clawR.setPosition(0);
+//        if (gamepad1.right_bumper)
+//            arm.setPower(50);
+//        if (gamepad1.left_bumper)
+//            arm.setPower(-50);
+//        if (gamepad1.a && !clawState) {
+//            clawL.setPosition(1);
+//            clawR.setPosition(1);
+//        }
+//        if (gamepad1.a && clawState) {
+//            clawL.setPosition(0);
+//            clawR.setPosition(0);
         }
     }
 }
