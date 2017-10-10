@@ -1,2 +1,3 @@
-include ':FtcRobotController'
+include ':FtcRobotController', ':8121bois', ':8121Code'
 include ':TeamCode'
+project(':8121Code').projectDir = new File('RMRobotics')

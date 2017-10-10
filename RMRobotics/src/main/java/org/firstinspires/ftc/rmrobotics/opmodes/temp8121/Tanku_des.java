@@ -46,15 +46,15 @@ public class Tanku_des extends OpMode {
         if (turn == 0){
             wheelFL.setPower(gamepad1.left_stick_y);
             wheelFR.setPower(gamepad1.left_stick_y);
-            wheelBL.setPower(gamepad1.left_stick_y);
-            wheelBR.setPower(gamepad1.left_stick_y);
+            //wheelBL.setPower(gamepad1.left_stick_y);
+            //wheelBR.setPower(gamepad1.left_stick_y);
         }
         else if(forward == 0)
         {
             wheelFL.setPower(-1*gamepad1.right_stick_x);
             wheelFR.setPower(gamepad1.right_stick_x);
-            wheelBL.setPower(-1*gamepad1.right_stick_x);
-            wheelBR.setPower(gamepad1.right_stick_x);
+            //wheelBL.setPower(-1*gamepad1.right_stick_x);
+            //wheelBR.setPower(gamepad1.right_stick_x);
         }
         if (gamepad1.right_bumper)
             arm.setPower(50);
