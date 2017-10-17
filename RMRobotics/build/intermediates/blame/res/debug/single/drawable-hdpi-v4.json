@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\button_shape.xml",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\bdeb09f6eef4338899a0925fd52c489c07e02f9a\\output\\res\\drawable-hdpi-v4\\button_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\button_shape.xml",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\drawable-hdpi-v4\\button_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    }
+]

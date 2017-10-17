@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="app_theme_ids">
+      <item>@style/AppThemeRedRC</item>
+      <item>@style/AppThemeGreenRC</item>
+      <item>@style/AppThemeBlueRC</item>
+      <item>@style/AppThemePurpleRC</item>
+      <item>@style/AppThemeOrangeRC</item>
+      <item>@style/AppThemeTealRC</item>
+  </integer-array>
+    <color name="black">#000000</color>
+    <color name="bright_red">#A6040E</color>
+    <color name="bright_red_text">#ff0a19</color>
+    <color name="dark_red_background">#3F0206</color>
+    <color name="light_red_background">#790E15</color>
+    <color name="medium_red_background">#4e0106</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="very_bright_red">#bf0510</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <string name="about_menu_item">About</string>
+    <string name="app_name">FTC Robot Controller</string>
+    <string name="blocks_menu_item">Blocks</string>
+    <string name="configure_robot_menu_item">Configure Robot</string>
+    <string name="exit_menu_item">Exit</string>
+    <string name="inspection_mode_menu_item">Self Inspect</string>
+    <string name="packageName">@string/packageNameRobotController</string>
+    <string name="program_and_manage_menu_item">Program &amp; Manage</string>
+    <string name="programming_mode_menu_item">Programming Mode</string>
+    <string name="restart_robot_menu_item">Restart Robot</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="toastConfigureRobotBeforeProgrammingMode">You must Configure Robot before starting Programming Mode.</string>
+    <string name="toastRestartingRobot">Restarting Robot</string>
+    <string name="toastWifiConfigurationComplete">Configuration Complete</string>
+    <style name="AppThemeBlueRC" parent="AppTheme.Blue">
+    </style>
+    <style name="AppThemeGreenRC" parent="AppTheme.Green">
+    </style>
+    <style name="AppThemeOrangeRC" parent="AppTheme.Orange">
+    </style>
+    <style name="AppThemePurpleRC" parent="AppTheme.Purple">
+    </style>
+    <style name="AppThemeRedRC" parent="AppTheme.Red">
+    </style>
+    <style name="AppThemeTealRC" parent="AppTheme.Teal">
+    </style>
+</resources>
