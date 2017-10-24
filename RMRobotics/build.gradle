@@ -12,6 +12,7 @@
 apply from: '../build.common.gradle'
 dependencies {
     compile project(':FtcRobotController')
+//    compile project(':OpenCV320')
 }
 android {
     buildToolsVersion '25.0.0'

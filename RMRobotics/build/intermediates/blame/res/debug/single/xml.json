@@ -1,11 +1,7 @@
 [
     {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\device_filter.xml",
-        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\device_filter.xml"
-    },
-    {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\k9usbbot.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\xml\\k9usbbot.xml"
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\a2dbde657e3cd19df1b177dc31dc263bfb082114\\output\\res\\xml\\k9usbbot.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\pushbotsens.xml",
@@ -13,23 +9,27 @@
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\squarebot.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\xml\\squarebot.xml"
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\a2dbde657e3cd19df1b177dc31dc263bfb082114\\output\\res\\xml\\squarebot.xml"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
+        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\preferences.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\rev_scoot.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\xml\\rev_scoot.xml"
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\a2dbde657e3cd19df1b177dc31dc263bfb082114\\output\\res\\xml\\rev_scoot.xml"
     },
     {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\k9usbbot.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\xml\\k9usbbot.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\app_settings.xml",
-        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\app_settings.xml"
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\device_filter.xml",
+        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\device_filter.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
         "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\preferences.xml"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\pushbot.xml",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\1dcc3f78a97d947d58e26270e429ae1664539004\\output\\res\\xml\\pushbot.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\k9legacybot.xml",
@@ -41,35 +41,19 @@
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\pushbotsens.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\xml\\pushbotsens.xml"
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\a2dbde657e3cd19df1b177dc31dc263bfb082114\\output\\res\\xml\\pushbotsens.xml"
     },
     {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\pushbot.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\xml\\pushbot.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\squarebot.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\xml\\squarebot.xml"
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\k9legacybot.xml",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\1dcc3f78a97d947d58e26270e429ae1664539004\\output\\res\\xml\\k9legacybot.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\k9legacybot.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\xml\\k9legacybot.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\k9legacybot.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\xml\\k9legacybot.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\rev_scoot.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\xml\\rev_scoot.xml"
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\a2dbde657e3cd19df1b177dc31dc263bfb082114\\output\\res\\xml\\k9legacybot.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\device_filter.xml",
         "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\device_filter.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\pushbotsens.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\xml\\pushbotsens.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\k9usbbot.xml",
@@ -80,24 +64,24 @@
         "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\device_filter.xml"
     },
     {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\advanced_rc_settings.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\xml\\advanced_rc_settings.xml"
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\squarebot.xml",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\1dcc3f78a97d947d58e26270e429ae1664539004\\output\\res\\xml\\squarebot.xml"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\k9usbbot.xml",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\1dcc3f78a97d947d58e26270e429ae1664539004\\output\\res\\xml\\k9usbbot.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\maxmodules.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\xml\\maxmodules.xml"
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\a2dbde657e3cd19df1b177dc31dc263bfb082114\\output\\res\\xml\\maxmodules.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\app_settings.xml",
         "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\app_settings.xml"
     },
     {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\maxmodules.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\xml\\maxmodules.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\preferences.xml",
-        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\preferences.xml"
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\pushbotsens.xml",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\1dcc3f78a97d947d58e26270e429ae1664539004\\output\\res\\xml\\pushbotsens.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\pushbot.xml",
@@ -109,10 +93,10 @@
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\pushbot.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\xml\\pushbot.xml"
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\a2dbde657e3cd19df1b177dc31dc263bfb082114\\output\\res\\xml\\pushbot.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\xml\\advanced_rc_settings.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\xml\\advanced_rc_settings.xml"
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\a2dbde657e3cd19df1b177dc31dc263bfb082114\\output\\res\\xml\\advanced_rc_settings.xml"
     }
 ]

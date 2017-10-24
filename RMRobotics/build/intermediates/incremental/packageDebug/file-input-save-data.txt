@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Oct 12 15:32:35 EDT 2017
+#Tue Oct 24 16:36:01 EDT 2017
 20.base=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug
 143.base=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug
 439.set=ASSET
@@ -61,7 +61,7 @@
 421.base=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug
 126.set=ASSET
 283.base=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug
-130.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+130.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\info_button.xml
 301.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug\\toolbox\\android_gyroscope.xml
 14.base=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug
 424.set=ASSET
@@ -376,7 +376,7 @@
 404.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\warningmessage.wav
 266.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug\\blockly\\LICENSE
 299.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_ftc_lynx_address_update.xml
-129.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\info_button.xml
+129.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
 13.set=ANDROID_RESOURCE
 130.base=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_
 301.base=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug
@@ -541,7 +541,7 @@
 412.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug\\blocks\\samples\\SensorDigitalTouch.blk
 151.set=ASSET
 248.base=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug
-274.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\simple_vertex_shader.glsl
+274.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\lynx_module.xml
 5.set=ASSET
 445.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\icon_menu.png
 196.set=ASSET
@@ -1323,7 +1323,7 @@ count=453
 413.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug\\java\\templates\\ConceptDIMAsIndicator
 161.set=ASSET
 249.base=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug
-275.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\lynx_module.xml
+275.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\resources-debug.ap_\\res\\raw\\simple_vertex_shader.glsl
 446.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug\\css\\font-awesome.min.css
 309.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug\\java\\templates\\SensorMRRangeSensor
 39.file=C\:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\assets\\debug\\java\\templates\\SensorHTColor

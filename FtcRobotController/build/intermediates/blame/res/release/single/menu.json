@@ -1,7 +1,7 @@
 [
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\release\\menu\\menu_server.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\417e6f5a96138798d363a929491ad501804eb586\\output\\res\\menu\\menu_server.xml"
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\5b0dc9cca01a761a15c19e5685fcd62cc06771b2\\output\\res\\menu\\menu_server.xml"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\release\\menu\\ftc_robot_controller.xml",
@@ -9,6 +9,6 @@
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\release\\menu\\main_menu.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\e3f63d10488702e34088b86c40a86771c0a8cebe\\output\\res\\menu\\main_menu.xml"
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\70a2d217e48f77c3bf39c61423b9adb9934046b6\\output\\res\\menu\\main_menu.xml"
     }
 ]

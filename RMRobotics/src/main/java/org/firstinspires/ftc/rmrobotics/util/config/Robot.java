@@ -1,6 +1,5 @@
 package org.firstinspires.ftc.rmrobotics.util.config;
 
-//import com.kauailabs.navx.ftc.AHRS;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
@@ -19,7 +18,6 @@ public abstract class Robot {
     protected ArrayList<servo> servos = new ArrayList<>();
     protected ArrayList<crservo> crservos = new ArrayList<>();
     protected ArrayList<i2csensor> sensors = new ArrayList<>();
-//    protected AHRS navx;
     protected Op opMode;
     protected DcMotor.RunMode motorMode;
 
