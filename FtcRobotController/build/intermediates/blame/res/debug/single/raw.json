@@ -1,5 +1,13 @@
 [
     {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\cube_mesh_fragment_shader.glsl",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\b1abae1dd411da557ab0ca1f35e2f0edaf4c6553\\output\\res\\raw\\cube_mesh_fragment_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\chimeconnect.wav",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\raw\\chimeconnect.wav"
+    },
+    {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\warningmessage.wav",
         "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\raw\\warningmessage.wav"
     },
@@ -12,8 +20,16 @@
         "source": "C:\\Users\\rotom\\.android\\build-cache\\c1ac0ff0107d717bf7c9f8bd7e1f42cb47aad7b2\\output\\res\\raw\\texture_vertex_shader.glsl"
     },
     {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\texture_vertex_shader.glsl",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\b1abae1dd411da557ab0ca1f35e2f0edaf4c6553\\output\\res\\raw\\texture_vertex_shader.glsl"
+    },
+    {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\chimedisconnect.wav",
         "source": "C:\\Users\\rotom\\.android\\build-cache\\2015ee9fed21fd276344fb51aad84ea252fd3616\\output\\res\\raw\\chimedisconnect.wav"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\errormessage.wav",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\raw\\errormessage.wav"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\errormessage.wav",
@@ -24,8 +40,20 @@
         "source": "C:\\Users\\rotom\\.android\\build-cache\\c1ac0ff0107d717bf7c9f8bd7e1f42cb47aad7b2\\output\\res\\raw\\cube_mesh_fragment_shader.glsl"
     },
     {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\simple_vertex_shader.glsl",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\b1abae1dd411da557ab0ca1f35e2f0edaf4c6553\\output\\res\\raw\\simple_vertex_shader.glsl"
+    },
+    {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\simple_vertex_shader.glsl",
         "source": "C:\\Users\\rotom\\.android\\build-cache\\c1ac0ff0107d717bf7c9f8bd7e1f42cb47aad7b2\\output\\res\\raw\\simple_vertex_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\nxtstartupsound.wav",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\raw\\nxtstartupsound.wav"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\cube_mesh_vertex_shader.glsl",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\b1abae1dd411da557ab0ca1f35e2f0edaf4c6553\\output\\res\\raw\\cube_mesh_vertex_shader.glsl"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\nxtstartupsound.wav",
@@ -42,5 +70,21 @@
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\cube_mesh_vertex_shader.glsl",
         "source": "C:\\Users\\rotom\\.android\\build-cache\\c1ac0ff0107d717bf7c9f8bd7e1f42cb47aad7b2\\output\\res\\raw\\cube_mesh_vertex_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\warningmessage.wav",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\raw\\warningmessage.wav"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\chimedisconnect.wav",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\ec42f68259e1ffa8b3453c78e348e2d2505334fd\\output\\res\\raw\\chimedisconnect.wav"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\color_fragment_shader.glsl",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\b1abae1dd411da557ab0ca1f35e2f0edaf4c6553\\output\\res\\raw\\color_fragment_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\texture_fragment_shader.glsl",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\b1abae1dd411da557ab0ca1f35e2f0edaf4c6553\\output\\res\\raw\\texture_fragment_shader.glsl"
     }
 ]
