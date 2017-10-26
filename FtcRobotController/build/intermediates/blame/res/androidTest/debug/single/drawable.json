@@ -1,5 +1,25 @@
 [
     {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\black_border.xml",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\d1740ed077aa81a59d307d812ded0e490c0846cb\\output\\res\\drawable\\black_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\icon_menu.png",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\cd91d1d0f1d95b25d280bec1e05406da8ffd1ad6\\output\\res\\drawable\\icon_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\button_shape.xml",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\faa5d1cdb775b2e2950592a2e4a4a92579520434\\output\\res\\drawable\\button_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\feedback_shape_orange.xml",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\a86372a8b0a420399197e3d5b470b00f6fe49b73\\output\\res\\drawable\\feedback_shape_orange.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\icon_robotcontroller.png",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\cd91d1d0f1d95b25d280bec1e05406da8ffd1ad6\\output\\res\\drawable\\icon_robotcontroller.png"
+    },
+    {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\FtcRobotController\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\black_border.xml",
         "source": "C:\\Users\\rotom\\.android\\build-cache\\4f495f11673bdc9cda25d17fcfb65312917c32d3\\output\\res\\drawable\\black_border.xml"
     },

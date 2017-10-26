@@ -4,8 +4,28 @@
         "source": "C:\\Users\\rotom\\.android\\build-cache\\5e71593d5a74c27d9d2de1b95f47f79eed448810\\output\\res\\raw\\texture_fragment_shader.glsl"
     },
     {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\cube_mesh_fragment_shader.glsl",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\a86372a8b0a420399197e3d5b470b00f6fe49b73\\output\\res\\raw\\cube_mesh_fragment_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\color_fragment_shader.glsl",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\a86372a8b0a420399197e3d5b470b00f6fe49b73\\output\\res\\raw\\color_fragment_shader.glsl"
+    },
+    {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\chimedisconnect.wav",
         "source": "C:\\Users\\rotom\\.android\\build-cache\\1d001dc9f50c482047e31b621dd2d3191bf0ede4\\output\\res\\raw\\chimedisconnect.wav"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\chimeconnect.wav",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\faa5d1cdb775b2e2950592a2e4a4a92579520434\\output\\res\\raw\\chimeconnect.wav"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\texture_fragment_shader.glsl",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\a86372a8b0a420399197e3d5b470b00f6fe49b73\\output\\res\\raw\\texture_fragment_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\simple_vertex_shader.glsl",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\a86372a8b0a420399197e3d5b470b00f6fe49b73\\output\\res\\raw\\simple_vertex_shader.glsl"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\chimeconnect.wav",
@@ -20,8 +40,20 @@
         "source": "C:\\Users\\rotom\\.android\\build-cache\\5e71593d5a74c27d9d2de1b95f47f79eed448810\\output\\res\\raw\\color_fragment_shader.glsl"
     },
     {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\warningmessage.wav",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\faa5d1cdb775b2e2950592a2e4a4a92579520434\\output\\res\\raw\\warningmessage.wav"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\cube_mesh_vertex_shader.glsl",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\a86372a8b0a420399197e3d5b470b00f6fe49b73\\output\\res\\raw\\cube_mesh_vertex_shader.glsl"
+    },
+    {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\nxtstartupsound.wav",
         "source": "C:\\Users\\rotom\\.android\\build-cache\\1d001dc9f50c482047e31b621dd2d3191bf0ede4\\output\\res\\raw\\nxtstartupsound.wav"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\nxtstartupsound.wav",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\faa5d1cdb775b2e2950592a2e4a4a92579520434\\output\\res\\raw\\nxtstartupsound.wav"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\texture_vertex_shader.glsl",
@@ -30,6 +62,18 @@
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\cube_mesh_vertex_shader.glsl",
         "source": "C:\\Users\\rotom\\.android\\build-cache\\5e71593d5a74c27d9d2de1b95f47f79eed448810\\output\\res\\raw\\cube_mesh_vertex_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\errormessage.wav",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\faa5d1cdb775b2e2950592a2e4a4a92579520434\\output\\res\\raw\\errormessage.wav"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\chimedisconnect.wav",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\faa5d1cdb775b2e2950592a2e4a4a92579520434\\output\\res\\raw\\chimedisconnect.wav"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\texture_vertex_shader.glsl",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\a86372a8b0a420399197e3d5b470b00f6fe49b73\\output\\res\\raw\\texture_vertex_shader.glsl"
     },
     {
         "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\raw\\errormessage.wav",
