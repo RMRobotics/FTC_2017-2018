@@ -8,15 +8,7 @@ package com.qualcomm.WirelessP2p;
 
 public final class R {
     public static final class color {
-        public static final int black = 0x7f09000b;
-        public static final int bright_red = 0x7f090011;
-        public static final int bright_red_text = 0x7f090012;
-        public static final int dark_red_background = 0x7f090019;
-        public static final int light_red_background = 0x7f090026;
-        public static final int medium_red_background = 0x7f090040;
-        public static final int transparent_color = 0x7f090047;
-        public static final int very_bright_red = 0x7f090048;
-        public static final int white = 0x7f090055;
+        public static final int bright_red = 0x7f090010;
     }
     public static final class string {
         public static final int app_name = 0x7f0a0032;

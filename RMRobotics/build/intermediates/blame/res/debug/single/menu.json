@@ -1,38 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\menu_server.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\76b9dc61d6dd2585ae3869299beeccf0970b9537\\output\\res\\menu\\menu_server.xml"
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\menu_server.xml",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\4f495f11673bdc9cda25d17fcfb65312917c32d3\\output\\res\\menu\\menu_server.xml"
     },
     {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\menu_server.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\bf25d509ae8d5599f7a5af666ea4c1a36bd2d82c\\output\\res\\menu\\menu_server.xml"
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\main_menu.xml",
+        "source": "C:\\Users\\rotom\\.android\\build-cache\\fffcc4e97e4cad541651e18dd310c5a53f00e74d\\output\\res\\menu\\main_menu.xml"
     },
     {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\ftc_robot_controller.xml",
-        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\menu\\ftc_robot_controller.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\ftc_robot_controller.xml",
-        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\menu\\ftc_robot_controller.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\ftc_robot_controller.xml",
-        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\menu\\ftc_robot_controller.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\main_menu.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\a98e56fbcc713a6048c8fa0ca0208a85b93376cf\\output\\res\\menu\\main_menu.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\main_menu.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\c9ffa9f03b41f787b4a0d6a655e9d096828ed4cc\\output\\res\\menu\\main_menu.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\main_menu.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\70a2d217e48f77c3bf39c61423b9adb9934046b6\\output\\res\\menu\\main_menu.xml"
-    },
-    {
-        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\menu_server.xml",
-        "source": "C:\\Users\\rotom\\.android\\build-cache\\5b0dc9cca01a761a15c19e5685fcd62cc06771b2\\output\\res\\menu\\menu_server.xml"
+        "merged": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\menu\\ftc_robot_controller.xml",
+        "source": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\menu\\ftc_robot_controller.xml"
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+        "outputFile": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\FtcRobotController\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
         "map": [
             {
                 "to": {
@@ -12,40 +12,14 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\src\\main\\res\\values-v14\\styles.xml",
+                    "file": "C:\\Users\\rotom\\.android\\build-cache\\5e71593d5a74c27d9d2de1b95f47f79eed448810\\output\\res\\values-v14\\values-v14.xml",
                     "position": {
-                        "startLine": 40,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 1909,
-                        "endLine": 42,
+                        "startOffset": 55,
+                        "endLine": 4,
                         "endColumn": 12,
-                        "endOffset": 2057
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endLine": 4,
-                    "endColumn": 12,
-                    "endOffset": 201
-                },
-                "from": {
-                    "file": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2017-2018\\FtcRobotController\\src\\main\\res\\values-v14\\styles.xml",
-                    "position": {
-                        "startLine": 40,
-                        "startColumn": 4,
-                        "startOffset": 1909,
-                        "endLine": 42,
-                        "endColumn": 12,
-                        "endOffset": 2057
+                        "endOffset": 201
                     }
                 }
             }

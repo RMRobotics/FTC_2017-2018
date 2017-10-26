@@ -24,8 +24,8 @@ import java.util.Arrays;
 
 public class temp8121 extends Robot {
 
-    private motor wheelFL;
-    private motor wheelFR;
+//    private motor wheelFL;
+//    private motor wheelFR;
     private motor wheelBL;
     private motor wheelBR;
     private motor arm;
@@ -51,26 +51,23 @@ public class temp8121 extends Robot {
                 motorMode = DcMotor.RunMode.RUN_TO_POSITION;
             }
         }
-
-//        navx = AHRS.getInstance(hMap.deviceInterfaceModule.get("dim"), 0, AHRS.DeviceDataType.kProcessedData, (byte) 50);
-
-        wheelFL = new motor(hMap.dcMotor.get("wheelFL"), DcMotorSimple.Direction.REVERSE, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
-        wheelFR = new motor(hMap.dcMotor.get("wheelFR"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
+//        wheelFL = new motor(hMap.dcMotor.get("wheelFL"), DcMotorSimple.Direction.REVERSE, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
+//        wheelFR = new motor(hMap.dcMotor.get("wheelFR"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
         wheelBL = new motor(hMap.dcMotor.get("wheelBL"), DcMotorSimple.Direction.REVERSE, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
         wheelBR = new motor(hMap.dcMotor.get("wheelBR"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
         arm = new motor(hMap.dcMotor.get("arm"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.BRAKE, MotorType.NVRST40);
-        motors.addAll(Arrays.asList(wheelFL, wheelFR, wheelBL, wheelBR, arm));
+        motors.addAll(Arrays.asList(/*wheelFL, wheelFR, */wheelBL, wheelBR, arm));
 
         clawL = new servo(hMap.servo.get("clawL"), Servo.Direction.FORWARD, 0.12, 0.5, 0.12);
         clawR = new servo(hMap.servo.get("clawR"), Servo.Direction.REVERSE, 0.12, 0.5, 0.12);
         servos.addAll(Arrays.asList(clawL, clawR));
     }
 
-    public motor wheelFL() { return wheelFL; }
-    public motor wheelFR() { return wheelFR; }
+//    public motor wheelFL() { return wheelFL; }
+//    public motor wheelFR() { return wheelFR; }
     public motor wheelBL() { return wheelBL; }
     public motor wheelBR() { return wheelBR; }
     public motor arm() { return arm; }
     public servo clawL() { return clawL; }
-    public servo claw() { return clawL; }
+    public servo clawR() { return clawR; }
 }

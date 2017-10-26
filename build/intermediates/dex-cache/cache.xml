@@ -3,120 +3,237 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\8e1a96bcfb6e84f12846214c11ce6ae45dc3364f\output\jars\classes.jar"
+        jar="C:\Users\rotom\.android\build-cache\3087af04c9e24ce1d67deb9ee0fc8aec0a19a3c5\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="9dafed45e330aec14abcce05bdb7bbdb2a2d7092">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_ae9411fb3f0d8b988286dce9c3785059622f46d6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\525a362a7857c4b1befcc0751ea16e5f89275ce1\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
+        revision="25.0.3"
         sha1="e259d01a014f392930432e85cc1ac9bf807a92df">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_e6ca072e69e75cc6328270da05993f9fc7914319.jar" />
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\classes_a93bcd61be7ebedf5c0e12829b171d7b471c3399.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\FtcRobotController\build\intermediates\bundles\default\classes.jar"
+        jar="C:\Users\rotom\.android\build-cache\5e71593d5a74c27d9d2de1b95f47f79eed448810\output\jars\libs\gson-extras-0.2.1.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="1d969cd162400d0629f2624de70cc50e3cb211ce">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_a3fe249408316aca26516ec7d9d07b9d8d245b3a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\525a362a7857c4b1befcc0751ea16e5f89275ce1\output\jars\libs\support-annotations-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5a214d3b1b12e72f4fb0d5d5d8d0ec43c96de2b5">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_1b51647a7564629f05220f4da19b332b425ac4a9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\525a362a7857c4b1befcc0751ea16e5f89275ce1\output\jars\libs\gson-2.8.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e118dd0900e4a18fb928ebb8df2d9fbda78f2b5d">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\gson-2.8.0_c6f0acca36572733db5f7893e806486b5d6eae79.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\525a362a7857c4b1befcc0751ea16e5f89275ce1\output\jars\libs\Vuforia.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="91b46366eb9f8203073ee2935087c097c888c0ed">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\Vuforia_43ae85bf04b2157ded2143978b9ba6a590a2bb46.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\9a3b068e867c424cd8988387b29698d4235e380e\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="96cbbea552fe9bf3c56540c7e4912eb5cf72301e">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_ffae125786662b1d7eaf9ff144f83d50ee03b818.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\525a362a7857c4b1befcc0751ea16e5f89275ce1\output\jars\libs\gson-extras-0.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
+        revision="25.0.3"
         sha1="b30c2655badcc7ce97f84e49f777b7dd154bad57">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\gson-extras-0.2.1_6afa177d44c18049f84548bed4943defe9b05074.jar" />
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\gson-extras-0.2.1_8dbfa458c700a63bd4c8e59d88e7f2ff7d570637.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\69c889d389f3f2f7eea13c2b6964e8d72d766255\output\jars\classes.jar"
+        jar="C:\Users\rotom\.android\build-cache\4f495f11673bdc9cda25d17fcfb65312917c32d3\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="9403be210676ed196cdcc64c7391b9ae2361c174">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_a24987562299c738739eab8a9432a1691c9faa1b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\70a2d217e48f77c3bf39c61423b9adb9934046b6\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="9da82f9829b6cafb8407989729481220ca06c905">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_0646580c0a73cc73113b1925b3637f34d72ea211.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\a2dbde657e3cd19df1b177dc31dc263bfb082114\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c2abba0621a5319232804767218216568263aa37">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_2697b58d349f2d4e09c0d4a81c33eff0347fa471.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\5b0dc9cca01a761a15c19e5685fcd62cc06771b2\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
+        revision="25.0.3"
         sha1="75bdc736b17d8f39d246beac357cb3a0e007fcfa">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_62541d288de8293adc03a0032638b386aba87921.jar" />
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\classes_a7ec603787d461c247466e2138d9a23ab5d30d26.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\rotom\.android\build-cache\525a362a7857c4b1befcc0751ea16e5f89275ce1\output\jars\libs\javac.jar"
+        jar="C:\Users\rotom\.android\build-cache\f45e7d9318ec9a333355676673bdc9f59f3a144a\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.0"
+        revision="25.0.3"
+        sha1="9403be210676ed196cdcc64c7391b9ae2361c174">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\classes_3e5215c5caeb6ac5cc9004eb7157289f0d33f229.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\5e71593d5a74c27d9d2de1b95f47f79eed448810\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e259d01a014f392930432e85cc1ac9bf807a92df">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\classes_113099cdbf3fbd7561d39bf377676432555f45c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\5e71593d5a74c27d9d2de1b95f47f79eed448810\output\jars\libs\gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e118dd0900e4a18fb928ebb8df2d9fbda78f2b5d">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\gson-2.8.0_d7bf12dd1b6b65722f8252544e03be34a3db3652.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\3087af04c9e24ce1d67deb9ee0fc8aec0a19a3c5\output\jars\libs\gson-extras-0.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b30c2655badcc7ce97f84e49f777b7dd154bad57">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\gson-extras-0.2.1_7d3ad05dba17b60668083e196dc9c7f3ae6cc711.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\d86b6465f83e4d687bc2cff1d7edbc5b72ba080d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="75bdc736b17d8f39d246beac357cb3a0e007fcfa">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\classes_e9c4ab72d26e21cc7734f713cb0fd548877bc379.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\3087af04c9e24ce1d67deb9ee0fc8aec0a19a3c5\output\jars\libs\Vuforia.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="91b46366eb9f8203073ee2935087c097c888c0ed">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\Vuforia_096320945cedac490739280acfc1d44a298c8bca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\FtcRobotController\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="63096d280a6d0792ddbe5601216c3bc2bb685e8c">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\classes_4082c8d09a869647f0638e785a5a0010d5ed6190.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\eb1906903b9a13e4fe1551ac444aafa5adf66493\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9403be210676ed196cdcc64c7391b9ae2361c174">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\classes_1b4521b9448455626536c0e927c4892c7c57ab97.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\5e71593d5a74c27d9d2de1b95f47f79eed448810\output\jars\libs\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5a214d3b1b12e72f4fb0d5d5d8d0ec43c96de2b5">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_d3b11f9179c8880a0a082ba703c31cbd3b2cb491.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\fffcc4e97e4cad541651e18dd310c5a53f00e74d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9da82f9829b6cafb8407989729481220ca06c905">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\classes_2ad985531815c9cc090abf46d41f22a4ab904a2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\57ff18dfecb446fea358e586b2100360db0c9d71\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="96cbbea552fe9bf3c56540c7e4912eb5cf72301e">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\classes_40937957506bc7e9b678b7a04bf6c6004dbbe79e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\bae92c98615d5bbd874583023c682f7b7f3ffb9a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c2abba0621a5319232804767218216568263aa37">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\classes_48d6ba22b73386a7e6d8f43c753ea33e864357d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\3087af04c9e24ce1d67deb9ee0fc8aec0a19a3c5\output\jars\libs\gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e118dd0900e4a18fb928ebb8df2d9fbda78f2b5d">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\gson-2.8.0_ea1f9802ae057e090cd995a6cdffecb0501d8d37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\1d001dc9f50c482047e31b621dd2d3191bf0ede4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c2abba0621a5319232804767218216568263aa37">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\classes_ca4209dd1a0beb2dc6e27caf1d71216412cf391a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\af45147812027ca699ffcab319dc0e15ed7c5602\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="96cbbea552fe9bf3c56540c7e4912eb5cf72301e">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\classes_49abb4f2ec9606536d337b3692bc75c5f462acfe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\3087af04c9e24ce1d67deb9ee0fc8aec0a19a3c5\output\jars\libs\javac.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
         sha1="c576121aac49e547b39aedfb1daa29782db4166c">
-        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\javac_1fa283dd350c827c01dc43c9e0e119837125a421.jar" />
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\javac_3530e897ac8aee7d99034ca04eb8b6f0e3d708e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\3087af04c9e24ce1d67deb9ee0fc8aec0a19a3c5\output\jars\libs\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5a214d3b1b12e72f4fb0d5d5d8d0ec43c96de2b5">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_3fab9a0ea427b70652776b145d98a04871decbc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\5e71593d5a74c27d9d2de1b95f47f79eed448810\output\jars\libs\Vuforia.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="91b46366eb9f8203073ee2935087c097c888c0ed">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\Vuforia_be7fc941ae570b760dceab83dff19e08ba21ee8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\c827ce8804152a8da9fdebbe7ce3d33383f06641\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9da82f9829b6cafb8407989729481220ca06c905">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\classes_039f7c1d2b5200d07c601191ad4fd38373642fdf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\FtcRobotController\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="63096d280a6d0792ddbe5601216c3bc2bb685e8c">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\classes_779eb766dad161d617ef40c0d84e9a37058b4c20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\3a2b6268ac83b9a0e7950b79268c4dbf0f5b0e05\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9dafed45e330aec14abcce05bdb7bbdb2a2d7092">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\Legacy Systems Lol\ftc_app\TeamCode\build\intermediates\pre-dexed\debug\classes_64fbaf4042c740a1a232bb6b7c3268e12d99817c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\42ee0eaf536f27c18935ab3d2bac3595be41b0c0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9dafed45e330aec14abcce05bdb7bbdb2a2d7092">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\classes_ad985eddfccc5623040929b006bc1dd7383b2abe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rotom\.android\build-cache\5e71593d5a74c27d9d2de1b95f47f79eed448810\output\jars\libs\javac.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c576121aac49e547b39aedfb1daa29782db4166c">
+        <dex dex="C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018_FRESH\RMRobotics\build\intermediates\pre-dexed\debug\javac_872839db057bb75420ca3376b83102e3d7f724f7.jar" />
     </item>
 
 </items>

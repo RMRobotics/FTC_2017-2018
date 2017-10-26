@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+        "outputFile": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018_FRESH\\RMRobotics\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,59 +12,7 @@
                     "endOffset": 187
                 },
                 "from": {
-                    "file": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\values-v11\\values-v11.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endLine": 4,
-                        "endColumn": 12,
-                        "endOffset": 187
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endLine": 4,
-                    "endColumn": 12,
-                    "endOffset": 187
-                },
-                "from": {
-                    "file": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\Legacy Systems Lol\\FTC_2016-2017\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\values-v11\\values-v11.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endLine": 4,
-                        "endColumn": 12,
-                        "endOffset": 187
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\RMRobotics\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endLine": 4,
-                    "endColumn": 12,
-                    "endOffset": 187
-                },
-                "from": {
-                    "file": "C:\\Users\\rotom\\OneDrive\\Documents\\Robotics\\FTC_2016-2017\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\values-v11\\values-v11.xml",
+                    "file": "C:\\Users\\rotom\\.android\\build-cache\\5e71593d5a74c27d9d2de1b95f47f79eed448810\\output\\res\\values-v11\\values-v11.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
