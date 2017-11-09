@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.rmrobotics.util.enums;
+package org.firstinspires.ftc.rmrobotics.util;
 
         import com.qualcomm.robotcore.hardware.CRServo;
         import com.qualcomm.robotcore.hardware.DcMotor;
