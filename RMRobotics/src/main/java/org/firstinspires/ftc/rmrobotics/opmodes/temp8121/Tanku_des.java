@@ -19,7 +19,7 @@ public class Tanku_des extends OpMode {
     private DcMotor arm;
     private Servo clawL;
     private Servo clawR;
-    boolean clawState = false;
+    private boolean clawState = false;
 
     @Override
     public void init() {

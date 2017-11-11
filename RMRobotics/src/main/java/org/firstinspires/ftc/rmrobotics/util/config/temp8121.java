@@ -58,8 +58,9 @@ public class temp8121 extends Robot {
         arm = new motor(hMap.dcMotor.get("arm"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.BRAKE, MotorType.NVRST40);
         motors.addAll(Arrays.asList(/*wheelFL, wheelFR, */wheelBL, wheelBR, arm));
 
-        clawL = new servo(hMap.servo.get("clawL"), Servo.Direction.FORWARD, 0.12, 0.5, 0.12);
-        clawR = new servo(hMap.servo.get("clawR"), Servo.Direction.REVERSE, 0.12, 0.5, 0.12);
+        clawL = new servo(hMap.servo.get("clawL"), Servo.Direction.FORWARD, 0, 0.3, 0);
+        clawR = new servo(hMap.servo.get("clawR"), Servo.Direction.REVERSE, 0, 0.3, 0);
+
         servos.addAll(Arrays.asList(clawL, clawR));
     }
 
