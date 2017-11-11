@@ -63,10 +63,12 @@ public class Tanku_des extends OpMode {
         if (gamepad1.a && !clawState) {
             clawL.setPosition(1);
             clawR.setPosition(1);
+            clawState = !clawState;
         }
         if (gamepad1.a && clawState) {
             clawL.setPosition(0);
             clawR.setPosition(0);
+            clawState = !clawState;
         }
     }
 }
