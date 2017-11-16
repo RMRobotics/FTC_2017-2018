@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\General\\Desktop\\Robit Land\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\General\\Desktop\\Robit Land\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
     },

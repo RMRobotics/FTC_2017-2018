@@ -7,6 +7,9 @@ package org.firstinspires.ftc.rmrobotics.util;
         import com.qualcomm.robotcore.hardware.Servo;
         import com.qualcomm.robotcore.util.ElapsedTime;
 
+        import org.firstinspires.ftc.robotcore.external.matrices.OpenGLMatrix;
+        import org.firstinspires.ftc.robotcore.external.matrices.VectorF;
+
 /**
  * Created by Gregory on 1/10/2017.
  */
@@ -119,7 +122,12 @@ public class AutoFxns {
             }
         }
     }
-
+    public VectorF getVector(OpenGLMatrix bot, float desX, float desY)
+    {
+        VectorF amHere = bot.getTranslation();
+        VectorF goThere = new VectorF(desX,desY);
+        return goThere.subtracted(amHere);
+    }
     public void lineCheck(double num, String side) {
         //on red side the right side should see line first, on blue side left side should see line first
         if (side.charAt(0) == 'r' || side.charAt(0) == 'R')

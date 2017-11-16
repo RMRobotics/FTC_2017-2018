@@ -28,14 +28,7 @@ public class testVuAuto extends LinearOpMode{
     OpenGLMatrix lastLocation = null;
     VuforiaLocalizer vuforia;
     @Override public void runOpMode() {
-        //0,0,0 is front left bottom corner. phone is a matrix of where the phone is relative to the robot
-        OpenGLMatrix phone = OpenGLMatrix
-                .translation(5,18,5) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
-                .multiplied(Orientation.getRotationMatrix(
-                        AxesReference.EXTRINSIC, AxesOrder.YZY,
-                        AngleUnit.DEGREES, 0, 90, -90));
-        //theoretically should have phone upright, screen facing out towards the right
-//        RobotLog.ii(TAG, "phone=%s", format(phoneLocationOnRobot));
+
 
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
@@ -50,38 +43,53 @@ public class testVuAuto extends LinearOpMode{
         waitForStart();
         relicTrackables.activate();
 
-
-        //trans: bottom left of field is 0,0. red bottom picture is (0,34,0) in inches. blue bottom (144,34,0) red top (10,144,0) blue top (134,144,0)
-        //rot: (0,0,90) (0,0,-90), (0,0,0), (0,0,0)
-        OpenGLMatrix image = OpenGLMatrix
-                .translation(0,34,0) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
+        //0,0,0 is front left bottom corner. phone is a matrix of where the phone is relative to the robot
+        OpenGLMatrix phone2bot = OpenGLMatrix
+                .translation(5,18,5) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
                 .multiplied(Orientation.getRotationMatrix(
-                        AxesReference.EXTRINSIC, AxesOrder.YZY,
+                        AxesReference.EXTRINSIC, AxesOrder.XYZ,
+                        AngleUnit.DEGREES, 0, 90, -90));
+        //theoretically should have phone upright, screen facing out towards the right
+//        RobotLog.ii(TAG, "phone=%s", format(phoneLocationOnRobot));
+
+        //trans: bottom left of field is 0,0. red bottom picture is (0,34,0) in inches. blue bottom (144,34,0) red top (0,106,0) blue top (144,106,0)
+        //rot: (0,0,90) (0,0,-90), (0,0,0), (0,0,0)
+        //this program is testing red top
+        OpenGLMatrix pic2field = OpenGLMatrix
+                .translation(0,106,0) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
+                .multiplied(Orientation.getRotationMatrix(
+                        AxesReference.EXTRINSIC, AxesOrder.XYZ,
                         AngleUnit.DEGREES, 0, 0, 90));
         while (opModeIsActive()) {
+            OpenGLMatrix bot2field = new OpenGLMatrix();
             RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
             if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
-                telemetry.addData("VuMark", "%s visible", vuMark);
-                OpenGLMatrix pose = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
-                telemetry.addData("Pose", format(pose));
-                if (pose != null) {
-                    VectorF trans = pose.getTranslation();
-                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
+                //telemetry.addData("VuMark", "%s visible", vuMark);
+                OpenGLMatrix pic2phone = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
+                //telemetry.addData("Pose", format(pic2phone));
+                if (pic2phone != null) {
+                    OpenGLMatrix pic2bot = pic2phone.multiplied(phone2bot);
+                    OpenGLMatrix bot2pic = pic2bot.transposed();
+                    bot2field = bot2pic.multiplied(pic2field);
+//                    VectorF trans = pose.getTranslation();
+//                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
+//                    double tX = trans.get(0);
+//                    double tY = trans.get(1);
+//                    double tZ = trans.get(2);
+//                    double rX = rot.firstAngle;
+//                    double rY = rot.secondAngle;
+//                    double rZ = rot.thirdAngle;
 
-                    double tX = trans.get(0);
-                    double tY = trans.get(1);
-                    double tZ = trans.get(2);
-                    double rX = rot.firstAngle;
-                    double rY = rot.secondAngle;
-                    double rZ = rot.thirdAngle;
+
                     //offset picture from phone
                     //we need robot to picture
                 }
             }
-            else {
+
+            /*else {
                 telemetry.addData("VuMark", "not visible");
             }
-            telemetry.update();
+            telemetry.update();*/
 
         }
     }
