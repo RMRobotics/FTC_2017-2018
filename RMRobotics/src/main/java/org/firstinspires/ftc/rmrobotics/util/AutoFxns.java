@@ -61,6 +61,11 @@ public class AutoFxns {
         lineRreader = dddd;
     }
 
+    public AutoFxns ()
+    {
+
+    }
+
     public void move(double duration, double power, double angle, double rotate) {
         angle *= (Math.PI / 180);
         time.reset();

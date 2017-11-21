@@ -4,6 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.util.RobotLog;
 
+import org.firstinspires.ftc.rmrobotics.util.AutoFxns;
 import org.firstinspires.ftc.robotcore.external.ClassFactory;
 import org.firstinspires.ftc.robotcore.external.matrices.OpenGLMatrix;
 import org.firstinspires.ftc.robotcore.external.matrices.VectorF;
@@ -27,6 +28,7 @@ public class testVuAuto extends LinearOpMode{
     public static final String TAG = "Vuforia VuMark Sample";
     OpenGLMatrix lastLocation = null;
     VuforiaLocalizer vuforia;
+
     @Override public void runOpMode() {
 
 
@@ -60,6 +62,7 @@ public class testVuAuto extends LinearOpMode{
                 .multiplied(Orientation.getRotationMatrix(
                         AxesReference.EXTRINSIC, AxesOrder.XYZ,
                         AngleUnit.DEGREES, 0, 0, 90));
+        AutoFxns autoboi = new AutoFxns();
         while (opModeIsActive()) {
             OpenGLMatrix bot2field = new OpenGLMatrix();
             RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
