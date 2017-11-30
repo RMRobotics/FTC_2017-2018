@@ -2,49 +2,291 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c423b4d7-a1b8-47f4-a4ee-a542292488d2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Blocks_release_.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/dummyConfig.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libRobotCore.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/transforms/mergeJniLibs/debug/folders/2000/1f/main/lib/armeabi-v7a/libVuforia.so" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/classes/debug/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/Tanku_des.class" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/classes/debug/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/Tanku_des.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" afterPath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/buildConfig/androidTest/debug/com/qualcomm/ftcrobotcontroller/test/BuildConfig.java" afterPath="$PROJECT_DIR$/FtcRobotController/build/generated/source/buildConfig/androidTest/debug/com/qualcomm/ftcrobotcontroller/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/buildConfig/debug/com/qualcomm/ftcrobotcontroller/BuildConfig.java" afterPath="$PROJECT_DIR$/FtcRobotController/build/generated/source/buildConfig/debug/com/qualcomm/ftcrobotcontroller/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/r/androidTest/debug/com/qualcomm/ftcrobotcontroller/test/R.java" afterPath="$PROJECT_DIR$/FtcRobotController/build/generated/source/r/androidTest/debug/com/qualcomm/ftcrobotcontroller/test/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/R.txt" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values-w820dp-v13/values-w820dp-v13.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values-w820dp-v13/values-w820dp-v13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values/values.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/res/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v11/values-v11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v14/values-v14.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v14/values-v14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/symbols/androidTest/debug/R.txt" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/symbols/androidTest/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/RMRobotics.iml" afterPath="$PROJECT_DIR$/RMRobotics/RMRobotics.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/generated/source/buildConfig/androidTest/debug/com/qualcomm/ftcrobotcontroller/test/BuildConfig.java" afterPath="$PROJECT_DIR$/RMRobotics/build/generated/source/buildConfig/androidTest/debug/com/qualcomm/ftcrobotcontroller/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/Buildings.txt" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/Buildings.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/CzechWolf" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/CzechWolf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/FtcBlocks.html" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/FtcBlocks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/FtcBlocksProjects.html" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/FtcBlocksProjects.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/FtcSounds.html" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/FtcSounds.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/RobotConfig.xsd" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/RobotConfig.xsd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/RobotConfigDescriptionGenerate.xslt" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/RobotConfigDescriptionGenerate.xslt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/RobotConfigTaxonomy.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/RobotConfigTaxonomy.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/RobotConfigTaxonomy.xsd" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/RobotConfigTaxonomy.xsd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/LICENSE" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/blockly_compressed.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/blockly_compressed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/blocks_compressed.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/blocks_compressed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/javascript_compressed.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/javascript_compressed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/media/sprites.svg" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/media/sprites.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/msg/messages.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blockly/msg/messages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/acceleration.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/acceleration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/acceleration_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/acceleration_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/analog_input.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/analog_input.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/analog_output.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/analog_output.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/android_accelerometer.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/android_accelerometer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/android_gyroscope.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/android_gyroscope.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/android_orientation.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/android_orientation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/android_sound_pool.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/android_sound_pool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/android_text_to_speech.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/android_text_to_speech.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/angular_velocity.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/angular_velocity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/bno055imu.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/bno055imu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/bno055imu_parameters.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/bno055imu_parameters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/clipboard_util.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/clipboard_util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/color.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/color.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/color_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/color_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/compass_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/compass_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/cr_servo.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/cr_servo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/dbg_log.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/dbg_log.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/dc_motor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/dc_motor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/digital_channel.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/digital_channel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/elapsed_time.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/elapsed_time.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/elapsed_time2.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/elapsed_time2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/gamepad.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/gamepad.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/gyro_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/gyro_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/hardware_util.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/hardware_util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/ir_seeker_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/ir_seeker_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/led.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/led.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/light_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/light_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/linear_op_mode.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/linear_op_mode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/lynx_i2c_color_range_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/lynx_i2c_color_range_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/magnetic_flux.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/magnetic_flux.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/matrix_f.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/matrix_f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/misc.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/misc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/mr_i2c_compass_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/mr_i2c_compass_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/mr_i2c_range_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/mr_i2c_range_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/navigation.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/navigation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/open_gl_matrix.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/open_gl_matrix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/optical_distance_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/optical_distance_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/orientation.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/orientation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/position.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/position.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/project_util.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/project_util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/quaternion.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/quaternion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/range.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/range.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/BasicPOVDrive.blk" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/BasicPOVDrive.blk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/BasicTankDrive.blk" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/BasicTankDrive.blk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/ConceptDeviceInteraction.blk" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/ConceptDeviceInteraction.blk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/ConceptSmoothServo.blk" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/ConceptSmoothServo.blk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/ConceptTextToSpeech.blk" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/ConceptTextToSpeech.blk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/ConceptVuMarkDetection.blk" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/ConceptVuMarkDetection.blk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/SensorDigitalTouch.blk" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/SensorDigitalTouch.blk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/SensorIMU.blk" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/SensorIMU.blk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/SensorREVColorDistance.blk" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/SensorREVColorDistance.blk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/default.blk" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/samples/default.blk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/servo.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/servo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/servo_controller.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/servo_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/sound_util.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/sound_util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/system.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/system.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/telemetry.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/telemetry.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/temperature.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/temperature.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/toolbox_util.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/toolbox_util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/touch_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/touch_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/ultrasonic_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/ultrasonic_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vars.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vector_f.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vector_f.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/velocity.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/velocity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/voltage_sensor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/voltage_sensor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia_localizer.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia_localizer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia_localizer_parameters.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia_localizer_parameters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia_trackable.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia_trackable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia_trackable_default_listener.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia_trackable_default_listener.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia_trackables.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/blocks/vuforia_trackables.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/connection.html" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/connection.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/FtcBlocks.less" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/FtcBlocks.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/FtcBlocksProjects.less" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/FtcBlocksProjects.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/FtcSounds.less" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/FtcSounds.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/SourceCodePro.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/SourceCodePro.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/base.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/bootstrap.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/connection.less" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/connection.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/core.less" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/core.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/frame.less" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/frame.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/manage.less" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/css/manage.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/frame.html" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/help.html" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/help.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/css/angular-resizable.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/css/angular-resizable.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/css/jquery.contextmenu.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/css/jquery.contextmenu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/css/main.less" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/css/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/css/perfect-scrollbar.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/css/perfect-scrollbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/css/tether.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/css/tether.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/editor.html" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/editor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ace.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/angular-messages.min.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/angular-messages.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/angular.min.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/BufferedTokenStream.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/BufferedTokenStream.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/CharStreams.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/CharStreams.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/CommonTokenFactory.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/CommonTokenFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/CommonTokenStream.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/CommonTokenStream.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/FileStream.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/FileStream.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/InputStream.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/InputStream.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/IntervalSet.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/IntervalSet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/LL1Analyzer.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/LL1Analyzer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/Lexer.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/Lexer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/Parser.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/Parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/ParserRuleContext.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/ParserRuleContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/PredictionContext.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/PredictionContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/README.md" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/Recognizer.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/Recognizer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/RuleContext.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/RuleContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/Token.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/Token.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/Utils.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/Utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATN.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATN.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNConfig.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNConfigSet.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNConfigSet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNDeserializationOptions.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNDeserializationOptions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNDeserializer.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNDeserializer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNSimulator.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNSimulator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNState.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNState.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNType.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ATNType.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/LexerATNSimulator.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/LexerATNSimulator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/LexerAction.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/LexerAction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/LexerActionExecutor.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/LexerActionExecutor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ParserATNSimulator.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/ParserATNSimulator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/PredictionMode.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/PredictionMode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/SemanticContext.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/SemanticContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/Transition.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/Transition.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/index.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/atn/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/dfa/DFA.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/dfa/DFA.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/dfa/DFASerializer.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/dfa/DFASerializer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/dfa/DFAState.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/dfa/DFAState.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/dfa/index.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/dfa/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/error/DiagnosticErrorListener.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/error/DiagnosticErrorListener.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/error/ErrorListener.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/error/ErrorListener.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/error/ErrorStrategy.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/error/ErrorStrategy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/error/Errors.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/error/Errors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/error/index.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/error/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/index.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/package.json" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/polyfills/codepointat.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/polyfills/codepointat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/polyfills/fromcodepoint.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/polyfills/fromcodepoint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/tree/Tree.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/tree/Tree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/tree/Trees.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/tree/Trees.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/tree/index.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/antlr4/tree/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/app.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/es5-shim.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/es5-shim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/es6-shim.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/es6-shim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ext-language_tools.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ext-language_tools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ext-spellcheck.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ext-spellcheck.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ext-whitespace.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ext-whitespace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/flowtype.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/flowtype.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ftclangtools.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ftclangtools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/java/JavaLexer.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/java/JavaLexer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/java/JavaListener.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/java/JavaListener.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/java/JavaParser.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/java/JavaParser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/java/index.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/java/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/jquery.contextmenu.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/jquery.contextmenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/jquery.position.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/jquery.position.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/keybinding-emacs.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/keybinding-emacs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/keybinding-vim.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/keybinding-vim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/main.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/mode-java.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/mode-java.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/mode-markdown.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/mode-markdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/mode-text.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/mode-text.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/perfect-scrollbar.jquery.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/perfect-scrollbar.jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/polyfills.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/polyfills.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/require.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/require.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/snippets/java.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/snippets/java.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/snippets/markdown.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/snippets/markdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/snippets/text.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/snippets/text.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-chaos.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-chaos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-chrome.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-chrome.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-github.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-github.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-monokai.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-monokai.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-solarized-dark.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-solarized-dark.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-solarized-light.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/theme-solarized-light.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/toe.min.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/toe.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ui-ace.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/ui-ace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/worker-base.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/worker-base.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/worker-java.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/worker-java.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/worker-javascript.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/js/worker-javascript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/BasicOpMode_Iterative" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/BasicOpMode_Iterative" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/BasicOpMode_Linear" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/BasicOpMode_Linear" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/BlankIterativeOpMode" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/BlankIterativeOpMode" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/BlankLinearOpMode" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/BlankLinearOpMode" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptCompassCalibration" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptCompassCalibration" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptDIMAsIndicator" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptDIMAsIndicator" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptI2cAddressChange" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptI2cAddressChange" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptNullOp" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptNullOp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptRampMotorSpeed" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptRampMotorSpeed" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptRegisterOpModes" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptRegisterOpModes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptScanServo" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptScanServo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptTelemetry" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptTelemetry" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptVuMarkIdentification" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptVuMarkIdentification" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptVuforiaNavigation" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/ConceptVuforiaNavigation" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/HardwareK9bot" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/HardwareK9bot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/HardwarePushbot" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/HardwarePushbot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/HardwarePushbotMatrix" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/HardwarePushbotMatrix" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/K9botTeleopTank_Linear" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/K9botTeleopTank_Linear" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByEncoder_Linear" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByEncoder_Linear" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByGyro_Linear" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByGyro_Linear" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByTime_Linear" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotAutoDriveByTime_Linear" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotAutoDriveToLine_Linear" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotAutoDriveToLine_Linear" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotTeleopPOV_Linear" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotTeleopPOV_Linear" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotTeleopTank_Iterative" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/PushbotTeleopTank_Iterative" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorAdafruitRGB" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorAdafruitRGB" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorBNO055IMU" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorBNO055IMU" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorBNO055IMUCalibration" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorBNO055IMUCalibration" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorColor" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorColor" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorDIO" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorDIO" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorDigitalTouch" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorDigitalTouch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorHTColor" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorHTColor" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorHTGyro" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorHTGyro" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorKLNavxMicro" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorKLNavxMicro" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorLEGOLight" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorLEGOLight" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorLEGOTouch" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorLEGOTouch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMRColor" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMRColor" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMRCompass" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMRCompass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMRGyro" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMRGyro" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMRIrSeeker" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMRIrSeeker" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMROpticalDistance" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMROpticalDistance" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMRRangeSensor" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorMRRangeSensor" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorREVColorDistance" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/SensorREVColorDistance" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/TemplateOpMode_Iterative" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/TemplateOpMode_Iterative" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/TemplateOpMode_Linear" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/java/templates/TemplateOpMode_Linear" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/URI.min.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/URI.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/bootstrap.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/jquery-3.1.1.min.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/jquery-3.1.1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/less.min.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/less.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/npm.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/util.js" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/js/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/manage.html" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/manage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/android_accelerometer.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/android_accelerometer.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/android_gyroscope.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/android_gyroscope.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/android_orientation.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/android_orientation.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/android_sound_pool.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/android_sound_pool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/android_text_to_speech.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/android_text_to_speech.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/bno055imu_parameters.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/bno055imu_parameters.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/color.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/color.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/dbg_log.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/dbg_log.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/elapsed_time.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/elapsed_time.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/gamepad.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/gamepad.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/images.css" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/images.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/linear_op_mode.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/linear_op_mode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/misc.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/navigation.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/navigation.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/range.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/range.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/telemetry.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/assets/debug/toolbox/telemetry.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/RMRobotics/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/Tanku_des.java" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/Tanku_des.java" />
     </list>
     <ignored path="ftc_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,8 +321,8 @@
       <file leaf-file-name="Tanku_des.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/Tanku_des.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1239">
-              <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+            <state relative-caret-position="492">
+              <caret line="65" column="35" lean-forward="false" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -89,8 +331,8 @@
       <file leaf-file-name="testVuAuto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-451">
-              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="-661">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,11 +340,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoFxns.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testingColorSensor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp8121.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/temp8121.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="42" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dummyConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/dummyConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="620">
+              <caret line="67" column="51" lean-forward="false" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AutoFxns.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/AutoFxns.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1900">
-              <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+            <state relative-caret-position="305">
+              <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -111,11 +385,9 @@
       <file leaf-file-name="ConceptVuMarkIdentification.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptVuMarkIdentification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-84">
+              <caret line="126" column="27" lean-forward="false" selection-start-line="125" selection-start-column="8" selection-end-line="126" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,7 +397,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4200">
               <caret line="245" column="34" lean-forward="false" selection-start-line="245" selection-start-column="34" selection-end-line="245" selection-end-column="34" />
-              <folding />
+              <folding>
+                <element signature="e#0#18825#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2710,12 +2985,14 @@
       <list>
         <option value="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptVuMarkIdentification.java" />
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/temp8121.java" />
-        <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/Tanku_des.java" />
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java" />
         <option value="$PROJECT_DIR$/FtcRobotController/build.gradle" />
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/enums/AutoFxns.java" />
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" />
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/AutoFxns.java" />
+        <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/Tanku_des.java" />
+        <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/dummyConfig.java" />
+        <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java" />
       </list>
     </option>
   </component>
@@ -2740,10 +3017,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2769,13 +3044,89 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmrobotics" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FTC_2017-2018" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMRobotics" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmrobotics" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FTC_2017-2018" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMRobotics" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmrobotics" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp8121" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FTC_2017-2018" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RMRobotics" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rmrobotics" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Legacy Systems Lol/FTC_2016-2017" />
     <property name="device.picker.selection" value="2a2a6e2" />
   </component>
   <component name="RunDashboard">
@@ -2861,7 +3212,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511296339871" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512076785584" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2909,7 +3260,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511296339871" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512076785584" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2943,6 +3294,27 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
@@ -2961,6 +3333,31 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="FTC_2017-2018" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
       <method />
     </configuration>
@@ -3046,7 +3443,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511296339871" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512076785587" />
       </method>
     </configuration>
     <configuration default="false" name="RMRobotics" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -3095,7 +3492,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511296339871" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1512076785587" />
       </method>
     </configuration>
     <list size="2">
@@ -3138,91 +3535,39 @@
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.4922879" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26791444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.5064433" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.4922879" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.4935567" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.4935567" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2673969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26737967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26842105" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -3240,20 +3585,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/temp8121.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="61" column="77" lean-forward="false" selection-start-line="61" selection-start-column="77" selection-end-line="61" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/hardware/servo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/learningTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -3318,9 +3649,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3050">
           <caret line="165" column="47" lean-forward="false" selection-start-line="165" selection-start-column="47" selection-end-line="165" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3328,7 +3657,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2875">
           <caret line="160" column="9" lean-forward="false" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="e#0#18825#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3390,9 +3722,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2550">
           <caret line="145" column="64" lean-forward="false" selection-start-line="145" selection-start-column="64" selection-end-line="145" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3440,9 +3770,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2550">
           <caret line="145" column="64" lean-forward="false" selection-start-line="145" selection-start-column="64" selection-end-line="145" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3490,9 +3818,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
           <caret line="145" column="64" lean-forward="false" selection-start-line="145" selection-start-column="64" selection-end-line="145" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3538,14 +3864,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/libs/RobotCore-release-sources.jar!/com/qualcomm/robotcore/eventloop/opmode/OpMode.java">
@@ -3559,13 +3885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/temp8121.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="61" column="77" lean-forward="false" selection-start-line="61" selection-start-column="77" selection-end-line="61" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -3608,43 +3927,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4200">
           <caret line="245" column="34" lean-forward="false" selection-start-line="245" selection-start-column="34" selection-end-line="245" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="e#0#18825#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/Tanku_des.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="63" column="31" lean-forward="false" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+        <state relative-caret-position="492">
+          <caret line="65" column="35" lean-forward="false" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptVuMarkIdentification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="126" column="27" lean-forward="false" selection-start-line="125" selection-start-column="8" selection-end-line="126" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/temp8121.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="42" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/AutoFxns.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/dummyConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="67" column="51" lean-forward="false" selection-start-line="67" selection-start-column="51" selection-end-line="67" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-451">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="-661">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptVuMarkIdentification.java">
+    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="546">
+          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/AutoFxns.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1900">
-          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>

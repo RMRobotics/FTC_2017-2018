@@ -57,15 +57,15 @@ public class Tanku_des extends OpMode {
             wheelBR.setPower(gamepad1.right_stick_x);
         }
         if (gamepad1.right_bumper)
-            arm.setPower(50);
+            arm.setPower(25);
         if (gamepad1.left_bumper)
-            arm.setPower(-50);
+            arm.setPower(-25);
         if (gamepad1.a && !clawState) {
             clawL.setPosition(1);
             clawR.setPosition(1);
             clawState = !clawState;
         }
-        if (gamepad1.a && clawState) {
+        else if (gamepad1.a && clawState) {
             clawL.setPosition(0);
             clawR.setPosition(0);
             clawState = !clawState;
