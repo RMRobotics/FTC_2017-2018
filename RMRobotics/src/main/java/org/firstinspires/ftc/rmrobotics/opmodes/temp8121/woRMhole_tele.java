@@ -12,7 +12,7 @@ import java.util.Collections;
 /**
  * Created by General on 12/5/2017.
  */
-@TeleOp(name="woRMhole_tele", group="temp8121")
+@TeleOp(name="woRMhole_tele", group="woRMholeConfig")
 public class woRMhole_tele extends OpMode {
 
     private DcMotor wheelFL;
