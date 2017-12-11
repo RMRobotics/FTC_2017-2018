@@ -4,6 +4,7 @@ import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
+import com.qualcomm.robotcore.hardware.I2cDeviceSynch;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.hardware.VoltageSensor;
 
@@ -60,7 +61,6 @@ public class temp8121 extends Robot {
 
         clawL = new servo(hMap.servo.get("clawL"), Servo.Direction.FORWARD, 0, 0.3, 0);
         clawR = new servo(hMap.servo.get("clawR"), Servo.Direction.REVERSE, 0, 0.3, 0);
-
         servos.addAll(Arrays.asList(clawL, clawR));
     }
 
