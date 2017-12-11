@@ -22,7 +22,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by rotom on 10/17/2017.
  */
 
-@Autonomous(name="testVuAuto", group ="temp8121")
+@Autonomous(name="testVuAuto", group ="woRMholeConfig")
 public class testVuAuto extends LinearOpMode{
     public static final String TAG = "Vuforia VuMark Sample";
     OpenGLMatrix lastLocation = null;
