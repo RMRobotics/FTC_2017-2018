@@ -74,6 +74,8 @@ public class testVuAuto extends LinearOpMode{
                     OpenGLMatrix pic2bot = pic2phone.multiplied(phone2bot);
                     OpenGLMatrix bot2pic = pic2bot.transposed();
                     bot2field = bot2pic.multiplied(pic2field);
+                    //bot to field should be the final transformation matrix that we need
+
 //                    VectorF trans = pose.getTranslation();
 //                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
 //                    double tX = trans.get(0);
@@ -88,6 +90,7 @@ public class testVuAuto extends LinearOpMode{
                     //we need robot to picture
                 }
             }
+            autoboi.move(2, 100, autoboi.getDestinationMatrix(bot2field, 100, 100, 90)[2], autoboi.getDestinationMatrix(bot2field, 100, 100, 90)[3]);
 
             /*else {
                 telemetry.addData("VuMark", "not visible");

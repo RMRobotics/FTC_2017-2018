@@ -127,11 +127,17 @@ public class AutoFxns {
             }
         }
     }
-    public VectorF getVector(OpenGLMatrix bot, float desX, float desY)
+    public float[] getDestinationMatrix(OpenGLMatrix bot, float desX, float desY, float desRot)
     {
-        VectorF amHere = bot.getTranslation();
-        VectorF goThere = new VectorF(desX,desY);
-        return goThere.subtracted(amHere);
+        //return translation in X, translation in Y, and the angle at which to end at
+        float tX, tY, moveAngle, finAngle;
+        VectorF desired = new VectorF(desX,desY);
+        tX = desired.subtracted(bot.getTranslation()).get(0);
+        tY = desired.subtracted(bot.getTranslation()).get(1);
+        moveAngle = (float)Math.atan(tY/tX) + bot.get(2,3);
+        finAngle = desRot - bot.get(2,3);
+        float[] movements = {tX, tY, moveAngle, finAngle};
+        return movements;
     }
     public void lineCheck(double num, String side) {
         //on red side the right side should see line first, on blue side left side should see line first
