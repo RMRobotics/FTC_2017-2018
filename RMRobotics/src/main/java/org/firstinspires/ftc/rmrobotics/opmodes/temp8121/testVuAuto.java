@@ -90,8 +90,14 @@ public class testVuAuto extends LinearOpMode{
                     //we need robot to picture
                 }
             }
-            autoboi.move(2, 100, autoboi.getDestinationMatrix(bot2field, 100, 100, 90)[2], autoboi.getDestinationMatrix(bot2field, 100, 100, 90)[3]);
 
+            //For duration and power, we gotta do some maths with integration, but i doesnt no how 2 do dat rn. Arbitrarily at 2
+            if (vuMark == RelicRecoveryVuMark.CENTER)
+                autoboi.move(2, 100, autoboi.getDestinationMatrix(bot2field, 4, 84, 90)[2], autoboi.getDestinationMatrix(bot2field, 4, 84, 90)[3]);
+            if (vuMark == RelicRecoveryVuMark.LEFT)
+                autoboi.move(2, 100, autoboi.getDestinationMatrix(bot2field, 4, (float)76.33, 90)[2], autoboi.getDestinationMatrix(bot2field, 4, (float)76.37, 90)[3]);
+            if (vuMark == RelicRecoveryVuMark.RIGHT)
+                autoboi.move(2, 100, autoboi.getDestinationMatrix(bot2field, 4, (float)91.63, 90)[2], autoboi.getDestinationMatrix(bot2field, 4, (float)91.63, 90)[3]);
             /*else {
                 telemetry.addData("VuMark", "not visible");
             }
