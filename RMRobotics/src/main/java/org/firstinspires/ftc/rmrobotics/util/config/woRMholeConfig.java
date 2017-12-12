@@ -33,6 +33,9 @@ public class woRMholeConfig extends Robot {
     private crservo clawTL;
     private crservo clawTR;
     private servo gemBar;
+    private servo relicArmT;
+    private servo relicArmB;
+    private motor ArmMotor;
 
     public woRMholeConfig(final HardwareMap h, final Op o) {
         super(h);
@@ -57,6 +60,8 @@ public class woRMholeConfig extends Robot {
         wheelFR = new motor(hMap.dcMotor.get("wheelFR"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
         wheelBL = new motor(hMap.dcMotor.get("wheelBL"), DcMotorSimple.Direction.REVERSE, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
         wheelBR = new motor(hMap.dcMotor.get("wheelBR"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
+        ArmMotor = new motor(hMap.dcMotor.get("ArmMotor"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
+
         lift = new motor(hMap.dcMotor.get("lift"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.BRAKE, MotorType.NVRST40);
 
         motors.addAll(Arrays.asList(wheelFL, wheelFR, wheelBL, wheelBR, lift));
@@ -64,6 +69,8 @@ public class woRMholeConfig extends Robot {
         clawBL = new servo(hMap.servo.get("clawBL"), Servo.Direction.FORWARD, 0, 0.6, 0);
         clawBR = new servo(hMap.servo.get("clawBR"), Servo.Direction.REVERSE, 0, 0.6, 0);
         gemBar = new servo(hMap.servo.get("gemBar"), Servo.Direction.FORWARD, 0, 1, 0);
+        relicArmT = new servo(hMap.servo.get("clawBL"), Servo.Direction.FORWARD, 0, 0.6, 0);
+        relicArmB = new servo(hMap.servo.get("clawBR"), Servo.Direction.REVERSE, 0, 0.6, 0);
 
         servos.addAll(Arrays.asList(clawBL, clawBR, gemBar));
 
@@ -83,5 +90,8 @@ public class woRMholeConfig extends Robot {
     public crservo clawTL() {return clawTL;}
     public crservo clawTR() {return clawTR;}
     public servo gemBar() {return gemBar;}
+    public servo relicArmT() {return relicArmT;}
+    public servo relicArmB() {return relicArmB;}
+    public motor ArmMotor() {return ArmMotor;}
 
 }

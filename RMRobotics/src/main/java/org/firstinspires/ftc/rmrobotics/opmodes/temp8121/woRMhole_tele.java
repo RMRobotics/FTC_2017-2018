@@ -6,6 +6,10 @@ import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
+
+import org.firstinspires.ftc.rmrobotics.hardware.motor;
+import org.firstinspires.ftc.rmrobotics.hardware.servo;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,6 +29,9 @@ public class woRMhole_tele extends OpMode {
     private CRServo clawTL;
     private CRServo clawTR;
     private Servo gemBar;
+    private Servo relicArmT;
+    private Servo relicArmB;
+    private DcMotor ArmMotor;
     private boolean clawState = false;
 
     public void init()
@@ -33,6 +40,7 @@ public class woRMhole_tele extends OpMode {
         wheelFR = hardwareMap.dcMotor.get("wheelFR");
         wheelBL = hardwareMap.dcMotor.get("wheelBL");
         wheelBR = hardwareMap.dcMotor.get("wheelBR");
+        ArmMotor = hardwareMap.dcMotor.get("ArmMotor");
         wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
         wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
         lift = hardwareMap.dcMotor.get("lift");
@@ -40,8 +48,11 @@ public class woRMhole_tele extends OpMode {
         clawBR = hardwareMap.servo.get("clawBR");
         clawTL = hardwareMap.crservo.get("clawTL");
         clawTR = hardwareMap.crservo.get("clawTR");
+        relicArmT = hardwareMap.servo.get("relicArmT");
+        relicArmB = hardwareMap.servo.get("relicArmB");
         clawBR.setDirection(Servo.Direction.REVERSE);
         clawTR.setDirection(CRServo.Direction.REVERSE);
+        relicArmB.setDirection(Servo.Direction.REVERSE);
         gemBar = hardwareMap.servo.get("gemBar");
         clawBL.setPosition(0);
         clawBR.setPosition(0);
@@ -98,6 +109,7 @@ public class woRMhole_tele extends OpMode {
             clawTL.setPower(gamepad2.left_trigger/128);
         }
 
+        ArmMotor.setPower(gamepad2.left_stick_y/128);
         lift.setPower(gamepad2.right_stick_y/128);
 
         if (gamepad2.a)
@@ -108,7 +120,16 @@ public class woRMhole_tele extends OpMode {
         if (gamepad2.b)
         {
             gemBar.setPosition(-1);
-
+        }
+        if (gamepad2.x)
+        {
+            relicArmB.setPosition(0.6);
+            relicArmT.setPosition(0.6);
+        }
+        if (gamepad2.y)
+        {
+            relicArmB.setPosition(0);
+            relicArmT.setPosition(0);
         }
     }
 }
