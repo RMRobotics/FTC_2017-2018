@@ -2,10 +2,11 @@ package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
-import org.firstinspires.ftc.rmrobotics.util.AutoFxns;
 import org.firstinspires.ftc.robotcore.external.ClassFactory;
 import org.firstinspires.ftc.robotcore.external.matrices.OpenGLMatrix;
 import org.firstinspires.ftc.robotcore.external.matrices.VectorF;
@@ -31,6 +32,10 @@ public class autoMark1 extends LinearOpMode{
     private DcMotor wheelFR;
     private DcMotor wheelBL;
     private DcMotor wheelBR;
+    private Servo clawBL;
+    private Servo clawBR;
+    private CRServo clawTL;
+    private CRServo clawTR;
 
     private ElapsedTime time = new ElapsedTime();
 
@@ -39,11 +44,24 @@ public class autoMark1 extends LinearOpMode{
     VuforiaLocalizer vuforia;
 
     @Override public void runOpMode() {
-        AutoFxns a1 = new AutoFxns();
+
+
         wheelFL = hardwareMap.dcMotor.get("wheelFL");
         wheelFR = hardwareMap.dcMotor.get("wheelFR");
         wheelBL = hardwareMap.dcMotor.get("wheelBL");
         wheelBR = hardwareMap.dcMotor.get("wheelBR");
+
+        clawBL = hardwareMap.servo.get("clawBL");
+        clawBR = hardwareMap.servo.get("clawBR");
+        clawTL = hardwareMap.crservo.get("clawTL");
+        clawTR = hardwareMap.crservo.get("clawTR");
+
+        clawBL.setPosition(0.6);
+        clawBR.setPosition(0.6);
+
+        clawTR.setPower(1);
+        clawTL.setPower(1);
+
         double timeToWall, timeToColumn, rotate90; //rotate90 is the amount of time that it takes to rotate 90 degrees
         RelicRecoveryVuMark column = runVuforia();
         time.reset();
@@ -56,6 +74,12 @@ public class autoMark1 extends LinearOpMode{
         if (column == RelicRecoveryVuMark.RIGHT)
             timeToColumn = 0;
         move(timeToColumn, 1.0, 90.0, 0.0);
+
+        clawBL.setPosition(0);
+        clawBR.setPosition(0);
+
+        clawTR.setPower(0);
+        clawTL.setPower(0);
 
     }
 
@@ -90,27 +114,27 @@ public class autoMark1 extends LinearOpMode{
             if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
                 telemetry.addData("VuMark", "%s visible", vuMark);
                 OpenGLMatrix pose = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
-                telemetry.addData("Pose", format(pose));
-                if (pose != null) {
-                    VectorF trans = pose.getTranslation();
-                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
-
-                    double tX = trans.get(0);
-                    double tY = trans.get(1);
-                    double tZ = trans.get(2);
-
-                    double rX = rot.firstAngle;
-                    double rY = rot.secondAngle;
-                    double rZ = rot.thirdAngle;
-                }
+//                telemetry.addData("Pose", format(pose));
+//                if (pose != null) {
+//                    VectorF trans = pose.getTranslation();
+//                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
+//
+//                    double tX = trans.get(0);
+//                    double tY = trans.get(1);
+//                    double tZ = trans.get(2);
+//
+//                    double rX = rot.firstAngle;
+//                    double rY = rot.secondAngle;
+//                    double rZ = rot.thirdAngle;
+//                }
+//            }
+//            else {
+//                telemetry.addData("VuMark", "not visible");
+//            }
+                telemetry.update();
+                return vuMark;
             }
-            else {
-                telemetry.addData("VuMark", "not visible");
-            }
-            telemetry.update();
-            return vuMark;
         }
+
+
     }
-
-
-}
