@@ -40,8 +40,8 @@ public class autoMark1 extends LinearOpMode{
     private ElapsedTime time = new ElapsedTime();
 
     public static final String TAG = "Auto Version 1";
-    OpenGLMatrix lastLocation = null;
-    VuforiaLocalizer vuforia;
+/*    OpenGLMatrix lastLocation = null;
+    VuforiaLocalizer vuforia;*/
 
     @Override public void runOpMode() {
 
@@ -56,24 +56,35 @@ public class autoMark1 extends LinearOpMode{
         clawTL = hardwareMap.crservo.get("clawTL");
         clawTR = hardwareMap.crservo.get("clawTR");
 
-        clawBL.setPosition(0.6);
-        clawBR.setPosition(0.6);
-
         clawTR.setPower(1);
         clawTL.setPower(1);
 
-        double timeToWall, timeToColumn, rotate90; //rotate90 is the amount of time that it takes to rotate 90 degrees
+        clawBL.setPosition(0.6);
+        clawBR.setPosition(0.6);
+
+        double timeToStance, timeToColumn, rotate90; //rotate90 is the amount of time that it takes to rotate 90 degrees
+
+        timeToStance = 2;
+        timeToColumn = 2;
+        rotate90 = 5;
+        /*
         RelicRecoveryVuMark column = runVuforia();
+*/
         time.reset();
+/*
         move(rotate90, 1.0, 0.0, 1.0);
-        move(timeToWall, 1.0, 0.0, 0.0);
-        if (column == RelicRecoveryVuMark.LEFT)
+*/
+        move(timeToStance, 1.0, 0.0, 0.0);
+        move(rotate90, 1.0, 0.0, 1.0); //if right turn
+
+/*        if (column == RelicRecoveryVuMark.LEFT)
             timeToColumn = 0;
         if (column == RelicRecoveryVuMark.CENTER)
             timeToColumn = 0;
         if (column == RelicRecoveryVuMark.RIGHT)
-            timeToColumn = 0;
-        move(timeToColumn, 1.0, 90.0, 0.0);
+            timeToColumn = 0;*/
+        move(timeToColumn, 1.0, 0.0, 0.0);
+
 
         clawBL.setPosition(0);
         clawBR.setPosition(0);
@@ -96,7 +107,7 @@ public class autoMark1 extends LinearOpMode{
     }
 
 
-    public RelicRecoveryVuMark runVuforia(){
+/*    public RelicRecoveryVuMark runVuforia() {
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
         parameters.vuforiaLicenseKey = "ATsODcD/////AAAAAVw2lR...d45oGpdljdOh5LuFB9nDNfckoxb8COxKSFX";
@@ -113,7 +124,7 @@ public class autoMark1 extends LinearOpMode{
             RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
             if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
                 telemetry.addData("VuMark", "%s visible", vuMark);
-                OpenGLMatrix pose = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
+                OpenGLMatrix pose = ((VuforiaTrackableDefaultListener) relicTemplate.getListener()).getPose();
 //                telemetry.addData("Pose", format(pose));
 //                if (pose != null) {
 //                    VectorF trans = pose.getTranslation();
@@ -131,10 +142,11 @@ public class autoMark1 extends LinearOpMode{
 //            else {
 //                telemetry.addData("VuMark", "not visible");
 //            }
-            telemetry.update();
-            return vuMark;
+                telemetry.update();
+                return vuMark;
+            }
         }
-    }
+    }*/
 
 
 }
