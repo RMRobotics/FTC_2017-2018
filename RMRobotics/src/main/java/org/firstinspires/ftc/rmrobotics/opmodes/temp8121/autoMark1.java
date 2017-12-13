@@ -25,7 +25,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by Kameron on 10/24/2017.
  */
 
-@Autonomous(name="autoMark1", group ="temp8121")
+@Autonomous(name="autoMark1", group ="woRMholeConfig")
 public class autoMark1 extends LinearOpMode{
 
     private DcMotor wheelFL;
@@ -66,7 +66,7 @@ public class autoMark1 extends LinearOpMode{
 
         timeToStance = 2;
         timeToColumn = 2;
-        rotate90 = 5;
+        rotate90 = 2;
         /*
         RelicRecoveryVuMark column = runVuforia();
 */
@@ -75,7 +75,7 @@ public class autoMark1 extends LinearOpMode{
         move(rotate90, 1.0, 0.0, 1.0);
 */
         move(timeToStance, 1.0, 0.0, 0.0);
-        move(rotate90, 1.0, 0.0, 1.0); //if right turn
+        move(rotate90, 1.0, 0.0, 90.0); //if right turn
 
 /*        if (column == RelicRecoveryVuMark.LEFT)
             timeToColumn = 0;
