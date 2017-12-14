@@ -20,11 +20,14 @@ public class woRMhole_tele extends OpMode {
     private DcMotor wheelBL;
     private DcMotor wheelBR;
     private DcMotor lift;
+    private DcMotor arm;
     private Servo clawBL;
     private Servo clawBR;
     private CRServo clawTL;
     private CRServo clawTR;
-    private Servo gemBar;
+    private Servo armT;
+    private Servo armB;
+//    private Servo gemBar;
     private boolean clawState = false;
 
     public void init()
@@ -36,18 +39,25 @@ public class woRMhole_tele extends OpMode {
         wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
         wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
         lift = hardwareMap.dcMotor.get("lift");
+        lift.setDirection(DcMotorSimple.Direction.REVERSE);
+        arm = hardwareMap.dcMotor.get("arm");
         clawBL = hardwareMap.servo.get("clawBL");
         clawBR = hardwareMap.servo.get("clawBR");
+        armT = hardwareMap.servo.get("armT");
+        armB = hardwareMap.servo.get("armB");
         clawTL = hardwareMap.crservo.get("clawTL");
         clawTR = hardwareMap.crservo.get("clawTR");
         clawBR.setDirection(Servo.Direction.REVERSE);
         clawTR.setDirection(CRServo.Direction.REVERSE);
-        gemBar = hardwareMap.servo.get("gemBar");
+        armB.setDirection(Servo.Direction.REVERSE);
+//        gemBar = hardwareMap.servo.get("gemBar");
         clawBL.setPosition(0);
         clawBR.setPosition(0);
+        armT.setPosition(0);
+        armB.setPosition(0);
         clawTL.setPower(0);
         clawTR.setPower(0);
-        gemBar.setPosition(0);
+//        gemBar.setPosition(0);
     }
 
     public void loop()
@@ -75,17 +85,15 @@ public class woRMhole_tele extends OpMode {
         if ((double) Collections.max(l) > 1) {
             max = (double) Collections.max(l);
         }
-
         if (gamepad2.right_bumper)
-        {
-            clawBL.setPosition(0.6);
-            clawBR.setPosition(0.6);
-
-        }
-        if (gamepad2.left_bumper)
         {
             clawBL.setPosition(0);
             clawBR.setPosition(0);
+        }
+        if (gamepad2.left_bumper)
+        {
+            clawBL.setPosition(0.6);
+            clawBR.setPosition(0.6);
         }
         if (gamepad2.right_trigger!=0 && gamepad2.left_trigger==0)
         {
@@ -97,27 +105,22 @@ public class woRMhole_tele extends OpMode {
             clawTR.setPower(-gamepad2.left_trigger/128);
             clawTL.setPower(-gamepad2.left_trigger/128);
         }
-        else if (gamepad2.right_trigger!=0 && gamepad2.left_trigger==0)
-        {
-            clawTR.setPower(gamepad2.left_trigger/128);
-            clawTL.setPower(gamepad2.left_trigger/128);
-        }
         else
         {
             clawTR.setPower(0);
             clawTL.setPower(0);
         }
-        lift.setPower(gamepad2.right_stick_y/256);
-
+        lift.setPower(gamepad2.right_stick_y/2);
+        arm.setPower(gamepad2.left_stick_y/2);
         if (gamepad2.a)
         {
-            gemBar.setPosition(1);
-
+            armT.setPosition(0);
+            armB.setPosition(0);
         }
         if (gamepad2.b)
         {
-            gemBar.setPosition(-1);
-
+            armT.setPosition(0.6);
+            armB.setPosition(0.6);
         }
     }
 }
