@@ -80,25 +80,22 @@ public class woRMhole_tele extends OpMode {
             clawBL.setPosition(0);
             clawBR.setPosition(0);
         }
-        if (gamepad2.left_trigger!=0 && gamepad2.right_trigger==0)
+        if (gamepad2.right_trigger!=0 && gamepad2.left_trigger==0)
+        {
+            clawTR.setPower(gamepad2.left_trigger/128);
+            clawTL.setPower(gamepad2.left_trigger/128);
+        }
+        else if (gamepad2.left_trigger!=0 && gamepad2.right_trigger==0)
         {
             clawTR.setPower(-gamepad2.left_trigger/128);
             clawTL.setPower(-gamepad2.left_trigger/128);
-
-
         }
         else
         {
             clawTR.setPower(0);
             clawTL.setPower(0);
         }
-        if (gamepad2.right_trigger!=0 && gamepad2.left_trigger==0)
-        {
-            clawTR.setPower(gamepad2.left_trigger/128);
-            clawTL.setPower(gamepad2.left_trigger/128);
-        }
-
-        lift.setPower(gamepad2.right_stick_y/128);
+        lift.setPower(gamepad2.right_stick_y/256);
 
         if (gamepad2.a)
         {
