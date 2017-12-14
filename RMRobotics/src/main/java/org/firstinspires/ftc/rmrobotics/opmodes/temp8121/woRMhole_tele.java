@@ -52,9 +52,20 @@ public class woRMhole_tele extends OpMode {
 
     public void loop()
     {
-        double forward = gamepad1.right_stick_y;
-        double strafe = gamepad1.right_stick_x;
-        double rotate = gamepad1.left_stick_x;
+        double forward, strafe, rotate;
+
+        if (gamepad1.right_trigger!=0)
+        {
+            forward = gamepad1.right_stick_y/3;
+            strafe = gamepad1.right_stick_x/3;
+            rotate = gamepad1.left_stick_x/3;
+        }
+        else {
+            forward = gamepad1.right_stick_y;
+            strafe = gamepad1.right_stick_x;
+            rotate = gamepad1.left_stick_x;
+        }
+
         double max = 1;
         List l = new ArrayList<>();
         l.add(Math.abs(forward + strafe + rotate));
@@ -64,10 +75,6 @@ public class woRMhole_tele extends OpMode {
         if ((double) Collections.max(l) > 1) {
             max = (double) Collections.max(l);
         }
-        wheelFL.setPower((-forward + strafe + rotate) / max);
-        wheelFR.setPower((-forward - strafe - rotate) / max);
-        wheelBL.setPower((-forward - strafe + rotate) / max);
-        wheelBR.setPower((-forward + strafe - rotate) / max);
 
         if (gamepad2.right_bumper)
         {
@@ -86,6 +93,11 @@ public class woRMhole_tele extends OpMode {
             clawTL.setPower(-gamepad2.left_trigger/128);
 
 
+        }
+        else if (gamepad2.right_trigger!=0 && gamepad2.left_trigger==0)
+        {
+            clawTR.setPower(gamepad2.left_trigger/128);
+            clawTL.setPower(gamepad2.left_trigger/128);
         }
         else
         {
