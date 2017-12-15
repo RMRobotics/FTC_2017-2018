@@ -27,7 +27,7 @@ public class woRMhole_tele extends OpMode {
     private CRServo clawTR;
     private Servo armT;
     private Servo armB;
-//    private Servo gemBar;
+    private Servo gemBar;
     private boolean clawState = false;
 
     public void init()
@@ -50,14 +50,14 @@ public class woRMhole_tele extends OpMode {
         clawBR.setDirection(Servo.Direction.REVERSE);
         clawTR.setDirection(CRServo.Direction.REVERSE);
         armB.setDirection(Servo.Direction.REVERSE);
-//        gemBar = hardwareMap.servo.get("gemBar");
+        gemBar = hardwareMap.servo.get("gemBar");
         clawBL.setPosition(0);
         clawBR.setPosition(0);
         armT.setPosition(0);
         armB.setPosition(0);
         clawTL.setPower(0);
         clawTR.setPower(0);
-//        gemBar.setPosition(0);
+        gemBar.setPosition(0);
     }
 
     public void loop()
@@ -121,6 +121,14 @@ public class woRMhole_tele extends OpMode {
         {
             armT.setPosition(0.6);
             armB.setPosition(0.6);
+        }
+        if (gamepad1.a)
+        {
+            gemBar.setPosition(0);
+        }
+        if (gamepad1.b)
+        {
+            gemBar.setPosition(1);
         }
     }
 }
