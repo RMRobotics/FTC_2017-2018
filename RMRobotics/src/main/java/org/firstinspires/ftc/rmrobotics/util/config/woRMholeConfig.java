@@ -35,7 +35,7 @@ public class woRMholeConfig extends Robot {
     private crservo clawTR;
     private servo armT;
     private servo armB;
-    private servo gemBar;
+//    private servo gemBar;
 
     public woRMholeConfig(final HardwareMap h, final Op o) {
         super(h);
@@ -68,9 +68,9 @@ public class woRMholeConfig extends Robot {
         clawBR = new servo(hMap.servo.get("clawBR"), Servo.Direction.REVERSE, 0, 0.6, 0);
         armT = new servo(hMap.servo.get("armT"), Servo.Direction.FORWARD, 0, 0.6, 0);
         armB = new servo(hMap.servo.get("armB"), Servo.Direction.REVERSE, 0, 0.6, 0);
-        gemBar = new servo(hMap.servo.get("gemBar"), Servo.Direction.FORWARD, 0, 1, 0);
+//        gemBar = new servo(hMap.servo.get("gemBar"), Servo.Direction.FORWARD, 0, 1, 0);
 
-        servos.addAll(Arrays.asList(clawBL, clawBR, gemBar, armT, armB));
+        servos.addAll(Arrays.asList(clawBL, clawBR, /*gemBar, */armT, armB));
 
         clawTL = new crservo(hMap.crservo.get("clawTL"), CRServo.Direction.FORWARD);
         clawTR = new crservo(hMap.crservo.get("clawTR"), CRServo.Direction.REVERSE);
@@ -90,6 +90,6 @@ public class woRMholeConfig extends Robot {
     public servo armB() {return armB;}
     public crservo clawTL() {return clawTL;}
     public crservo clawTR() {return clawTR;}
-    public servo gemBar() {return gemBar;}
+//    public servo gemBar() {return gemBar;}
 
 }
