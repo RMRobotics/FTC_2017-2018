@@ -85,6 +85,8 @@ public class woRMholeConfig extends Robot {
     public motor lift() {return lift;}
     public servo clawBL() {return clawBL;}
     public servo clawBR() {return clawBR;}
+    public servo armT() {return armT;}
+    public servo armB() {return armB;}
     public crservo clawTL() {return clawTL;}
     public crservo clawTR() {return clawTR;}
     public servo gemBar() {return gemBar;}
