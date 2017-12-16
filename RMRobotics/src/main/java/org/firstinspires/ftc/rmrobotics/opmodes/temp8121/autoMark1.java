@@ -74,8 +74,8 @@ public class autoMark1 extends LinearOpMode{
 /*
         move(rotate90, 1.0, 0.0, 1.0);
 */
-        move(timeToStance, 1.0, 0.0, 0.0);
-        move(rotate90, 1.0, 0.0, 90.0); //if right turn
+        move(timeToStance, 0.1, 0.0, 0.0);
+        move(rotate90, 0.1, 0.0, 90.0); //if right turn
 
 /*        if (column == RelicRecoveryVuMark.LEFT)
             timeToColumn = 0;
@@ -83,7 +83,7 @@ public class autoMark1 extends LinearOpMode{
             timeToColumn = 0;
         if (column == RelicRecoveryVuMark.RIGHT)
             timeToColumn = 0;*/
-        move(timeToColumn, 1.0, 0.0, 0.0);
+        move(timeToColumn, 0.1, 0.0, 0.0);
 
 
         clawBL.setPosition(0);
