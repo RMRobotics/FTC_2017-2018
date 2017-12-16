@@ -28,7 +28,7 @@ public class woRMhole_tele extends OpMode {
     private Servo armT;
     private CRServo armB;
 //    private Servo gemBar;
-    private boolean clawState = false;
+    private boolean clawState = false, slowMo = false;
 
     public void init()
     {
@@ -51,7 +51,7 @@ public class woRMhole_tele extends OpMode {
         armB.setDirection(CRServo.Direction.FORWARD);
 //        gemBar = hardwareMap.servo.get("gemBar");
         clawBL.setPosition(-1);
-        clawBR.setPosition(1);
+        clawBR.setPosition(-1);
         armT.setPosition(0);
         armB.setPower(0);
         clawTL.setPosition(0);
@@ -63,7 +63,7 @@ public class woRMhole_tele extends OpMode {
     {
         double forward, strafe, rotate;
 
-        if (gamepad1.right_trigger!=0)
+        if (slowMo)
         {
             forward = -gamepad1.right_stick_y/3;
             strafe = gamepad1.right_stick_x/3;
@@ -76,7 +76,7 @@ public class woRMhole_tele extends OpMode {
         }
 
         double max = 1;
-        /*
+        /*;;;;;;;;;;;;;;;;;;;;
         List l = new ArrayList<>();
         l.add(Math.abs(forward + strafe + rotate));
         l.add(Math.abs(forward - strafe - rotate));
@@ -91,12 +91,12 @@ public class woRMhole_tele extends OpMode {
         }*/
         if (gamepad2.right_bumper)
         {
-            clawBL.setPosition(1);
-            clawBR.setPosition(-1);
+            clawBL.setPosition(0.7);
+            clawBR.setPosition(-0.7);
         }
         if (gamepad2.left_bumper)
         {
-            clawBL.setPosition(-1);
+            clawBL.setPosition(-0.6);
             clawBR.setPosition(1);
         }
 /*        if (gamepad2.x){
@@ -108,18 +108,22 @@ public class woRMhole_tele extends OpMode {
             clawTL.setPower(-1);
 
         }*/
-        if (gamepad2.right_trigger!=0)
+        if (gamepad2.right_trigger != 0)
+        {
+            clawTR.setPosition(-0.5);
+            clawTL.setPosition(0.5);
+        }
+        if (gamepad2.left_trigger != 0)
         {
             clawTR.setPosition(1);
-            clawTL.setPosition(-1);
-        }
-        if (gamepad2.left_trigger!=0)
-        {
-            clawTR.setPosition(-1);
-            clawTL.setPosition(1);
+            clawTL.setPosition(-0.5);
         }
 
-        lift.setPower(gamepad2.right_stick_y/2);
+        if (gamepad2.right_stick_y < 0)
+            lift.setPower(gamepad2.right_stick_y/4);
+        else
+            lift.setPower(gamepad2.right_stick_y/2);
+
         arm.setPower(gamepad2.left_stick_y/2);
         if (gamepad1.a)
         {
@@ -127,18 +131,21 @@ public class woRMhole_tele extends OpMode {
         }
         if (gamepad1.b)
         {
-            armT.setPosition(1);
+            armT.setPosition(0);
         }
-        if (gamepad1.x)
+        if (gamepad1.left_trigger != 0)
         {
             armB.setPower(-1);
         }
-        else if (gamepad1.y)
+        else if (gamepad1.right_trigger != 0)
         {
             armB.setPower(1);
         }
         else{
             armB.setPower(0);
+        }
+        if (gamepad1.x){
+            slowMo = !slowMo;
         }
 
 //        if (gamepad1.a)
