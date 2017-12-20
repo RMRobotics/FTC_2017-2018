@@ -28,14 +28,14 @@ public class woRMholeConfig extends Robot {
     private motor wheelFL;
     private motor wheelFR;
     private motor lift;
+    private motor arm;
     private servo clawBL;
     private servo clawBR;
-    private crservo clawTL;
-    private crservo clawTR;
-    private servo gemBar;
-    private servo relicArmT;
-    private servo relicArmB;
-    private motor ArmMotor;
+    private servo clawTL;
+    private servo clawTR;
+    private servo armT;
+    private crservo armB;
+//    private servo gemBar;
 
     public woRMholeConfig(final HardwareMap h, final Op o) {
         super(h);
@@ -60,24 +60,23 @@ public class woRMholeConfig extends Robot {
         wheelFR = new motor(hMap.dcMotor.get("wheelFR"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
         wheelBL = new motor(hMap.dcMotor.get("wheelBL"), DcMotorSimple.Direction.REVERSE, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
         wheelBR = new motor(hMap.dcMotor.get("wheelBR"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
-        ArmMotor = new motor(hMap.dcMotor.get("ArmMotor"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.FLOAT, MotorType.NVRST40);
+        lift = new motor(hMap.dcMotor.get("lift"), DcMotorSimple.Direction.REVERSE, motorMode, DcMotor.ZeroPowerBehavior.BRAKE, MotorType.NVRST20);
+        arm = new motor(hMap.dcMotor.get("arm"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.BRAKE, MotorType.NVRST20);
+        motors.addAll(Arrays.asList(wheelFL, wheelFR, wheelBL, wheelBR, lift, arm));
 
-        lift = new motor(hMap.dcMotor.get("lift"), DcMotorSimple.Direction.FORWARD, motorMode, DcMotor.ZeroPowerBehavior.BRAKE, MotorType.NVRST40);
+        clawBL = new servo(hMap.servo.get("clawBL"), Servo.Direction.FORWARD, -1, 1, -1);
+        clawBR = new servo(hMap.servo.get("clawBR"), Servo.Direction.FORWARD, -1, 1, -1);
+        armT = new servo(hMap.servo.get("armT"), Servo.Direction.FORWARD, -1, 1, 0);
+        clawTL = new servo(hMap.servo.get("clawTL"), Servo.Direction.FORWARD, -1, 1, 0);
+        clawTR = new servo(hMap.servo.get("clawTR"), Servo.Direction.FORWARD, -1, 1, 0);
 
-        motors.addAll(Arrays.asList(wheelFL, wheelFR, wheelBL, wheelBR, lift));
+//        gemBar = new servo(hMap.servo.get("gemBar"), Servo.Direction.FORWARD, 0, 1, 0);
 
-        clawBL = new servo(hMap.servo.get("clawBL"), Servo.Direction.FORWARD, 0, 0.6, 0);
-        clawBR = new servo(hMap.servo.get("clawBR"), Servo.Direction.REVERSE, 0, 0.6, 0);
-        gemBar = new servo(hMap.servo.get("gemBar"), Servo.Direction.FORWARD, 0, 1, 0);
-        relicArmT = new servo(hMap.servo.get("clawBL"), Servo.Direction.FORWARD, 0, 0.6, 0);
-        relicArmB = new servo(hMap.servo.get("clawBR"), Servo.Direction.REVERSE, 0, 0.6, 0);
+        servos.addAll(Arrays.asList(clawBL, clawBR, /*gemBar, */armT, clawTL, clawTR));
 
-        servos.addAll(Arrays.asList(clawBL, clawBR, gemBar));
+        armB = new crservo(hMap.crservo.get("armB"), CRServo.Direction.FORWARD);
 
-        clawTL = new crservo(hMap.crservo.get("clawTL"), CRServo.Direction.FORWARD);
-        clawTR = new crservo(hMap.crservo.get("clawTR"), CRServo.Direction.REVERSE);
-
-        crservos.addAll(Arrays.asList(clawTL, clawTR));
+        crservos.addAll(Arrays.asList(armB));
 
     }
     public motor wheelBR() {return wheelBR;}
@@ -85,13 +84,13 @@ public class woRMholeConfig extends Robot {
     public motor wheelFL() {return wheelFL;}
     public motor wheelFR() {return wheelFR;}
     public motor lift() {return lift;}
+    public motor arm() {return arm;}
     public servo clawBL() {return clawBL;}
     public servo clawBR() {return clawBR;}
-    public crservo clawTL() {return clawTL;}
-    public crservo clawTR() {return clawTR;}
-    public servo gemBar() {return gemBar;}
-    public servo relicArmT() {return relicArmT;}
-    public servo relicArmB() {return relicArmB;}
-    public motor ArmMotor() {return ArmMotor;}
+    public servo armT() {return armT;}
+    public crservo armB() {return armB;}
+    public servo clawTL() {return clawTL;}
+    public servo clawTR() {return clawTR;}
+//    public servo gemBar() {return gemBar;}
 
 }
