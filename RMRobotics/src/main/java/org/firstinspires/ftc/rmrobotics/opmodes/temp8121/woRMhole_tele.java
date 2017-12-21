@@ -52,9 +52,9 @@ public class woRMhole_tele extends OpMode {
 //        gemBar = hardwareMap.servo.get("gemBar");
         clawBL.setPosition(-0.7);
         clawBR.setPosition(1);
-        armT.setPosition(1);
+        armT.setPosition(0.5);
         armB.setPower(0);
-        clawTL.setPosition(-0.5);
+        clawTL.setPosition(-1);
         clawTR.setPosition(1);
 //        gemBar.setPosition(0);
     }
@@ -89,15 +89,15 @@ public class woRMhole_tele extends OpMode {
         /*if ((double) Collections.max(l) > 1) {
             max = (double) Collections.max(l);
         }*/
-        if (gamepad2.right_bumper)
+        if (gamepad1.right_bumper)
         {
-            clawBL.setPosition(0.7);
-            clawBR.setPosition(0.3);
+            clawTR.setPosition(-0.2);
+            clawTL.setPosition(0.5);
         }
-        if (gamepad2.left_bumper)
+        if (gamepad1.left_bumper)
         {
-            clawBL.setPosition(-0.7);
-            clawBR.setPosition(1);
+            clawTR.setPosition(1);
+            clawTL.setPosition(-1);
         }
 /*        if (gamepad2.x){
             clawTL.setPower(1);
@@ -108,15 +108,16 @@ public class woRMhole_tele extends OpMode {
             clawTL.setPower(-1);
 
         }*/
-        if (gamepad2.right_trigger != 0)
+        if (gamepad1.right_trigger != 0)
         {
-            clawTR.setPosition(-0.3);
-            clawTL.setPosition(0.5);
+            clawBL.setPosition(0.7);
+            clawBR.setPosition(0.3);
         }
-        if (gamepad2.left_trigger != 0)
+        if (gamepad1.left_trigger != 0)
         {
-            clawTR.setPosition(1);
-            clawTL.setPosition(-1);
+
+            clawBL.setPosition(-0.7);
+            clawBR.setPosition(1);
         }
 
         if (gamepad2.right_stick_y < 0)
@@ -125,26 +126,26 @@ public class woRMhole_tele extends OpMode {
             lift.setPower(gamepad2.right_stick_y/2);
 
         arm.setPower(gamepad2.left_stick_y/2);
-        if (gamepad1.a)
+        if (gamepad2.y)
         {
             armT.setPosition(0);
         }
-        if (gamepad1.b)
+        if (gamepad2.x)
         {
-            armT.setPosition(-1);
+            armT.setPosition(0.5);
         }
-        if (gamepad1.left_trigger > 0 && gamepad1.right_trigger == 0)
+        if (gamepad2.left_trigger > 0 && gamepad2.right_trigger == 0)
         {
             armB.setPower(-1);
         }
-        else if (gamepad1.right_trigger > 0 && gamepad1.left_trigger == 0)
+        else if (gamepad2.right_trigger > 0 && gamepad2.left_trigger == 0)
         {
             armB.setPower(1);
         }
         else{
             armB.setPower(0);
         }
-        if (gamepad1.x){
+        if (gamepad1.b){
             slowMo = !slowMo;
         }
 

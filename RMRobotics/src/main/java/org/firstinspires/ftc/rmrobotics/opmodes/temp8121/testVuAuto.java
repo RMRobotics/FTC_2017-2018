@@ -45,10 +45,10 @@ public class testVuAuto extends LinearOpMode{
 
         //0,0,0 is front left bottom corner. phone is a matrix of where the phone is relative to the robot
         OpenGLMatrix phone2bot = OpenGLMatrix
-                .translation(5,18,5) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
+                .translation(3.75f, 5.37f, 6.248f) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
                 .multiplied(Orientation.getRotationMatrix(
                         AxesReference.EXTRINSIC, AxesOrder.XYZ,
-                        AngleUnit.DEGREES, 0, 90, -90));
+                        AngleUnit.DEGREES, 0, 0, 0));
         //theoretically should have phone upright, screen facing out towards the right
 //        RobotLog.ii(TAG, "phone=%s", format(phoneLocationOnRobot));
 

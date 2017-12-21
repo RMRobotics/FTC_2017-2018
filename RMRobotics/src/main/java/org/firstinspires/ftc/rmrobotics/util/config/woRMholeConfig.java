@@ -66,7 +66,7 @@ public class woRMholeConfig extends Robot {
 
         clawBL = new servo(hMap.servo.get("clawBL"), Servo.Direction.FORWARD, -1, 1, -1);
         clawBR = new servo(hMap.servo.get("clawBR"), Servo.Direction.FORWARD, -1, 1, -1);
-        armT = new servo(hMap.servo.get("armT"), Servo.Direction.FORWARD, -1, 1, 0);
+        armT = new servo(hMap.servo.get("armT"), Servo.Direction.FORWARD, 0, 1, 0);
         clawTL = new servo(hMap.servo.get("clawTL"), Servo.Direction.FORWARD, -1, 1, 0);
         clawTR = new servo(hMap.servo.get("clawTR"), Servo.Direction.FORWARD, -1, 1, 0);
 
