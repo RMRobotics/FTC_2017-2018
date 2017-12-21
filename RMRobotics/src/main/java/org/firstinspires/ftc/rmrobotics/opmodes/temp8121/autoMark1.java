@@ -26,7 +26,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  */
 
 @Autonomous(name="autoMark1", group ="temp8121")
-public class autoMark1 extends LinearOpMode{
+public class autoMark1 extends LinearOpMode {
 
     private DcMotor wheelFL;
     private DcMotor wheelFR;
@@ -43,7 +43,8 @@ public class autoMark1 extends LinearOpMode{
     OpenGLMatrix lastLocation = null;
     VuforiaLocalizer vuforia;
 
-    @Override public void runOpMode() {
+    @Override
+    public void runOpMode() {
 
 
         wheelFL = hardwareMap.dcMotor.get("wheelFL");
@@ -100,7 +101,7 @@ public class autoMark1 extends LinearOpMode{
     }
 
 
-    public RelicRecoveryVuMark runVuforia(){
+    public RelicRecoveryVuMark runVuforia() {
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
         parameters.vuforiaLicenseKey = "ATsODcD/////AAAAAVw2lR...d45oGpdljdOh5LuFB9nDNfckoxb8COxKSFX";
@@ -117,7 +118,7 @@ public class autoMark1 extends LinearOpMode{
             RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
             if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
                 telemetry.addData("VuMark", "%s visible", vuMark);
-                OpenGLMatrix pose = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
+                OpenGLMatrix pose = ((VuforiaTrackableDefaultListener) relicTemplate.getListener()).getPose();
 //                telemetry.addData("Pose", format(pose));
 //                if (pose != null) {
 //                    VectorF trans = pose.getTranslation();
@@ -140,5 +141,6 @@ public class autoMark1 extends LinearOpMode{
             }
         }
 
-
+        return null;
     }
+}
