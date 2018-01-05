@@ -4,6 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
@@ -32,16 +33,20 @@ public class autoMark1 extends LinearOpMode{
     private DcMotor wheelFR;
     private DcMotor wheelBL;
     private DcMotor wheelBR;
+    private DcMotor lift;
+    private DcMotor arm;
     private Servo clawBL;
     private Servo clawBR;
-    private CRServo clawTL;
-    private CRServo clawTR;
+    private Servo clawTL;
+    private Servo clawTR;
+    private Servo armT;
+    private CRServo armB;
 
     private ElapsedTime time = new ElapsedTime();
 
     public static final String TAG = "Auto Version 1";
 /*    OpenGLMatrix lastLocation = null;
-    VuforiaLocalizer vuforia;*/
+   VuforiaLocalizer vuforia;*/
 
     @Override public void runOpMode() {
 
@@ -50,47 +55,55 @@ public class autoMark1 extends LinearOpMode{
         wheelFR = hardwareMap.dcMotor.get("wheelFR");
         wheelBL = hardwareMap.dcMotor.get("wheelBL");
         wheelBR = hardwareMap.dcMotor.get("wheelBR");
-
+        wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
+        wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
+        lift = hardwareMap.dcMotor.get("lift");
+        lift.setDirection(DcMotorSimple.Direction.REVERSE);
+        lift.setPower(0);
+        arm = hardwareMap.dcMotor.get("arm");
         clawBL = hardwareMap.servo.get("clawBL");
         clawBR = hardwareMap.servo.get("clawBR");
-        clawTL = hardwareMap.crservo.get("clawTL");
-        clawTR = hardwareMap.crservo.get("clawTR");
+        armT = hardwareMap.servo.get("armT");
+        armB = hardwareMap.crservo.get("armB");
+        clawTL = hardwareMap.servo.get("clawTL");
+        clawTR = hardwareMap.servo.get("clawTR");
+        armB.setDirection(CRServo.Direction.FORWARD);
+//        gemBar = hardwareMap.servo.get("gemBar");
+        clawBL.setPosition(-0.7);
+        clawBR.setPosition(1);
+        armT.setPosition(0.5);
+        armB.setPower(0);
+        clawTL.setPosition(-1);
+        clawTR.setPosition(1);
+//        gemBar.setPosition(0);
 
-        clawTR.setPower(1);
-        clawTL.setPower(1);
-
-        clawBL.setPosition(0.6);
-        clawBR.setPosition(0.6);
-
-        double timeToStance, timeToColumn, rotate90; //rotate90 is the amount of time that it takes to rotate 90 degrees
+        double timeToStance, timeToColumn, rotate90, powerino; //rotate90 is the amount of time that it takes to rotate 90 degrees
 
         timeToStance = 2;
         timeToColumn = 2;
-        rotate90 = 2;
-        /*
-        RelicRecoveryVuMark column = runVuforia();
+        rotate90 = 0.7;
+       /*
+       RelicRecoveryVuMark column = runVuforia();
 */
         time.reset();
 /*
-        move(rotate90, 1.0, 0.0, 1.0);
+       move(rotate90, 1.0, 0.0, 1.0);
 */
-        move(timeToStance, 0.1, 0.0, 0.0);
-        move(rotate90, 0.1, 0.0, 90.0); //if right turn
+
+
+
+        //move(timeToStance, 0.05, 0.0, 0.0);
+        move(rotate90, 0.05, 0.0, 90.0); //if left turn
 
 /*        if (column == RelicRecoveryVuMark.LEFT)
-            timeToColumn = 0;
-        if (column == RelicRecoveryVuMark.CENTER)
-            timeToColumn = 0;
-        if (column == RelicRecoveryVuMark.RIGHT)
-            timeToColumn = 0;*/
-        move(timeToColumn, 0.1, 0.0, 0.0);
+           timeToColumn = 0;
+       if (column == RelicRecoveryVuMark.CENTER)
+           timeToColumn = 0;
+       if (column == RelicRecoveryVuMark.RIGHT)
+           timeToColumn = 0;*/
+        move(timeToColumn, 0.05, 0.0, 0.0);
 
 
-        clawBL.setPosition(0);
-        clawBR.setPosition(0);
-
-        clawTR.setPower(0);
-        clawTL.setPower(0);
 
     }
 
@@ -108,23 +121,23 @@ public class autoMark1 extends LinearOpMode{
 
 
 /*    public RelicRecoveryVuMark runVuforia() {
-        int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
-        VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
-        parameters.vuforiaLicenseKey = "ATsODcD/////AAAAAVw2lR...d45oGpdljdOh5LuFB9nDNfckoxb8COxKSFX";
-        parameters.cameraDirection = VuforiaLocalizer.CameraDirection.FRONT;
-        this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
-        VuforiaTrackables relicTrackables = this.vuforia.loadTrackablesFromAsset("RelicVuMark");
-        VuforiaTrackable relicTemplate = relicTrackables.get(0);
-        relicTemplate.setName("relicVuMarkTemplate");
-        telemetry.addData(">", "Press Play to start");
-        telemetry.update();
-        waitForStart();
-        relicTrackables.activate();
-        while (opModeIsActive()) {
-            RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
-            if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
-                telemetry.addData("VuMark", "%s visible", vuMark);
-                OpenGLMatrix pose = ((VuforiaTrackableDefaultListener) relicTemplate.getListener()).getPose();
+       int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
+       VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
+       parameters.vuforiaLicenseKey = "ATsODcD/////AAAAAVw2lR...d45oGpdljdOh5LuFB9nDNfckoxb8COxKSFX";
+       parameters.cameraDirection = VuforiaLocalizer.CameraDirection.FRONT;
+       this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
+       VuforiaTrackables relicTrackables = this.vuforia.loadTrackablesFromAsset("RelicVuMark");
+       VuforiaTrackable relicTemplate = relicTrackables.get(0);
+       relicTemplate.setName("relicVuMarkTemplate");
+       telemetry.addData(">", "Press Play to start");
+       telemetry.update();
+       waitForStart();
+       relicTrackables.activate();
+       while (opModeIsActive()) {
+           RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
+           if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
+               telemetry.addData("VuMark", "%s visible", vuMark);
+               OpenGLMatrix pose = ((VuforiaTrackableDefaultListener) relicTemplate.getListener()).getPose();
 //                telemetry.addData("Pose", format(pose));
 //                if (pose != null) {
 //                    VectorF trans = pose.getTranslation();
@@ -142,11 +155,11 @@ public class autoMark1 extends LinearOpMode{
 //            else {
 //                telemetry.addData("VuMark", "not visible");
 //            }
-                telemetry.update();
-                return vuMark;
-            }
-        }
-    }*/
+               telemetry.update();
+               return vuMark;
+           }
+       }
+   }*/
 
 
 }

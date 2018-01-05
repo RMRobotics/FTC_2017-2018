@@ -7,483 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c423b4d7-a1b8-47f4-a4ee-a542292488d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/buildConfig/release/com/qualcomm/ftcrobotcontroller/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/r/release/com/google/blocks/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/r/release/com/qualcomm/WirelessP2p/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/r/release/com/qualcomm/analyticsmodule/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/r/release/com/qualcomm/ftccommon/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/r/release/com/qualcomm/ftcrobotcontroller/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/r/release/com/qualcomm/hardware/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/r/release/com/qualcomm/robotcore/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/r/release/org/firstinspires/inspection/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/multi/values-sw720dp-land-v13.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/multi/values-v11.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/multi/values-v14.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/multi/values-w820dp-v13.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/multi/values.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/single/drawable-hdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/single/drawable-mdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/single/drawable-xhdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/single/drawable-xxhdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/single/drawable.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/single/layout.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/single/menu.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/single/raw.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/androidTest/debug/single/xml.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/multi/values-sw720dp-land-v13.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/multi/values-v11.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/multi/values-v14.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/multi/values-w820dp-v13.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/multi/values.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/single/drawable.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/single/layout.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/single/menu.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/single/raw.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/debug/single/xml.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/multi/values-sw720dp-land-v13.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/multi/values-v11.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/multi/values-v14.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/multi/values-w820dp-v13.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/multi/values.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/single/drawable-hdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/single/drawable-mdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/single/drawable-xhdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/single/drawable-xxhdpi-v4.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/single/drawable.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/single/layout.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/single/menu.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/single/raw.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/blame/res/release/single/xml.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/R.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/assets/FTC_2016-17.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/assets/FTC_2016-17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/assets/RelicVuMark.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/assets/RelicVuMark.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/assets/StonesAndChips.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/assets/StonesAndChips.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/classes.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/drawable-hdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/drawable-mdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_menu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_robotcontroller.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/drawable-xxhdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/layout/activity_ftc_controller.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/menu/ftc_robot_controller.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/xml/app_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/bundles/default/res/xml/device_filter.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$array.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$menu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$raw.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R$xml.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/google/blocks/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/WirelessP2p/R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/WirelessP2p/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/WirelessP2p/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/WirelessP2p/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/analyticsmodule/R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/analyticsmodule/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/analyticsmodule/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/analyticsmodule/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$array.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$menu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$raw.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R$xml.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftccommon/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$array.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$menu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$raw.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R$xml.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/ftcrobotcontroller/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R$array.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R$raw.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/hardware/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R$array.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R$raw.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/com/qualcomm/robotcore/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Iterative.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Linear.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptCompassCalibration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptDIMAsIndicator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptI2cAddressChange.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptNullOp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptRampMotorSpeed.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptRegisterOpModes.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptScanServo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTelemetry$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTelemetry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptVuMarkIdentification.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/ConceptVuforiaNavigation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/HardwareK9bot.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/HardwarePushbot.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/HardwarePushbotMatrix.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/K9botTeleopTank_Linear.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/PushbotAutoDriveByEncoder_Linear.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/PushbotAutoDriveByGyro_Linear.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/PushbotAutoDriveByTime_Linear.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/PushbotAutoDriveToLine_Linear.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/PushbotTeleopPOV_Linear.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/PushbotTeleopTank_Iterative.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorAdafruitRGB$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorAdafruitRGB$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorAdafruitRGB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMU$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMU$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMU$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMU$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMU$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMU$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMU$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMU$8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMU.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMUCalibration$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMUCalibration$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMUCalibration$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMUCalibration$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMUCalibration$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMUCalibration$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorBNO055IMUCalibration.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorColor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorColor$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorColor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorDIO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorDigitalTouch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorHTColor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorHTColor$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorHTColor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorHTGyro.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorLEGOLight.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorLEGOTouch.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRColor$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRColor$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRColor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRCompass.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRGyro.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRIrSeeker.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorMROpticalDistance.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorMRRangeSensor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorREVColorDistance$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorREVColorDistance$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/external/samples/SensorREVColorDistance.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/internal/FtcOpModeRegister.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$RobotRestarter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$SharedPreferencesListener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$array.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$color.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$dimen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$menu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$raw.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R$styleable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/classes/release/org/firstinspires/inspection/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental-safeguard/release/tag.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/compileReleaseAidl/dependency.store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeReleaseShaders/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageReleaseResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageReleaseResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageReleaseResources/merged.dir/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifests/aapt/release/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable-hdpi-v4/button_shape.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable-mdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_menu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_robotcontroller.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable/black_border.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable/button_shape.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable/feedback_shape_orange.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable/icon_menu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/drawable/icon_robotcontroller.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_about.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_blocks.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_config_wifi_direct.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_configure_from_template.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_ftc_configuration.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_ftc_controller.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_ftc_lynx_address_update.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_ftc_lynx_fw_update.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_channel_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_remembered_groups.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_generic_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_inspection.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_load.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_program_and_manage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_programming_mode.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_swap_usb_devices.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/activity_view_logs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/analog_input_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/analog_inputs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/analog_output_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/analog_outputs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/banner_parent.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/button_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/color_list_preference_line_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/device_interface_module.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/digital_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/digital_device_lynx.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/digital_devices.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/feedback.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/file_info.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/gray_line.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/header.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/i2c_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/i2cs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/info_button.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/item_list_parent.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/legacy.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/loading_indicator_overlay.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/lynx_module.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/lynx_module_configure_address.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/lynx_module_configure_address_spin_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/lynx_usb_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/matrices.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/matrix_devices.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/motor.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/motor_controller_banner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/motor_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/port_attached_row.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/pwm_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/pwms.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/red_line.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/servo.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/servo_controller_banner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/servo_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/simple_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/layout/template_info.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/menu/ftc_robot_controller.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/menu/main_menu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/menu/menu_server.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/chimeconnect.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/chimedisconnect.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/color_fragment_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/cube_mesh_fragment_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/cube_mesh_vertex_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/errormessage.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/nxtstartupsound.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/simple_vertex_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/texture_fragment_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/texture_vertex_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/raw/warningmessage.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/values-v11/values-v11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/values-v14/values-v14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/xml/advanced_rc_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/xml/app_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/xml/device_filter.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/xml/k9legacybot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/xml/k9usbbot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/xml/maxmodules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/xml/pushbot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/xml/pushbotsens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/xml/rev_scoot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/debug/xml/squarebot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable-hdpi-v4/button_shape.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable-mdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable-xhdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable-xhdpi-v4/icon_menu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable-xhdpi-v4/icon_robotcontroller.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable-xxhdpi-v4/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable/black_border.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable/button_shape.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable/feedback_shape_orange.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable/icon_menu.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/drawable/icon_robotcontroller.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_about.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_blocks.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_config_wifi_direct.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_configure_from_template.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_configuration.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_controller.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_lynx_address_update.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_lynx_fw_update.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_wifi_channel_selector.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_ftc_wifi_remembered_groups.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_generic_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_inspection.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_load.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_program_and_manage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_programming_mode.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_swap_usb_devices.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/activity_view_logs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/analog_input_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/analog_inputs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/analog_output_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/analog_outputs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/banner_parent.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/button_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/color_list_preference_line_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/device_interface_module.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/digital_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/digital_device_lynx.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/digital_devices.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/feedback.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/file_info.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/gray_line.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/header.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/i2c_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/i2cs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/info_button.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/item_list_parent.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/legacy.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/loading_indicator_overlay.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/lynx_module.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/lynx_module_configure_address.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/lynx_module_configure_address_spin_item.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/lynx_usb_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/matrices.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/matrix_devices.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/motor.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/motor_controller_banner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/motor_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/port_attached_row.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/pwm_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/pwms.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/red_line.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/servo.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/servo_controller_banner.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/servo_list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/simple_device.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/layout/template_info.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/menu/ftc_robot_controller.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/menu/main_menu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/menu/menu_server.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/chimeconnect.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/chimedisconnect.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/color_fragment_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/cube_mesh_fragment_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/cube_mesh_vertex_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/errormessage.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/nxtstartupsound.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/simple_vertex_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/texture_fragment_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/texture_vertex_shader.glsl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/raw/warningmessage.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/values-v11/values-v11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/values-v14/values-v14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/values/values.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/xml/advanced_rc_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/xml/app_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/xml/device_filter.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/xml/k9legacybot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/xml/k9usbbot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/xml/maxmodules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/xml/pushbot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/xml/pushbotsens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/xml/rev_scoot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/merged/release/xml/squarebot.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/outputs/aar/FtcRobotController-debug.aar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FtcRobotController/build/outputs/aar/FtcRobotController-release.aar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" afterPath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build.gradle" afterPath="$PROJECT_DIR$/FtcRobotController/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/generated/source/buildConfig/debug/com/qualcomm/ftcrobotcontroller/BuildConfig.java" afterPath="$PROJECT_DIR$/FtcRobotController/build/generated/source/buildConfig/debug/com/qualcomm/ftcrobotcontroller/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/generated/source/buildConfig/androidTest/debug/com/qualcomm/ftcrobotcontroller/test/BuildConfig.java" afterPath="$PROJECT_DIR$/RMRobotics/build/generated/source/buildConfig/androidTest/debug/com/qualcomm/ftcrobotcontroller/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/RMRobotics/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/RMRobotics/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" />
     </list>
     <ignored path="ftc_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -518,7 +44,7 @@
       <file leaf-file-name="testingColorSensor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="119">
               <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
@@ -528,9 +54,11 @@
       <file leaf-file-name="testVuAuto.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-493">
-              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="-95">
+              <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -538,9 +66,11 @@
       <file leaf-file-name="autoMark1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2108">
-              <caret line="143" column="15" lean-forward="false" selection-start-line="143" selection-start-column="15" selection-end-line="143" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="-1037">
+              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -551,8 +81,8 @@
             <state relative-caret-position="867">
               <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <marker date="1514923900620" expanded="true" signature="4391:4398" ph="{...}" />
-                <marker date="1514923900620" expanded="true" signature="4450:6183" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -573,7 +103,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -3167,10 +2699,10 @@
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/enums/AutoFxns.java" />
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/Tanku_des.java" />
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/AutoFxns.java" />
-        <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" />
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/dummyConfig.java" />
-        <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java" />
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java" />
+        <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java" />
+        <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" />
       </list>
     </option>
   </component>
@@ -3195,6 +2727,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3207,62 +2742,9 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FTC_2017-2018" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMRobotics" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FTC_2017-2018" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMRobotics" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmrobotics" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FTC_2017-2018" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RMRobotics" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rmrobotics" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="temp8121" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3352,7 +2834,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1514924155835" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242541" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3400,7 +2882,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1514924155836" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242542" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3562,7 +3044,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1514924155838" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242546" />
       </method>
     </configuration>
     <configuration default="false" name="RMRobotics" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -3611,7 +3093,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1514924155838" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242546" />
       </method>
     </configuration>
     <list size="2">
@@ -3656,7 +3138,7 @@
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.49028498" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32729805" sideWeight="0.49028498" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3787,7 +3269,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3832,7 +3316,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3877,7 +3363,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3922,7 +3410,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3991,21 +3481,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2108">
-          <caret line="143" column="15" lean-forward="false" selection-start-line="143" selection-start-column="15" selection-end-line="143" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/AutoFxns.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1514923900620" expanded="true" signature="4391:4398" ph="{...}" />
-            <marker date="1514923900620" expanded="true" signature="4450:6183" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -4022,7 +3504,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4101,27 +3585,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/dummyConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/dummyConfig.java" />
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="119">
           <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1037">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="-95">
+          <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

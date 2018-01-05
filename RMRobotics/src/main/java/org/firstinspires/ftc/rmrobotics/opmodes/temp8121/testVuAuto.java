@@ -60,16 +60,20 @@ public class testVuAuto extends LinearOpMode{
                 .multiplied(Orientation.getRotationMatrix(
                         AxesReference.EXTRINSIC, AxesOrder.XYZ,
                         AngleUnit.DEGREES, 0, 0, 90));
+
+        OpenGLMatrix pic2phone = null, bot2field = null, bot2pic = null, pic2bot = null;
+
         while (opModeIsActive()) {
-            OpenGLMatrix bot2field = new OpenGLMatrix();
+            bot2field = new OpenGLMatrix();
             RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
             if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
                 //telemetry.addData("VuMark", "%s visible", vuMark);
-                OpenGLMatrix pic2phone = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
+
+                pic2phone = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
                 //telemetry.addData("Pose", format(pic2phone));
                 if (pic2phone != null) {
-                    OpenGLMatrix pic2bot = pic2phone.multiplied(phone2bot);
-                    OpenGLMatrix bot2pic = pic2bot.transposed();
+                    pic2bot = pic2phone.multiplied(phone2bot);
+                    bot2pic = pic2bot.transposed();
                     bot2field = bot2pic.multiplied(pic2field);
 //                    VectorF trans = pose.getTranslation();
 //                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
@@ -86,10 +90,12 @@ public class testVuAuto extends LinearOpMode{
                 }
             }
 
-            /*else {
-                telemetry.addData("VuMark", "not visible");
-            }
-            telemetry.update();*/
+           /*else {
+               telemetry.addData("VuMark", "not visible");
+           }
+           telemetry.update();*/
+            telemetry.addData("p2f", format (pic2field));
+            telemetry.addData("p2ph", format (pic2phone));
 
         }
     }
