@@ -22,7 +22,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by rotom on 10/17/2017.
  */
 
-@Autonomous(name="testVuAuto", group ="woRMholeConfig")
+@Autonomous(name="testVuAuto", group ="empty")
 public class testVuAuto extends LinearOpMode{
     public static final String TAG = "Vuforia VuMark Sample";
     OpenGLMatrix lastLocation = null;
@@ -32,7 +32,7 @@ public class testVuAuto extends LinearOpMode{
 
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
-        parameters.vuforiaLicenseKey = "ATsODcD/////AAAAAVw2lR...d45oGpdljdOh5LuFB9nDNfckoxb8COxKSFX";
+        parameters.vuforiaLicenseKey = "AckoWtn/////AAAAGan7WAnq/0UVmQZG3sp7smBgRCNBnU1p+HmsTrC+W9TyxqaMlhFirDXglelvJCX4yBiO8oou6n7UWBfdRFbKHDqz0NIo5VcNHyhelmm0yK0vGKxoU0NZbQzjh5qVWnI/HRoFjM3JOq/LB/FTXgCcEaNGhXAqnz7nalixMeP8oRQlgX5nRVX4uE6w0K4yqIc5/FIDh1tn7PldiflmvNPhOW6FukPQD3d02wEnZB/JEchSSBzDbFA10XSgtYzXiweQI5tj+D5llLRrLh0mcWeouv55oSmya5RxUC26uEuO7bCAwyolWIuUr2Wh5oAG483nTD4vFhdjVMT7f0ovLO73C6xr2AXpNwen9IExRxBeosQ4";
         parameters.cameraDirection = VuforiaLocalizer.CameraDirection.FRONT;
         this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
         VuforiaTrackables relicTrackables = this.vuforia.loadTrackablesFromAsset("RelicVuMark");
@@ -47,7 +47,7 @@ public class testVuAuto extends LinearOpMode{
         OpenGLMatrix phone2bot = OpenGLMatrix
                 .translation(3.75f, 5.37f, 6.248f) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
                 .multiplied(Orientation.getRotationMatrix(
-                        AxesReference.EXTRINSIC, AxesOrder.XYZ,
+                        AxesReference.EXTRINSIC, AxesOrder.XZY,
                         AngleUnit.DEGREES, 0, 0, 0));
         //theoretically should have phone upright, screen facing out towards the right
 //        RobotLog.ii(TAG, "phone=%s", format(phoneLocationOnRobot));
@@ -58,20 +58,26 @@ public class testVuAuto extends LinearOpMode{
         OpenGLMatrix pic2field = OpenGLMatrix
                 .translation(0,106,0) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
                 .multiplied(Orientation.getRotationMatrix(
-                        AxesReference.EXTRINSIC, AxesOrder.XYZ,
+                        AxesReference.EXTRINSIC, AxesOrder.XZY,
                         AngleUnit.DEGREES, 0, 0, 90));
+        //kameron is actually tilted
         while (opModeIsActive()) {
             OpenGLMatrix bot2field = new OpenGLMatrix();
             RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
             if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
-                //telemetry.addData("VuMark", "%s visible", vuMark);
+                telemetry.addData("VuMark", "%s visible", vuMark);
                 OpenGLMatrix pic2phone = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
-                //telemetry.addData("Pose", format(pic2phone));
+                //pic2phone.translation(0.0f, 0.0f, -90.0f);
+
                 if (pic2phone != null) {
                     OpenGLMatrix pic2bot = pic2phone.multiplied(phone2bot);
                     OpenGLMatrix bot2pic = pic2bot.transposed();
                     bot2field = bot2pic.multiplied(pic2field);
-//                    VectorF trans = pose.getTranslation();
+                    telemetry.addData("pi2p", format(pic2phone));
+                    telemetry.addData("pi2b", format(pic2bot));
+                    telemetry.addData("b2pi", format(bot2pic));
+                    telemetry.addData("b2f", format(bot2field));
+                    VectorF trans = pic2phone.getTranslation();
 //                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
 //                    double tX = trans.get(0);
 //                    double tY = trans.get(1);
@@ -86,10 +92,10 @@ public class testVuAuto extends LinearOpMode{
                 }
             }
 
-            /*else {
+            else {
                 telemetry.addData("VuMark", "not visible");
             }
-            telemetry.update();*/
+            telemetry.update();
 
         }
     }
