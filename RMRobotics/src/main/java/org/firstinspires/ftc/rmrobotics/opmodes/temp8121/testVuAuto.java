@@ -44,7 +44,7 @@ public class testVuAuto extends LinearOpMode{
         relicTrackables.activate();
 
         //0,0,0 is front left bottom corner. phone is a matrix of where the phone is relative to the robot
-        OpenGLMatrix phone2bot = OpenGLMatrix
+        OpenGLMatrix camera2bot = OpenGLMatrix
                 .translation(3.75f, 5.37f, 6.248f) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
                 .multiplied(Orientation.getRotationMatrix(
                         AxesReference.EXTRINSIC, AxesOrder.XZY,
@@ -66,18 +66,16 @@ public class testVuAuto extends LinearOpMode{
             RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
             if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
                 telemetry.addData("VuMark", "%s visible", vuMark);
-                OpenGLMatrix pic2phone = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
+                OpenGLMatrix camera2pic = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
                 //pic2phone.translation(0.0f, 0.0f, -90.0f);
 
-                if (pic2phone != null) {
-                    OpenGLMatrix pic2bot = pic2phone.multiplied(phone2bot);
-                    OpenGLMatrix bot2pic = pic2bot.transposed();
+                if (camera2pic != null) {
+                    OpenGLMatrix bot2pic = camera2pic.multiplied(camera2bot);
                     bot2field = bot2pic.multiplied(pic2field);
-                    telemetry.addData("pi2p", format(pic2phone));
-                    telemetry.addData("pi2b", format(pic2bot));
-                    telemetry.addData("b2pi", format(bot2pic));
+                    telemetry.addData("c2p", format(camera2pic));
+                    telemetry.addData("b2p", format(bot2pic));
                     telemetry.addData("b2f", format(bot2field));
-                    VectorF trans = pic2phone.getTranslation();
+                    VectorF trans = camera2pic.getTranslation();
 //                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
 //                    double tX = trans.get(0);
 //                    double tY = trans.get(1);
