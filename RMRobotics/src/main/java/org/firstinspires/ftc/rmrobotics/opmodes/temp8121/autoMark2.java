@@ -26,8 +26,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by Kameron on 10/24/2017.
  */
 
-@Autonomous(name="autoMark1", group ="woRMholeConfig")
-public class autoMark1 extends LinearOpMode {
+@Autonomous(name="autoMark2", group ="woRMholeConfig")
+public class autoMark2 extends LinearOpMode {
 
     private DcMotor wheelFL;
     private DcMotor wheelFR;
@@ -134,24 +134,30 @@ public class autoMark1 extends LinearOpMode {
                 }
             }
 
-            if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-            {
-                move(0.95, 0.5, 0.0, 0.0);
+            move(0.35, 0.5, 0, 0);
+
+            if (vuMark.equals(RelicRecoveryVuMark.RIGHT)){
+                move(0.35, 0.5, -50, 0);
             }
 
-            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
-            {
-                move(0.60, 0.5, 0.0, 0.0);
+            else{
+                move(rotate90, 0.05, 0.0, -90.0);
+
+
+                if (vuMark.equals(RelicRecoveryVuMark.LEFT))
+                {
+                    move(0.6, 0.5, 0.0, 0.0);
+                }
+
+                if (vuMark.equals(RelicRecoveryVuMark.CENTER))
+                {
+                    move(0.25, 0.5, 0.0, 0.0);
+                }
+
+                move(rotate90, 0.05, 0.0, 90.0);
+
+                move(0.3, 0.5, 0, 0);
             }
-
-            if (vuMark.equals(RelicRecoveryVuMark.RIGHT))
-            {
-                move(0.4, 0.5, 0.0, 0.0);
-            }
-
-            move(rotate90, 0.05, 0.0, 90.0);
-
-            move(0.55, 0.5, 0, 0);
 
             clawTR.setPosition(1);
             clawTL.setPosition(-1);
