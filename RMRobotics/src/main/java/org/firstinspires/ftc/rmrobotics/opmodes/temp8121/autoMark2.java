@@ -26,8 +26,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by Kameron on 10/24/2017.
  */
 
-@Autonomous(name="autoMark1", group ="woRMholeConfig")
-public class autoMark1 extends LinearOpMode {
+@Autonomous(name="autoMark2", group ="woRMholeConfig")
+public class autoMark2 extends LinearOpMode {
 
     private DcMotor wheelFL;
     private DcMotor wheelFR;
@@ -45,13 +45,8 @@ public class autoMark1 extends LinearOpMode {
     private ElapsedTime time = new ElapsedTime();
 
     public static final String TAG = "Auto Version 1";
-<<<<<<< HEAD
-/*    OpenGLMatrix lastLocation = null;
-   VuforiaLocalizer vuforia;*/
-=======
     /*    OpenGLMatrix lastLocation = null;*/
     VuforiaLocalizer vuforia;
->>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 
     @Override
     public void runOpMode() {
@@ -75,29 +70,6 @@ public class autoMark1 extends LinearOpMode {
         clawTR = hardwareMap.servo.get("clawTR");
         armB.setDirection(CRServo.Direction.FORWARD);
 //        gemBar = hardwareMap.servo.get("gemBar");
-<<<<<<< HEAD
-        clawBL.setPosition(-0.7);
-        clawBR.setPosition(1);
-        armT.setPosition(0.5);
-        armB.setPower(0);
-        clawTL.setPosition(-1);
-        clawTR.setPosition(1);
-//        gemBar.setPosition(0);
-
-        double timeToStance, timeToColumn, rotate90, powerino; //rotate90 is the amount of time that it takes to rotate 90 degrees
-
-        timeToStance = 2;
-        timeToColumn = 2;
-        rotate90 = 0.7;
-       /*
-       RelicRecoveryVuMark column = runVuforia();
-*/
-        time.reset();
-/*
-       move(rotate90, 1.0, 0.0, 1.0);
-*/
-
-=======
         clawTR.setPosition(1);
         clawTL.setPosition(-1);
         armT.setPosition(0.5);
@@ -132,29 +104,13 @@ public class autoMark1 extends LinearOpMode {
             clawBR.setPosition(0.3);
             clawTR.setPosition(-0.2);
             clawTL.setPosition(0.5);
->>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 
             time.reset();
 
-<<<<<<< HEAD
-        //move(timeToStance, 0.05, 0.0, 0.0);
-        move(rotate90, 0.05, 0.0, 90.0); //if left turn
-
-/*        if (column == RelicRecoveryVuMark.LEFT)
-           timeToColumn = 0;
-       if (column == RelicRecoveryVuMark.CENTER)
-           timeToColumn = 0;
-       if (column == RelicRecoveryVuMark.RIGHT)
-           timeToColumn = 0;*/
-        move(timeToColumn, 0.05, 0.0, 0.0);
-
-
-=======
             while (time.seconds() < 0.5) {
             }
 
             lift.setPower(-0.2);
->>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 
             time.reset();
 
@@ -178,24 +134,30 @@ public class autoMark1 extends LinearOpMode {
                 }
             }
 
-            if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-            {
-                move(0.95, 0.5, 0.0, 0.0);
+            move(0.35, 0.5, 0, 0);
+
+            if (vuMark.equals(RelicRecoveryVuMark.RIGHT)){
+                move(0.35, 0.5, -50, 0);
             }
 
-            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
-            {
-                move(0.60, 0.5, 0.0, 0.0);
+            else{
+                move(rotate90, 0.05, 0.0, -90.0);
+
+
+                if (vuMark.equals(RelicRecoveryVuMark.LEFT))
+                {
+                    move(0.6, 0.5, 0.0, 0.0);
+                }
+
+                if (vuMark.equals(RelicRecoveryVuMark.CENTER))
+                {
+                    move(0.25, 0.5, 0.0, 0.0);
+                }
+
+                move(rotate90, 0.05, 0.0, 90.0);
+
+                move(0.3, 0.5, 0, 0);
             }
-
-            if (vuMark.equals(RelicRecoveryVuMark.RIGHT))
-            {
-                move(0.4, 0.5, 0.0, 0.0);
-            }
-
-            move(rotate90, 0.05, 0.0, 90.0);
-
-            move(0.55, 0.5, 0, 0);
 
             clawTR.setPosition(1);
             clawTL.setPosition(-1);
@@ -209,48 +171,6 @@ public class autoMark1 extends LinearOpMode {
             wheelFL.setPower(0);
             wheelFR.setPower(0);
 
-<<<<<<< HEAD
-/*    public RelicRecoveryVuMark runVuforia() {
-       int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
-       VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
-       parameters.vuforiaLicenseKey = "ATsODcD/////AAAAAVw2lR...d45oGpdljdOh5LuFB9nDNfckoxb8COxKSFX";
-       parameters.cameraDirection = VuforiaLocalizer.CameraDirection.FRONT;
-       this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
-       VuforiaTrackables relicTrackables = this.vuforia.loadTrackablesFromAsset("RelicVuMark");
-       VuforiaTrackable relicTemplate = relicTrackables.get(0);
-       relicTemplate.setName("relicVuMarkTemplate");
-       telemetry.addData(">", "Press Play to start");
-       telemetry.update();
-       waitForStart();
-       relicTrackables.activate();
-       while (opModeIsActive()) {
-           RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
-           if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
-               telemetry.addData("VuMark", "%s visible", vuMark);
-               OpenGLMatrix pose = ((VuforiaTrackableDefaultListener) relicTemplate.getListener()).getPose();
-//                telemetry.addData("Pose", format(pose));
-//                if (pose != null) {
-//                    VectorF trans = pose.getTranslation();
-//                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
-//
-//                    double tX = trans.get(0);
-//                    double tY = trans.get(1);
-//                    double tZ = trans.get(2);
-//
-//                    double rX = rot.firstAngle;
-//                    double rY = rot.secondAngle;
-//                    double rZ = rot.thirdAngle;
-//                }
-//            }
-//            else {
-//                telemetry.addData("VuMark", "not visible");
-//            }
-               telemetry.update();
-               return vuMark;
-           }
-       }
-   }*/
-=======
             break;
         }
         /*
@@ -271,7 +191,6 @@ public class autoMark1 extends LinearOpMode {
                 telemetry.addData("VuMark", "%s visible", vuMark);
                 telemetry.update();
             }
->>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 
             if (vuMark.equals("LEFT")) {
                 move(0.75, 0.5, 0.0, 0.0);
@@ -295,9 +214,6 @@ public class autoMark1 extends LinearOpMode {
 
         //move(timeToColumn, 0.5, 0.0, 0.0);
 
-<<<<<<< HEAD
-}
-=======
         //move(rotate90, 0.05, 0.0, 90.0); //if left turn
 
 /*        if (column == RelicRecoveryVuMark.LEFT)
@@ -327,4 +243,3 @@ public class autoMark1 extends LinearOpMode {
 
 
 
->>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
