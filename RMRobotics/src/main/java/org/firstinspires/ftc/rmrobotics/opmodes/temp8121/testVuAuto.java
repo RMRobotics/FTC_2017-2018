@@ -60,33 +60,17 @@ public class testVuAuto extends LinearOpMode{
                 .multiplied(Orientation.getRotationMatrix(
                         AxesReference.EXTRINSIC, AxesOrder.XZY,
                         AngleUnit.DEGREES, 0, 0, 90));
-<<<<<<< HEAD
-
-        OpenGLMatrix pic2phone = null, bot2field = null, bot2pic = null, pic2bot = null;
-
-=======
         //kameron is actually tilted
->>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
         while (opModeIsActive()) {
-            bot2field = new OpenGLMatrix();
+            OpenGLMatrix bot2field = new OpenGLMatrix();
             RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
             if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
-<<<<<<< HEAD
-                //telemetry.addData("VuMark", "%s visible", vuMark);
-
-                pic2phone = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
-                //telemetry.addData("Pose", format(pic2phone));
-                if (pic2phone != null) {
-                    pic2bot = pic2phone.multiplied(phone2bot);
-                    bot2pic = pic2bot.transposed();
-=======
                 telemetry.addData("VuMark", "%s visible", vuMark);
                 OpenGLMatrix camera2pic = ((VuforiaTrackableDefaultListener)relicTemplate.getListener()).getPose();
                 //pic2phone.translation(0.0f, 0.0f, -90.0f);
 
                 if (camera2pic != null) {
                     OpenGLMatrix bot2pic = camera2pic.multiplied(camera2bot);
->>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
                     bot2field = bot2pic.multiplied(pic2field);
                     telemetry.addData("c2p", format(camera2pic));
                     telemetry.addData("b2p", format(bot2pic));
@@ -106,19 +90,10 @@ public class testVuAuto extends LinearOpMode{
                 }
             }
 
-<<<<<<< HEAD
-           /*else {
-               telemetry.addData("VuMark", "not visible");
-           }
-           telemetry.update();*/
-            telemetry.addData("p2f", format (pic2field));
-            telemetry.addData("p2ph", format (pic2phone));
-=======
             else {
                 telemetry.addData("VuMark", "not visible");
             }
             telemetry.update();
->>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
 
         }
     }
