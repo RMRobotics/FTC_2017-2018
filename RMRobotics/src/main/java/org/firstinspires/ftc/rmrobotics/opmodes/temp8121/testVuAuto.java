@@ -45,7 +45,7 @@ public class testVuAuto extends LinearOpMode{
 
         //0,0,0 is front left bottom corner. phone is a matrix of where the phone is relative to the robot
         OpenGLMatrix camera2bot = OpenGLMatrix
-                .translation(3.75f, 5.37f, 6.248f) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
+                .translation(5.25f, 2.8f, 10.55f) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
                 .multiplied(Orientation.getRotationMatrix(
                         AxesReference.EXTRINSIC, AxesOrder.XZY,
                         AngleUnit.DEGREES, 0, 0, 0));
@@ -76,13 +76,20 @@ public class testVuAuto extends LinearOpMode{
                     telemetry.addData("b2p", format(bot2pic));
                     telemetry.addData("b2f", format(bot2field));
                     VectorF trans = camera2pic.getTranslation();
-//                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
-//                    double tX = trans.get(0);
-//                    double tY = trans.get(1);
-//                    double tZ = trans.get(2);
-//                    double rX = rot.firstAngle;
-//                    double rY = rot.secondAngle;
-//                    double rZ = rot.thirdAngle;
+                    Orientation rot = Orientation.getOrientation(camera2pic, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
+                    double tX = trans.get(0);
+                    double tY = trans.get(1);
+                    double tZ = trans.get(2);
+                    double rX = rot.firstAngle;
+                    double rY = rot.secondAngle;
+                    double rZ = rot.thirdAngle;
+                    telemetry.addData("tX", tX);
+                    telemetry.addData("tY", tY);
+                    telemetry.addData("tZ", tZ);
+                    telemetry.addData("rX", rX);
+                    telemetry.addData("rY", rY);
+                    telemetry.addData("rZ", rZ);
+
 
 
                     //offset picture from phone
