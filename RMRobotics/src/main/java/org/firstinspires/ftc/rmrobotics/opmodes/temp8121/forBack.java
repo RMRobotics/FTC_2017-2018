@@ -26,8 +26,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by Kameron on 10/24/2017.
  */
 
-@Autonomous(name="autoMark1", group ="woRMholeConfig")
-public class autoMark1 extends LinearOpMode {
+@Autonomous(name="forBack", group ="woRMholeConfig")
+public class forBack extends LinearOpMode {
 
     private DcMotor wheelFL;
     private DcMotor wheelFR;
@@ -83,7 +83,7 @@ public class autoMark1 extends LinearOpMode {
 
         timeToStance = 2;
         timeToColumn = 0.75;
-        rotate90 = 0.95;//0.82
+        rotate90 = 0.87;//0.82
 
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
@@ -100,70 +100,51 @@ public class autoMark1 extends LinearOpMode {
         waitForStart();
 
         while(opModeIsActive()) {
-            clawBL.setPosition(0.7);
-            clawBR.setPosition(0.3);
-            clawTR.setPosition(-0.2);
-            clawTL.setPosition(0.5);
 
-            time.reset();
 
-            while (time.seconds() < 0.5) {
-            }
-
-            lift.setPower(-0.2);
-
-            time.reset();
-
-            while (time.seconds() < 0.5) {
-            }
-
-            lift.setPower(0);
-
-            move(0.4, 0.5, 0.0, 0.0);
-            wheelBL.setPower(0);
-            wheelBR.setPower(0);
-            wheelFL.setPower(0);
-            wheelFR.setPower(0);
-
-            RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
-            while (vuMark == RelicRecoveryVuMark.UNKNOWN){
-                vuMark = RelicRecoveryVuMark.from(relicTemplate);
-                if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
-                    telemetry.addData("VuMark", "%s visible", vuMark);
-                    telemetry.update();
-                }
-            }
-
-            if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-            {
-                move(0.9, 0.5, 0.0, 0.0);
-            }
-
-            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
-            {
-                move(0.65, 0.5, 0.0, 0.0);
-            }
-
-            if (vuMark.equals(RelicRecoveryVuMark.RIGHT))
-            {
-                move(0.4, 0.5, 0.0, 0.0);
-            }
-
-            move(rotate90, 0.05, 0.0, 90.0);
-
-            move(0.5, 0.5, 0, 0);
-
-            clawTR.setPosition(1);
-            clawTL.setPosition(-1);
-            clawBL.setPosition(-0.7);
-            clawBR.setPosition(1);
-
-            move(0.2, -0.5, 0, 0);
+            move(0.9, 0.5, 0.0, 0.0);
+            move(0.9, -0.5, 0.0, 0.0);
 
             wheelBL.setPower(0);
             wheelBR.setPower(0);
             wheelFL.setPower(0);
             wheelFR.setPower(0);
+
+//            RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
+//            while (vuMark == RelicRecoveryVuMark.UNKNOWN){
+//                vuMark = RelicRecoveryVuMark.from(relicTemplate);
+//                if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
+//                    telemetry.addData("VuMark", "%s visible", vuMark);
+//                    telemetry.update();
+//                }
+//            }
+//
+//            if (vuMark.equals(RelicRecoveryVuMark.LEFT))
+//            {
+//                move(0.90, 0.5, 0.0, 0.0);
+//            }
+//
+//            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
+//            {
+//                move(0.60, 0.5, 0.0, 0.0);
+//            }
+//
+//            if (vuMark.equals(RelicRecoveryVuMark.RIGHT))
+//            {
+//                move(0.4, 0.5, 0.0, 0.0);
+//            }
+//
+//            move(rotate90, 0.05, 0.0, 90.0);
+//
+//            move(0.5, 0.5, 0, 0);
+//
+//            clawTR.setPosition(1);
+//            clawTL.setPosition(-1);
+//            clawBL.setPosition(-0.7);
+//            clawBR.setPosition(1);
+//
+//            move(0.2, -0.5, 0, 0);
+
 
             break;
         }
