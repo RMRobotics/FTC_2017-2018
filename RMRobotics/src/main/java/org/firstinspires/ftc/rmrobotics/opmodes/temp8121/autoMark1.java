@@ -70,6 +70,7 @@ public class autoMark1 extends LinearOpMode {
         clawTR = hardwareMap.servo.get("clawTR");
         armB.setDirection(CRServo.Direction.FORWARD);
 //        gemBar = hardwareMap.servo.get("gemBar");
+
         clawTR.setPosition(1);
         clawTL.setPosition(-1);
         armT.setPosition(0.5);
@@ -165,6 +166,7 @@ public class autoMark1 extends LinearOpMode {
             wheelFL.setPower(0);
             wheelFR.setPower(0);
 
+
             break;
         }
         /*
@@ -185,6 +187,7 @@ public class autoMark1 extends LinearOpMode {
                 telemetry.addData("VuMark", "%s visible", vuMark);
                 telemetry.update();
             }
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 
             if (vuMark.equals("LEFT")) {
                 move(0.75, 0.5, 0.0, 0.0);
@@ -207,6 +210,7 @@ public class autoMark1 extends LinearOpMode {
         //move(timeToStance, 0.05, 0.0, 0.0);
 
         //move(timeToColumn, 0.5, 0.0, 0.0);
+
 
         //move(rotate90, 0.05, 0.0, 90.0); //if left turn
 
