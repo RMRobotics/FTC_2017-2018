@@ -66,12 +66,12 @@ public class woRMhole_tele extends OpMode {
         if (slowMo)
         {
             forward = -gamepad1.right_stick_y/3;
-            strafe = gamepad1.right_stick_x/3;
+            strafe = -gamepad1.right_stick_x/3;
             rotate = gamepad1.left_stick_x/3;
         }
         else {
             forward = -gamepad1.right_stick_y;
-            strafe = gamepad1.right_stick_x;
+            strafe = -gamepad1.right_stick_x;
             rotate = gamepad1.left_stick_x;
         }
 
@@ -91,8 +91,8 @@ public class woRMhole_tele extends OpMode {
         }*/
         if (gamepad1.right_bumper)
         {
-            clawTR.setPosition(-0.2);
-            clawTL.setPosition(0.5);
+            clawTR.setPosition(0);
+            clawTL.setPosition(0.75);
         }
         if (gamepad1.left_bumper)
         {
@@ -132,7 +132,7 @@ public class woRMhole_tele extends OpMode {
         }
         if (gamepad2.x)
         {
-            armT.setPosition(0.5);
+            armT.setPosition(0.75);
         }
         if (gamepad2.left_trigger > 0 && gamepad2.right_trigger == 0)
         {

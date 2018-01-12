@@ -22,8 +22,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
 /**
  * Created by Kameron on 10/24/2017.
  */
-@Autonomous(name="autoMark1", group ="woRMholeConfig")
-public class autoMark1 extends LinearOpMode {
+@Autonomous(name="autoMark4", group ="woRMholeConfig")
+public class autoMark4 extends LinearOpMode {
     private DcMotor wheelFL;
     private DcMotor wheelFR;
     private DcMotor wheelBL;
@@ -60,9 +60,9 @@ public class autoMark1 extends LinearOpMode {
         clawTR = hardwareMap.servo.get("clawTR");
         armB.setDirection(CRServo.Direction.FORWARD);
 //        gemBar = hardwareMap.servo.get("gemBar");
-//        clawTR.setPosition(1);
-//        clawTL.setPosition(-1);
-//        armT.setPosition(0.5);
+        clawTR.setPosition(1);
+        clawTL.setPosition(-1);
+        armT.setPosition(0.5);
         armB.setPower(0);
         clawBL.setPosition(-0.7);
         clawBR.setPosition(1);
