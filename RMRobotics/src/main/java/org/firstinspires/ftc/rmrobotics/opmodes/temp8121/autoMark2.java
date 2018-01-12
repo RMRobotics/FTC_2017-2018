@@ -109,22 +109,48 @@ public class autoMark2 extends LinearOpMode {
                     telemetry.update();
                 }
             }
+<<<<<<< HEAD
             move(0.6, 0.5, 0, 0);
+=======
+
+            move(0.6, 0.5, 0, 0);
+
+>>>>>>> b29bbcdad1be6508bdea28fe5e8c25c0831d4e06
             if (vuMark.equals(RelicRecoveryVuMark.RIGHT)){
                 move(0.25, 0.05, 0.0, -90.0);
                 move(0.4, 0.4, 0, 0);
             }
             else{
+
                 move(rotate90, 0.05, 0.0, -90.0);
+<<<<<<< HEAD
                 if (vuMark.equals(RelicRecoveryVuMark.CENTER))
                 {
                     move(0.15, 0.5, 0.0, 0.0);
                 }
+=======
+
+
+                if (vuMark.equals(RelicRecoveryVuMark.CENTER))
+                {
+                    move(0.65, 0.5, 0.0, 0.0);
+                    move(rotate90-0.2, 0.05, 0.0, 90.0);
+
+                }
+
+>>>>>>> b29bbcdad1be6508bdea28fe5e8c25c0831d4e06
                 if (vuMark.equals(RelicRecoveryVuMark.LEFT))
                 {
-                    move(0.25, 0.5, 0.0, 0.0);
+                    move(0.88, 0.5, 0.0, 0.0);
+                    move(rotate90-0.2, 0.05, 0.0, 90.0);
                 }
+<<<<<<< HEAD
                 move(rotate90, 0.05, 0.0, 90.0);
+=======
+
+                //move(rotate90, 0.05, 0.0, 90.0);
+
+>>>>>>> b29bbcdad1be6508bdea28fe5e8c25c0831d4e06
                 move(0.3, 0.5, 0, 0);
             }
             clawTR.setPosition(1);
