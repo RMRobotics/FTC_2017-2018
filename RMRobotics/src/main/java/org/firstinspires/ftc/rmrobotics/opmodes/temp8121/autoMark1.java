@@ -39,8 +39,9 @@ public class autoMark1 extends LinearOpMode {
     private Servo clawBR;
     private Servo clawTL;
     private Servo clawTR;
-    private Servo armT;
-    private CRServo armB;
+//    private Servo armT;
+    private Servo gemBar;
+//    private CRServo armB;
 
     private ElapsedTime time = new ElapsedTime();
 
@@ -64,22 +65,22 @@ public class autoMark1 extends LinearOpMode {
         arm = hardwareMap.dcMotor.get("arm");
         clawBL = hardwareMap.servo.get("clawBL");
         clawBR = hardwareMap.servo.get("clawBR");
-        armT = hardwareMap.servo.get("armT");
-        armB = hardwareMap.crservo.get("armB");
+//        armT = hardwareMap.servo.get("armT");
+//        armB = hardwareMap.crservo.get("armB");
         clawTL = hardwareMap.servo.get("clawTL");
         clawTR = hardwareMap.servo.get("clawTR");
-        armB.setDirection(CRServo.Direction.FORWARD);
-//        gemBar = hardwareMap.servo.get("gemBar");
+//        armB.setDirection(CRServo.Direction.FORWARD);
+        gemBar = hardwareMap.servo.get("gemBar");
 
         clawTR.setPosition(1);
         clawTL.setPosition(-1);
-        armT.setPosition(0.5);
-        armB.setPower(0);
+//        armT.setPosition(0.5);
+//        armB.setPower(0);
         clawBL.setPosition(-0.7);
         clawBR.setPosition(1);
-//        gemBar.setPosition(0);
+        gemBar.setPosition(-1);
 
-        double timeToStance, timeToColumn, rotate90, powerino; //rotate90 is the amount of time that it takes to rotate 90 degrees
+        double timeToStance, timeToColumn, rotate90, timeToGem; //rotate90 is the amount of time that it takes to rotate 90 degrees
 
 
         timeToStance = 2;

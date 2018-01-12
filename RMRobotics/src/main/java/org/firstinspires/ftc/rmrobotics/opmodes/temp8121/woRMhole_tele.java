@@ -25,9 +25,9 @@ public class woRMhole_tele extends OpMode {
     private Servo clawBR;
     private Servo clawTL;
     private Servo clawTR;
-    private Servo armT;
-    private CRServo armB;
-//    private Servo gemBar;
+//    private Servo armT;
+//    private CRServo armB;
+    private Servo gemBar;
     private boolean clawState = false, slowMo = false;
 
     public void init()
@@ -44,19 +44,19 @@ public class woRMhole_tele extends OpMode {
         arm = hardwareMap.dcMotor.get("arm");
         clawBL = hardwareMap.servo.get("clawBL");
         clawBR = hardwareMap.servo.get("clawBR");
-        armT = hardwareMap.servo.get("armT");
-        armB = hardwareMap.crservo.get("armB");
+//        armT = hardwareMap.servo.get("armT");
+//        armB = hardwareMap.crservo.get("armB");
         clawTL = hardwareMap.servo.get("clawTL");
         clawTR = hardwareMap.servo.get("clawTR");
-        armB.setDirection(CRServo.Direction.FORWARD);
-//        gemBar = hardwareMap.servo.get("gemBar");
+//        armB.setDirection(CRServo.Direction.FORWARD);
+        gemBar = hardwareMap.servo.get("gemBar");
         clawBL.setPosition(-0.7);
         clawBR.setPosition(1);
-        armT.setPosition(0.5);
-        armB.setPower(0);
+//        armT.setPosition(0.5);
+//        armB.setPower(0);
         clawTL.setPosition(-1);
         clawTR.setPosition(1);
-//        gemBar.setPosition(0);
+        gemBar.setPosition(0);
     }
 
     public void loop()
@@ -126,36 +126,36 @@ public class woRMhole_tele extends OpMode {
             lift.setPower(gamepad2.right_stick_y/2);
 
         arm.setPower(gamepad2.left_stick_y/2);
-        if (gamepad2.y)
-        {
-            armT.setPosition(0);
-        }
-        if (gamepad2.x)
-        {
-            armT.setPosition(0.5);
-        }
-        if (gamepad2.left_trigger > 0 && gamepad2.right_trigger == 0)
-        {
-            armB.setPower(-1);
-        }
-        else if (gamepad2.right_trigger > 0 && gamepad2.left_trigger == 0)
-        {
-            armB.setPower(1);
-        }
-        else{
-            armB.setPower(0);
-        }
+//        if (gamepad2.y)
+//        {
+//            armT.setPosition(0);
+//        }
+//        if (gamepad2.x)
+//        {
+//            armT.setPosition(0.5);
+//        }
+//        if (gamepad2.left_trigger > 0 && gamepad2.right_trigger == 0)
+//        {
+//            armB.setPower(-1);
+//        }
+//        else if (gamepad2.right_trigger > 0 && gamepad2.left_trigger == 0)
+//        {
+//            armB.setPower(1);
+//        }
+//        else{
+//            armB.setPower(0);
+//        }
         if (gamepad1.b){
             slowMo = !slowMo;
         }
 
-//        if (gamepad1.a)
-//        {
-//            gemBar.setPosition(0);
-//        }
-//        if (gamepad1.b)
-//        {
-//            gemBar.setPosition(1);
-//        }
+        if (gamepad1.x)
+        {
+            gemBar.setPosition(0);
+        }
+        if (gamepad1.y)
+        {
+            gemBar.setPosition(1);
+        }
     }
 }

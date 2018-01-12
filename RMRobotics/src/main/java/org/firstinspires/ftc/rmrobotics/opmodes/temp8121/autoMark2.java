@@ -100,8 +100,8 @@ public class autoMark2 extends LinearOpMode {
         waitForStart();
 
         while(opModeIsActive()) {
-            clawBL.setPosition(0.7);
-            clawBR.setPosition(0.3);
+            //clawBL.setPosition(0.7);
+            //clawBR.setPosition(0.3);
             clawTR.setPosition(-0.2);
             clawTL.setPosition(0.5);
 
@@ -166,8 +166,8 @@ public class autoMark2 extends LinearOpMode {
 
             clawTR.setPosition(1);
             clawTL.setPosition(-1);
-            clawBL.setPosition(-0.7);
-            clawBR.setPosition(1);
+            //clawBL.setPosition(-0.7);
+            //clawBR.setPosition(1);
 
             move(0.2, -0.5, 0, 0);
 
