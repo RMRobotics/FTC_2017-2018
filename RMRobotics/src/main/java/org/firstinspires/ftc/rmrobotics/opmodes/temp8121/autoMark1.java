@@ -137,7 +137,7 @@ public class autoMark1 extends LinearOpMode {
 
             if (vuMark.equals(RelicRecoveryVuMark.LEFT))
             {
-                move(0.9, 0.5, 0.0, 0.0);
+                move(0.92, 0.5, 0.0, 0.0);
             }
 
             if (vuMark.equals(RelicRecoveryVuMark.CENTER))
