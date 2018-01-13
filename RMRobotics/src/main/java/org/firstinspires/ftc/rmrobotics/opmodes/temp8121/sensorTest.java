@@ -34,39 +34,10 @@ import android.graphics.Color;
 import android.view.View;
 
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
-<<<<<<< HEAD
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 
-import android.app.Activity;
-import android.graphics.Color;
-import android.view.View;
-
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
-=======
->>>>>>> b29bbcdad1be6508bdea28fe5e8c25c0831d4e06
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.ColorSensor;
-
-<<<<<<< HEAD
-
-=======
-/*
- *
- * This is an example LinearOpMode that shows how to use
- * a Modern Robotics Color Sensor.
- *
- * The op mode assumes that the color sensor
- * is configured with a name of "sensor_color".
- *
- * You can use the X button on gamepad1 to toggle the LED on and off.
- *
- * Use Android Studio to Copy this Class, and Paste it into your team's code folder with a new name.
- * Remove or comment out the @Disabled line to add this opmode to the Driver Station OpMode list
- */
->>>>>>> b29bbcdad1be6508bdea28fe5e8c25c0831d4e06
 @TeleOp(name = "Sensor: MR Color", group = "Sensor")
 public class sensorTest extends LinearOpMode {
 
@@ -106,10 +77,6 @@ public class sensorTest extends LinearOpMode {
         // while the op mode is active, loop and read the RGB data.
         // Note we use opModeIsActive() as our loop condition because it is an interruptible method.
         while (opModeIsActive()) {
-<<<<<<< HEAD
-
-=======
->>>>>>> b29bbcdad1be6508bdea28fe5e8c25c0831d4e06
             // convert the RGB values to HSV values.
             Color.RGBToHSV(colorSensor.red() * 8, colorSensor.green() * 8, colorSensor.blue() * 8, hsvValues);
 

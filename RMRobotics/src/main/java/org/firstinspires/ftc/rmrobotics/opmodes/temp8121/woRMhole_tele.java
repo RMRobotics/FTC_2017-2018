@@ -20,7 +20,7 @@ public class woRMhole_tele extends OpMode {
     private DcMotor wheelBL;
     private DcMotor wheelBR;
     private DcMotor lift;
-    private DcMotor arm;
+//    private DcMotor arm;
     private Servo clawBL;
     private Servo clawBR;
     private Servo clawTL;
@@ -41,7 +41,7 @@ public class woRMhole_tele extends OpMode {
         lift = hardwareMap.dcMotor.get("lift");
         lift.setDirection(DcMotorSimple.Direction.REVERSE);
         lift.setPower(0);
-        arm = hardwareMap.dcMotor.get("arm");
+//        arm = hardwareMap.dcMotor.get("arm");
         clawBL = hardwareMap.servo.get("clawBL");
         clawBR = hardwareMap.servo.get("clawBR");
         armT = hardwareMap.servo.get("armT");
@@ -125,7 +125,7 @@ public class woRMhole_tele extends OpMode {
         else
             lift.setPower(gamepad2.right_stick_y/2);
 
-        arm.setPower(gamepad2.left_stick_y/2);
+//        arm.setPower(gamepad2.left_stick_y/2);
         if (gamepad2.y)
         {
             armT.setPosition(0);
