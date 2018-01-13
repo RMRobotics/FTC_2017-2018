@@ -125,17 +125,7 @@ public class woRMhole_tele extends OpMode {
         else
             lift.setPower(gamepad2.right_stick_y/2);
 
-<<<<<<< HEAD
 //        arm.setPower(gamepad2.left_stick_y/2);
-        if (gamepad2.y)
-        {
-            armT.setPosition(0);
-        }
-        if (gamepad2.x)
-        {
-            armT.setPosition(0.75);
-=======
-        arm.setPower(gamepad2.left_stick_y/2);
 //        if (gamepad2.y)
 //        {
 //            armT.setPosition(0);
@@ -157,7 +147,6 @@ public class woRMhole_tele extends OpMode {
 //        }
         if (gamepad1.b){
             slowMo = !slowMo;
->>>>>>> ed39df24125b654234fd500cd1765757fa4ee908
         }
 
         if (gamepad1.x)
