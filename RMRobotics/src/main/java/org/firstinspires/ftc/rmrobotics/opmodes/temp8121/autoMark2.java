@@ -139,14 +139,10 @@ public class autoMark2 extends LinearOpMode {
             }
             clawTR.setPosition(1);
             clawTL.setPosition(-1);
-<<<<<<< HEAD
+
             clawBL.setPosition(-0.7);
             clawBR.setPosition(1);
-=======
-            //clawBL.setPosition(-0.7);
-            //clawBR.setPosition(1);
 
->>>>>>> ed39df24125b654234fd500cd1765757fa4ee908
             move(0.2, -0.5, 0, 0);
             wheelBL.setPower(0);
             wheelBR.setPower(0);

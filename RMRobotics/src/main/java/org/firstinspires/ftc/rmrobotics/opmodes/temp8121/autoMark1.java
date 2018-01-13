@@ -43,10 +43,7 @@ public class autoMark1 extends LinearOpMode {
 //    private Servo armT;
     private Servo gemBar;
 //    private CRServo armB;
-<<<<<<< HEAD
-=======
 
->>>>>>> ed39df24125b654234fd500cd1765757fa4ee908
     private ElapsedTime time = new ElapsedTime();
     public static final String TAG = "Auto Version 1";
     /*    OpenGLMatrix lastLocation = null;*/
@@ -64,7 +61,6 @@ public class autoMark1 extends LinearOpMode {
         lift = hardwareMap.dcMotor.get("lift");
         clawBL = hardwareMap.servo.get("clawBL");
         clawBR = hardwareMap.servo.get("clawBR");
-<<<<<<< HEAD
         clawTL = hardwareMap.servo.get("clawTL");
         clawTR = hardwareMap.servo.get("clawTR");
         gemBar = hardwareMap.servo.get("gemBar");
@@ -90,24 +86,7 @@ public class autoMark1 extends LinearOpMode {
 //        gemBar.setPosition(0);
 //        timeToStance = 2;
 //        timeToColumn = 0.75;
-=======
-//        armT = hardwareMap.servo.get("armT");
-//        armB = hardwareMap.crservo.get("armB");
-        clawTL = hardwareMap.servo.get("clawTL");
-        clawTR = hardwareMap.servo.get("clawTR");
-//        armB.setDirection(CRServo.Direction.FORWARD);
-        gemBar = hardwareMap.servo.get("gemBar");
 
-        clawTR.setPosition(1);
-        clawTL.setPosition(-1);
-//        armT.setPosition(0.5);
-//        armB.setPower(0);
-        clawBL.setPosition(-0.7);
-        clawBR.setPosition(1);
-        gemBar.setPosition(-1);
-
-        double timeToStance, timeToColumn, rotate90, timeToGem; //rotate90 is the amount of time that it takes to rotate 90 degrees
->>>>>>> ed39df24125b654234fd500cd1765757fa4ee908
 
 
         //Activate Vuforia
