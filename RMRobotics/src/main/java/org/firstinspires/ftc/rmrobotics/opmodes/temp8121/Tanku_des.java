@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
 
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -10,6 +11,7 @@ import com.qualcomm.robotcore.hardware.Servo;
  * Created by rotom on 9/26/2017.
  */
 
+@Disabled
 @TeleOp(name="tanku8121", group="temp8121")
 public class Tanku_des extends OpMode {
 //    private DcMotor wheelFL;

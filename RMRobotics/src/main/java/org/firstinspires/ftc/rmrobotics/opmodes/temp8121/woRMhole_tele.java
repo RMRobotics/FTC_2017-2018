@@ -54,8 +54,8 @@ public class woRMhole_tele extends OpMode {
         clawBR.setPosition(1);
 //        armT.setPosition(0.5);
 //        armB.setPower(0);
-        clawTL.setPosition(-1);
         clawTR.setPosition(1);
+        clawTL.setPosition(-0.6);
         gemBar.setPosition(0);
     }
 
@@ -66,12 +66,12 @@ public class woRMhole_tele extends OpMode {
         if (slowMo)
         {
             forward = -gamepad1.right_stick_y/3;
-            strafe = -gamepad1.right_stick_x/3;
+            strafe = gamepad1.right_stick_x/3;
             rotate = gamepad1.left_stick_x/3;
         }
         else {
             forward = -gamepad1.right_stick_y;
-            strafe = -gamepad1.right_stick_x;
+            strafe = gamepad1.right_stick_x;
             rotate = gamepad1.left_stick_x;
         }
 
@@ -83,21 +83,21 @@ public class woRMhole_tele extends OpMode {
         l.add(Math.abs(forward - strafe + rotate));
         l.add(Math.abs(forward + strafe - rotate));*/
         wheelFL.setPower((forward + strafe + rotate) / max);
-        wheelFR.setPower((forward - strafe - rotate) / max);
+        wheelFR.setPower((forward + strafe - rotate) / max);
         wheelBL.setPower((forward - strafe + rotate) / max);
-        wheelBR.setPower((forward + strafe - rotate) / max);
+        wheelBR.setPower((forward - strafe - rotate) / max);
         /*if ((double) Collections.max(l) > 1) {
             max = (double) Collections.max(l);
         }*/
         if (gamepad1.right_bumper)
         {
-            clawTR.setPosition(0);
+            clawTR.setPosition(0.2);
             clawTL.setPosition(0.75);
         }
         if (gamepad1.left_bumper)
         {
             clawTR.setPosition(1);
-            clawTL.setPosition(-1);
+            clawTL.setPosition(-0.6);
         }
 /*        if (gamepad2.x){
             clawTL.setPower(1);
@@ -120,10 +120,15 @@ public class woRMhole_tele extends OpMode {
             clawBR.setPosition(1);
         }
 
+        if (gamepad1.y){
+            clawTL.setPosition(0.1);
+            clawTR.setPosition(0.8);
+        }
+
         if (gamepad2.right_stick_y < 0)
-            lift.setPower(gamepad2.right_stick_y/3);
+            lift.setPower(gamepad2.right_stick_y/4);
         else
-            lift.setPower(gamepad2.right_stick_y/2);
+            lift.setPower(gamepad2.right_stick_y/3);
 
 //        arm.setPower(gamepad2.left_stick_y/2);
 //        if (gamepad2.y)
@@ -149,11 +154,11 @@ public class woRMhole_tele extends OpMode {
             slowMo = !slowMo;
         }
 
-        if (gamepad1.x)
+        if (gamepad2.x)
         {
             gemBar.setPosition(0);
         }
-        if (gamepad1.y)
+        if (gamepad2.y)
         {
             gemBar.setPosition(1);
         }

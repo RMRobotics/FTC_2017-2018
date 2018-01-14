@@ -70,7 +70,7 @@ public class woRMholeConfig extends Robot {
         clawTL = new servo(hMap.servo.get("clawTL"), Servo.Direction.FORWARD, -1, 1, 0);
         clawTR = new servo(hMap.servo.get("clawTR"), Servo.Direction.FORWARD, -1, 1, 0);
 
-        gemBar = new servo(hMap.servo.get("gemBar"), Servo.Direction.FORWARD, -1, 1, 0);
+        gemBar = new servo(hMap.servo.get("gemBar"), Servo.Direction.FORWARD, -1, 1.5, 0);
 
         servos.addAll(Arrays.asList(clawBL, clawBR, gemBar/*armT*/, clawTL, clawTR));
 

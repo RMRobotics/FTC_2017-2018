@@ -67,20 +67,21 @@ public class autoMark1 extends LinearOpMode {
         double /*timeToStance, timeToColumn,*/ rotate90; //rotate90 is the amount of time that it takes to rotate 90 degrees
 
         //init values
+        gemBar.setDirection(Servo.Direction.REVERSE);
         wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
         wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
         lift.setDirection(DcMotorSimple.Direction.REVERSE);
         lift.setPower(0);
         clawBL.setPosition(-0.7);
         clawBR.setPosition(1);
-        rotate90 = 0.95;//0.82
+        rotate90 = 0.4;//0.82
         colorSensor.enableLed(true);
 //        arm = hardwareMap.dcMotor.get("arm");
 //        armT = hardwareMap.servo.get("armT");
 //        armB = hardwareMap.crservo.get("armB");
 //        armB.setDirection(CRServo.Direction.FORWARD);
-//        clawTR.setPosition(1);
-//        clawTL.setPosition(-1);
+        clawTR.setPosition(1);
+        clawTL.setPosition(-1);
 //        armT.setPosition(0.5);
 //        armB.setPower(0);
 //        gemBar.setPosition(0);
@@ -105,11 +106,11 @@ public class autoMark1 extends LinearOpMode {
 
         while(opModeIsActive()) {
             //Grab the glyph
-            clawBL.setPosition(0.7);
-            clawBR.setPosition(0.3);
+            //clawBL.setPosition(0.7);
+            //clawBR.setPosition(0.3);
             clawTR.setPosition(-0.2);
             clawTL.setPosition(0.5);
-            holdUp(0.5);
+            holdUp(1.5);
 
             //Lift the lift so the block doesn't drag
             lift.setPower(-0.2);
@@ -119,9 +120,10 @@ public class autoMark1 extends LinearOpMode {
             lift.setPower(0);
 
             //Drop gemBar
-            gemBar.setPosition(1);
+            gemBar.setPosition(-1);
+            holdUp(1.5);
 
-            //Scan color of the jewel to the left
+            //Scan color of the jewel to the right
             boolean detected = false;
             String color = "";
             while (!detected) {
@@ -130,15 +132,13 @@ public class autoMark1 extends LinearOpMode {
                 telemetry.addData("Blue ", colorSensor.blue());
                 telemetry.update();
 
-                if (colorSensor.red() > 6)
+                if ((colorSensor.blue() > 0) && (colorSensor.red()<1))
                 {
-                    telemetry.addData("He is a RedBoi","");
                     detected = true;
                     color = "Red";
                 }
-                else if (colorSensor.blue() > 6)
+                else if ((colorSensor.blue() < 1) && (colorSensor.red()>0))
                 {
-                    telemetry.addData("He is a BlueBoi","");
                     detected = true;
                     color = "Blue";
                 }
@@ -147,24 +147,28 @@ public class autoMark1 extends LinearOpMode {
 
                 telemetry.update();
             }
+            holdUp(1);
 
             //Move backwards to topple jewel if necessary (if we need to move forward, it would be knocked off by going to read vuforia)
             if (color.equals("Red"))
             {
                 //Knock off jewel
-                move(0.4, -0.5, 0.0, 0.0);
+                move(0.18, -0.5, 0.0, 0.0);
                 wheelBL.setPower(0);
                 wheelBR.setPower(0);
                 wheelFL.setPower(0);
                 wheelFR.setPower(0);
+                holdUp(1.5);
 
                 //Retract gemBar and return to Start
-                gemBar.setPosition(-1);
-                move(0.4, 0.5, 0.0, 0.0);
+                gemBar.setPosition(1);
+                holdUp(3);
+                move(0.22, 0.5, 0.0, 0.0);
                 wheelBL.setPower(0);
                 wheelBR.setPower(0);
                 wheelFL.setPower(0);
                 wheelFR.setPower(0);
+                holdUp(2);
             }
 
             //Move to a spot where we can read Vuforia
@@ -173,10 +177,13 @@ public class autoMark1 extends LinearOpMode {
             wheelBR.setPower(0);
             wheelFL.setPower(0);
             wheelFR.setPower(0);
+            holdUp(1);
 
             //If we went forward, retract gemBar
-            if (color.equals("Blue"))
-                gemBar.setPosition(-1);
+            if (color.equals("Blue")) {
+                gemBar.setPosition(1);
+                holdUp(3);
+            }
 
             //Decode the Vuforia
             RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
@@ -190,24 +197,24 @@ public class autoMark1 extends LinearOpMode {
 
             //Get in front of respective Cryptobox
             if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-                move(0.92, 0.5, 0.0, 0.0);
-            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
                 move(0.65, 0.5, 0.0, 0.0);
+            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
+                move(0.55, 0.5, 0.0, 0.0);
             if (vuMark.equals(RelicRecoveryVuMark.RIGHT))
-                move(0.4, 0.5, 0.0, 0.0);
+                move(0.33, 0.5, 0.0, 0.0);
 
             //Orient to face Cryptobox
             move(rotate90, 0.05, 0.0, 90.0);
 
             //Go in Cryptobox and release glyphs
-            move(0.5, 0.5, 0, 0);
+            move(0.6, 0.25, 0, 0);
             clawTR.setPosition(1);
             clawTL.setPosition(-1);
             clawBL.setPosition(-0.7);
             clawBR.setPosition(1);
 
             //Move back
-            move(0.2, -0.5, 0, 0);
+            move(0.3, -0.5, 0, 0);
             wheelBL.setPower(0);
             wheelBR.setPower(0);
             wheelFL.setPower(0);

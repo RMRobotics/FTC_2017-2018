@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
 
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -8,6 +9,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 /**
  * Created by rotom on 9/28/2017.
  */
+@Disabled
 @TeleOp (name="test", group="8121")
 public class learningTest extends OpMode {
 
