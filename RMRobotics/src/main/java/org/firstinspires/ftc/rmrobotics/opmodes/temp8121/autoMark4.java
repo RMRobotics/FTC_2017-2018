@@ -22,8 +22,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
 /**
  * Created by Kameron on 10/24/2017.
  */
-@Autonomous(name="autoMark2", group ="woRMholeConfig")
-public class autoMark2 extends LinearOpMode {
+@Autonomous(name="autoMark4", group ="woRMholeConfig")
+public class autoMark4 extends LinearOpMode {
     private DcMotor wheelFL;
     private DcMotor wheelFR;
     private DcMotor wheelBL;
@@ -70,7 +70,7 @@ public class autoMark2 extends LinearOpMode {
         double timeToStance, timeToColumn, rotate90, powerino; //rotate90 is the amount of time that it takes to rotate 90 degrees
         timeToStance = 2;
         timeToColumn = 0.75;
-        rotate90 = 0.82;
+        rotate90 = 0.95;//0.82
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
         parameters.vuforiaLicenseKey = "AckoWtn/////AAAAGan7WAnq/0UVmQZG3sp7smBgRCNBnU1p+HmsTrC+W9TyxqaMlhFirDXglelvJCX4yBiO8oou6n7UWBfdRFbKHDqz0NIo5VcNHyhelmm0yK0vGKxoU0NZbQzjh5qVWnI/HRoFjM3JOq/LB/FTXgCcEaNGhXAqnz7nalixMeP8oRQlgX5nRVX4uE6w0K4yqIc5/FIDh1tn7PldiflmvNPhOW6FukPQD3d02wEnZB/JEchSSBzDbFA10XSgtYzXiweQI5tj+D5llLRrLh0mcWeouv55oSmya5RxUC26uEuO7bCAwyolWIuUr2Wh5oAG483nTD4vFhdjVMT7f0ovLO73C6xr2AXpNwen9IExRxBeosQ4";
@@ -84,8 +84,8 @@ public class autoMark2 extends LinearOpMode {
         relicTrackables.activate();
         waitForStart();
         while(opModeIsActive()) {
-            //clawBL.setPosition(0.7);
-            //clawBR.setPosition(0.3);
+            clawBL.setPosition(0.7);
+            clawBR.setPosition(0.3);
             clawTR.setPosition(-0.2);
             clawTL.setPosition(0.5);
             time.reset();
@@ -109,40 +109,24 @@ public class autoMark2 extends LinearOpMode {
                     telemetry.update();
                 }
             }
-
-            move(0.6, 0.5, 0, 0);
-            if (vuMark.equals(RelicRecoveryVuMark.RIGHT)){
-                move(0.25, 0.05, 0.0, -90.0);
-                move(0.4, 0.4, 0, 0);
+            if (vuMark.equals(RelicRecoveryVuMark.LEFT))
+            {
+                move(0.92, 0.5, 0.0, 0.0);
             }
-            else{
-
-                move(rotate90, 0.05, 0.0, -90.0);
-
-
-                if (vuMark.equals(RelicRecoveryVuMark.CENTER))
-                {
-                    move(0.65, 0.5, 0.0, 0.0);
-                    move(rotate90-0.2, 0.05, 0.0, 90.0);
-
-                }
-
-                if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-                {
-                    move(0.88, 0.5, 0.0, 0.0);
-                    move(rotate90-0.2, 0.05, 0.0, 90.0);
-                }
-
-                //move(rotate90, 0.05, 0.0, 90.0);
-
-                move(0.3, 0.5, 0, 0);
+            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
+            {
+                move(0.65, 0.5, 0.0, 0.0);
             }
+            if (vuMark.equals(RelicRecoveryVuMark.RIGHT))
+            {
+                move(0.4, 0.5, 0.0, 0.0);
+            }
+            move(rotate90, 0.05, 0.0, 90.0);
+            move(0.5, 0.5, 0, 0);
             clawTR.setPosition(1);
             clawTL.setPosition(-1);
-
             clawBL.setPosition(-0.7);
             clawBR.setPosition(1);
-
             move(0.2, -0.5, 0, 0);
             wheelBL.setPower(0);
             wheelBR.setPower(0);
@@ -150,7 +134,51 @@ public class autoMark2 extends LinearOpMode {
             wheelFR.setPower(0);
             break;
         }
-
+       /*
+       int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
+       VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
+       parameters.vuforiaLicenseKey = "AckoWtn/////AAAAGan7WAnq/0UVmQZG3sp7smBgRCNBnU1p+HmsTrC+W9TyxqaMlhFirDXglelvJCX4yBiO8oou6n7UWBfdRFbKHDqz0NIo5VcNHyhelmm0yK0vGKxoU0NZbQzjh5qVWnI/HRoFjM3JOq/LB/FTXgCcEaNGhXAqnz7nalixMeP8oRQlgX5nRVX4uE6w0K4yqIc5/FIDh1tn7PldiflmvNPhOW6FukPQD3d02wEnZB/JEchSSBzDbFA10XSgtYzXiweQI5tj+D5llLRrLh0mcWeouv55oSmya5RxUC26uEuO7bCAwyolWIuUr2Wh5oAG483nTD4vFhdjVMT7f0ovLO73C6xr2AXpNwen9IExRxBeosQ4";
+       parameters.cameraDirection = VuforiaLocalizer.CameraDirection.FRONT;
+       this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
+       VuforiaTrackables relicTrackables = this.vuforia.loadTrackablesFromAsset("RelicVuMark");
+       VuforiaTrackable relicTemplate = relicTrackables.get(0);
+       relicTemplate.setName("relicVuMarkTemplate");
+       telemetry.update();
+       waitForStart();
+       relicTrackables.activate();
+       while (opModeIsActive()) {
+           RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
+           if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
+               telemetry.addData("VuMark", "%s visible", vuMark);
+               telemetry.update();
+           }
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
+           if (vuMark.equals("LEFT")) {
+               move(0.75, 0.5, 0.0, 0.0);
+               telemetry.addData("ur mum gey:", "%s VuMark:", vuMark);
+               telemetry.update();
+           }
+           if (vuMark.equals(RelicRecoveryVuMark.LEFT))
+           {
+               move(0.75, 0.5, 0.0, 0.0);
+           }
+           if (vuMark.equals("RIGHT")) {
+               move(1.5, 0.5, 0.0, 0.0);
+           }
+           if (vuMark.equals("CENTER")) {
+               move(rotate90, 0.05, 0.0, 90.0);
+           }
+       }*/
+        //move(timeToStance, 0.05, 0.0, 0.0);
+        //move(timeToColumn, 0.5, 0.0, 0.0);
+        //move(rotate90, 0.05, 0.0, 90.0); //if left turn
+/*        if (column == RelicRecoveryVuMark.LEFT)
+           timeToColumn = 0;
+       if (column == RelicRecoveryVuMark.CENTER)
+           timeToColumn = 0;
+       if (column == RelicRecoveryVuMark.RIGHT)
+           timeToColumn = 0;*/
+        //move(timeToColumn, 0.5, 45.0, 0.0);
     }
     public void move(double duration, double power, double angle, double rotate) {
         angle *= (Math.PI / 180);

@@ -492,12 +492,24 @@
     <list default="true" id="c423b4d7-a1b8-47f4-a4ee-a542292488d2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.common.gradle" afterPath="$PROJECT_DIR$/build.common.gradle" />
 =======
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" />
+=======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
+=======
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
 >>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+<<<<<<< HEAD
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
+=======
+>>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
     </list>
     <ignored path="ftc_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -537,7 +549,11 @@
       <file leaf-file-name="testingColorSensor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="119">
+=======
             <state relative-caret-position="147">
+>>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
               <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
               <folding />
             </state>
@@ -547,6 +563,7 @@
       <file leaf-file-name="testVuAuto.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="-357">
               <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
@@ -561,11 +578,19 @@
             <state relative-caret-position="147">
               <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
 =======
+            <state relative-caret-position="-95">
+              <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
+=======
             <state relative-caret-position="477">
               <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
 >>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
               <folding />
+>>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
             </state>
           </provider>
         </entry>
@@ -574,12 +599,21 @@
         <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+            <state relative-caret-position="-1037">
+              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+=======
             <state relative-caret-position="-1000">
               <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
             <state relative-caret-position="2604">
               <caret line="143" column="15" lean-forward="false" selection-start-line="143" selection-start-column="15" selection-end-line="143" selection-end-column="15" />
               <folding />
+>>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
             </state>
           </provider>
         </entry>
@@ -589,7 +623,14 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1071">
               <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+<<<<<<< HEAD
+              <folding>
+                <element signature="imports" expanded="false" />
+                <marker date="1514923900620" expanded="true" signature="4391:4398" ph="{...}" />
+              </folding>
+=======
               <folding />
+>>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
             </state>
           </provider>
         </entry>
@@ -614,8 +655,14 @@
 =======
             <state relative-caret-position="399">
               <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+<<<<<<< HEAD
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+=======
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
               <folding />
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
             </state>
           </provider>
         </entry>
@@ -3264,6 +3311,10 @@
 =======
       <pane id="PackagesPane" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+      <pane id="Scope" />
+=======
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
       <pane id="Scratches" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
@@ -3328,6 +3379,7 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="ProjectPane" />
       <pane id="Scope" />
 <<<<<<< HEAD
@@ -3336,6 +3388,14 @@
 <<<<<<< HEAD
       <pane id="Scratches" />
 =======
+      <pane id="Scope" />
+<<<<<<< HEAD
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
+=======
+<<<<<<< HEAD
+      <pane id="Scratches" />
+=======
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
 >>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
     </panes>
@@ -3428,10 +3488,17 @@
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515528714625" />
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242541" />
+=======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183210184" />
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183155383" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
@@ -3484,10 +3551,17 @@
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515528714625" />
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242542" />
+=======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183210184" />
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183155383" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
@@ -3654,10 +3728,17 @@
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515528714628" />
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242546" />
+=======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183210184" />
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183155384" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
@@ -3711,10 +3792,17 @@
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515528714628" />
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242546" />
+=======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183210184" />
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183155384" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
@@ -3768,7 +3856,11 @@
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32729805" sideWeight="0.49028498" order="7" side_tool="false" content_ui="tabs" />
+=======
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32647815" sideWeight="0.49028498" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32716763" sideWeight="0.49028498" order="7" side_tool="false" content_ui="tabs" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
@@ -3903,7 +3995,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3947,7 +4041,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3991,7 +4087,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4035,7 +4133,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4118,7 +4218,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="59" column="12" lean-forward="false" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1514923900620" expanded="true" signature="4391:4398" ph="{...}" />
+          </folding>
+=======
           <folding />
+>>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
         </state>
       </provider>
     </entry>
@@ -4135,6 +4242,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+=======
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
         </state>
       </provider>
     </entry>
@@ -4218,6 +4331,21 @@
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java">
 <<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="119">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1037">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
         <state relative-caret-position="34">
           <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
@@ -4227,12 +4355,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1250">
           <caret line="58" column="32" lean-forward="false" selection-start-line="34" selection-start-column="8" selection-end-line="58" selection-end-column="32" />
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
           <folding />
+>>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
         </state>
       </provider>
     </entry>
@@ -4255,10 +4385,20 @@
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="-357">
           <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="-95">
+          <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
         <state relative-caret-position="275">
           <caret line="11" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding />
@@ -4269,12 +4409,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1000">
           <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
         <state relative-caret-position="477">
           <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
 >>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
           <folding />
+>>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
         </state>
       </provider>
     </entry>

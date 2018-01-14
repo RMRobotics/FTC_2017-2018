@@ -1,4 +1,5 @@
 package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
+
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.CRServo;
@@ -6,6 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
+
 import org.firstinspires.ftc.robotcore.external.ClassFactory;
 import org.firstinspires.ftc.robotcore.external.matrices.OpenGLMatrix;
 import org.firstinspires.ftc.robotcore.external.matrices.VectorF;
@@ -19,11 +21,14 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaLocalizer;
 import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackable;
 import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackableDefaultListener;
 import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
+
 /**
  * Created by Kameron on 10/24/2017.
  */
-@Autonomous(name="autoMark2", group ="woRMholeConfig")
-public class autoMark2 extends LinearOpMode {
+
+@Autonomous(name="twistyForwardBoi", group ="woRMholeConfig")
+public class twistyForwardBoi extends LinearOpMode {
+
     private DcMotor wheelFL;
     private DcMotor wheelFR;
     private DcMotor wheelBL;
@@ -36,12 +41,17 @@ public class autoMark2 extends LinearOpMode {
     private Servo clawTR;
     private Servo armT;
     private CRServo armB;
+
     private ElapsedTime time = new ElapsedTime();
+
     public static final String TAG = "Auto Version 1";
     /*    OpenGLMatrix lastLocation = null;*/
     VuforiaLocalizer vuforia;
+
     @Override
     public void runOpMode() {
+
+
         wheelFL = hardwareMap.dcMotor.get("wheelFL");
         wheelFR = hardwareMap.dcMotor.get("wheelFR");
         wheelBL = hardwareMap.dcMotor.get("wheelBL");
@@ -60,6 +70,7 @@ public class autoMark2 extends LinearOpMode {
         clawTR = hardwareMap.servo.get("clawTR");
         armB.setDirection(CRServo.Direction.FORWARD);
 //        gemBar = hardwareMap.servo.get("gemBar");
+
         clawTR.setPosition(1);
         clawTL.setPosition(-1);
         armT.setPosition(0.5);
@@ -67,91 +78,39 @@ public class autoMark2 extends LinearOpMode {
         clawBL.setPosition(-0.7);
         clawBR.setPosition(1);
 //        gemBar.setPosition(0);
-        double timeToStance, timeToColumn, rotate90, powerino; //rotate90 is the amount of time that it takes to rotate 90 degrees
-        timeToStance = 2;
-        timeToColumn = 0.75;
-        rotate90 = 0.82;
-        int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
-        VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
-        parameters.vuforiaLicenseKey = "AckoWtn/////AAAAGan7WAnq/0UVmQZG3sp7smBgRCNBnU1p+HmsTrC+W9TyxqaMlhFirDXglelvJCX4yBiO8oou6n7UWBfdRFbKHDqz0NIo5VcNHyhelmm0yK0vGKxoU0NZbQzjh5qVWnI/HRoFjM3JOq/LB/FTXgCcEaNGhXAqnz7nalixMeP8oRQlgX5nRVX4uE6w0K4yqIc5/FIDh1tn7PldiflmvNPhOW6FukPQD3d02wEnZB/JEchSSBzDbFA10XSgtYzXiweQI5tj+D5llLRrLh0mcWeouv55oSmya5RxUC26uEuO7bCAwyolWIuUr2Wh5oAG483nTD4vFhdjVMT7f0ovLO73C6xr2AXpNwen9IExRxBeosQ4";
-        parameters.cameraDirection = VuforiaLocalizer.CameraDirection.FRONT;
-        this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
-        VuforiaTrackables relicTrackables = this.vuforia.loadTrackablesFromAsset("RelicVuMark");
-        VuforiaTrackable relicTemplate = relicTrackables.get(0);
-        relicTemplate.setName("relicVuMarkTemplate");
-        telemetry.update();
+
+        double time1square, rotate90; //rotate90 is the amount of time that it takes to rotate 90 degrees
+
+
+        time1square = 0.9;
+        rotate90 = 0.95;//0.82
+
         waitForStart();
-        relicTrackables.activate();
+
         waitForStart();
+
         while(opModeIsActive()) {
-            //clawBL.setPosition(0.7);
-            //clawBR.setPosition(0.3);
-            clawTR.setPosition(-0.2);
-            clawTL.setPosition(0.5);
-            time.reset();
-            while (time.seconds() < 0.5) {
-            }
-            lift.setPower(-0.2);
-            time.reset();
-            while (time.seconds() < 0.5) {
-            }
-            lift.setPower(0);
-            move(0.4, 0.5, 0.0, 0.0);
+
+            move(time1square, 0.5, 0.0, 0.0);
             wheelBL.setPower(0);
             wheelBR.setPower(0);
             wheelFL.setPower(0);
             wheelFR.setPower(0);
-            RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
-            while (vuMark == RelicRecoveryVuMark.UNKNOWN){
-                vuMark = RelicRecoveryVuMark.from(relicTemplate);
-                if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
-                    telemetry.addData("VuMark", "%s visible", vuMark);
-                    telemetry.update();
-                }
-            }
 
-            move(0.6, 0.5, 0, 0);
-            if (vuMark.equals(RelicRecoveryVuMark.RIGHT)){
-                move(0.25, 0.05, 0.0, -90.0);
-                move(0.4, 0.4, 0, 0);
-            }
-            else{
+            move(rotate90, 0.05, 0.0, 90.0);
 
-                move(rotate90, 0.05, 0.0, -90.0);
-
-
-                if (vuMark.equals(RelicRecoveryVuMark.CENTER))
-                {
-                    move(0.65, 0.5, 0.0, 0.0);
-                    move(rotate90-0.2, 0.05, 0.0, 90.0);
-
-                }
-
-                if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-                {
-                    move(0.88, 0.5, 0.0, 0.0);
-                    move(rotate90-0.2, 0.05, 0.0, 90.0);
-                }
-
-                //move(rotate90, 0.05, 0.0, 90.0);
-
-                move(0.3, 0.5, 0, 0);
-            }
-            clawTR.setPosition(1);
-            clawTL.setPosition(-1);
-
-            clawBL.setPosition(-0.7);
-            clawBR.setPosition(1);
-
-            move(0.2, -0.5, 0, 0);
             wheelBL.setPower(0);
             wheelBR.setPower(0);
             wheelFL.setPower(0);
             wheelFR.setPower(0);
+
+
             break;
         }
 
     }
+
+
     public void move(double duration, double power, double angle, double rotate) {
         angle *= (Math.PI / 180);
         time.reset();
@@ -163,3 +122,7 @@ public class autoMark2 extends LinearOpMode {
         }
     }
 }
+
+
+
+

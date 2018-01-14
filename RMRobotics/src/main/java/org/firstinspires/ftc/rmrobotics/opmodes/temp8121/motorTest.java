@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
 
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.CRServo;
@@ -12,6 +13,7 @@ import java.util.Collections;
 /**
  * Created by General on 12/5/2017.
  */
+@Disabled
 @TeleOp(name="motorTest", group="motorTestConfig")
 public class motorTest extends OpMode {
 

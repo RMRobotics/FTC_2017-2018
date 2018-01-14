@@ -17,19 +17,17 @@ public class testServos extends OpMode {
 
     private Servo servo1;
     private Servo servo2;
-    private CRServo cr1;
-    private CRServo cr2;
 
     public void init()
     {
         servo1 = hardwareMap.servo.get("servo1");
         servo2 = hardwareMap.servo.get("servo2");
-        cr1 = hardwareMap.crservo.get("cr1");
-        cr2 = hardwareMap.crservo.get("cr2");
+//        cr1 = hardwareMap.crservo.get("cr1");
+//        cr2 = hardwareMap.crservo.get("cr2");
         servo1.setPosition(0);
         servo2.setPosition(0);
-        cr1.setPower(0);
-        cr2.setPower(0);
+//        cr1.setPower(0);
+//        cr2.setPower(0);
     }
 
     public void loop()
@@ -39,20 +37,20 @@ public class testServos extends OpMode {
         {
             servo1.setPosition(1);
             servo2.setPosition(1);
-            cr1.setPower(1);
-            cr2.setPower(1);
+//            cr1.setPower(1);
+//            cr2.setPower(1);
 
         }
         if (gamepad1.left_bumper)
         {
             servo1.setPosition(0);
             servo2.setPosition(0);
-            cr1.setPower(-1);
-            cr2.setPower(-1);
+//            cr1.setPower(-1);
+//            cr2.setPower(-1);
         }
-        if (gamepad1.a){
-            cr1.setPower(0);
-            cr2.setPower(0);
-        }
+//        if (gamepad1.a){
+//            cr1.setPower(0);
+//            cr2.setPower(0);
+//        }
     }
 }
