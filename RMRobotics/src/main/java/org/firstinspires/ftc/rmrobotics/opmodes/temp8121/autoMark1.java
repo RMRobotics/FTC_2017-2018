@@ -120,13 +120,14 @@ public class autoMark1 extends LinearOpMode {
             lift.setPower(0);
 
             //Drop gemBar
-            gemBar.setPosition(-1);
+            gemBar.setPosition(-0.96);
             holdUp(1.5);
 
             //Scan color of the jewel to the right
             boolean detected = false;
             String color = "";
-            while (!detected) {
+            time.reset();
+            while ((!detected) && (time.seconds()<5)) {
                 telemetry.addData("Red  ", colorSensor.red());
                 telemetry.addData("Green", colorSensor.green());
                 telemetry.addData("Blue ", colorSensor.blue());
@@ -149,11 +150,15 @@ public class autoMark1 extends LinearOpMode {
             }
             holdUp(1);
 
+            if (color.equals("")){
+                gemBar.setPosition(1);
+            }
+
             //Move backwards to topple jewel if necessary (if we need to move forward, it would be knocked off by going to read vuforia)
             if (color.equals("Red"))
             {
                 //Knock off jewel
-                move(0.18, -0.5, 0.0, 0.0);
+                move(0.15, -0.5, 0.0, 0.0);
                 wheelBL.setPower(0);
                 wheelBR.setPower(0);
                 wheelFL.setPower(0);
@@ -163,7 +168,7 @@ public class autoMark1 extends LinearOpMode {
                 //Retract gemBar and return to Start
                 gemBar.setPosition(1);
                 holdUp(3);
-                move(0.22, 0.5, 0.0, 0.0);
+                move(0.23, 0.5, 0.0, 0.0);
                 wheelBL.setPower(0);
                 wheelBR.setPower(0);
                 wheelFL.setPower(0);
@@ -197,7 +202,7 @@ public class autoMark1 extends LinearOpMode {
 
             //Get in front of respective Cryptobox
             if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-                move(0.65, 0.5, 0.0, 0.0);
+                move(0.70, 0.5, 0.0, 0.0);
             if (vuMark.equals(RelicRecoveryVuMark.CENTER))
                 move(0.55, 0.5, 0.0, 0.0);
             if (vuMark.equals(RelicRecoveryVuMark.RIGHT))

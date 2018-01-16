@@ -120,24 +120,25 @@ public class autoMark3 extends LinearOpMode {
             lift.setPower(0);
 
             //Drop gemBar
-            gemBar.setPosition(-1);
+            gemBar.setPosition(-0.96);
             holdUp(1.5);
 
             //Scan color of the jewel to the right
             boolean detected = false;
             String color = "";
-            while (!detected) {
+            time.reset();
+            while ((!detected) && (time.seconds()<5)) {
                 telemetry.addData("Red  ", colorSensor.red());
                 telemetry.addData("Green", colorSensor.green());
                 telemetry.addData("Blue ", colorSensor.blue());
                 telemetry.update();
 
-                if ((colorSensor.blue() < 0) && (colorSensor.red()>1))
+                if ((colorSensor.blue() < 1) && (colorSensor.red()>0))
                 {
                     detected = true;
                     color = "Red";
                 }
-                else if ((colorSensor.blue() > 1) && (colorSensor.red()<0))
+                else if ((colorSensor.blue() > 0) && (colorSensor.red()<1))
                 {
                     detected = true;
                     color = "Blue";
@@ -148,6 +149,10 @@ public class autoMark3 extends LinearOpMode {
                 telemetry.update();
             }
             holdUp(1);
+
+            if (color.equals("")){
+                gemBar.setPosition(1);
+            }
 
             //Move backwards to topple jewel if necessary (if we need to move forward, it would be knocked off by going to read vuforia)
             if (color.equals("Red"))
@@ -197,7 +202,7 @@ public class autoMark3 extends LinearOpMode {
 
             //Get in front of respective Cryptobox
             if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-                move(0.65, 0.5, 0.0, 0.0);
+                move(0.7, 0.5, 0.0, 0.0);
             if (vuMark.equals(RelicRecoveryVuMark.CENTER))
                 move(0.55, 0.5, 0.0, 0.0);
             if (vuMark.equals(RelicRecoveryVuMark.RIGHT))

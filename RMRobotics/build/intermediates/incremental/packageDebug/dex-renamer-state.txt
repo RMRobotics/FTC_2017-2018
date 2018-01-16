@@ -1,4 +1,4 @@
-#Thu Nov 02 16:07:55 EDT 2017
+#Sun Jan 14 15:20:17 EST 2018
 base.0=C\:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=C\:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

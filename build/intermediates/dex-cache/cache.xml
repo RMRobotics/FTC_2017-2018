@@ -3,30 +3,39 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Kameron\.android\build-cache\a86372a8b0a420399197e3d5b470b00f6fe49b73\output\jars\libs\gson-2.8.0.jar"
+        jar="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\FtcRobotController\build\intermediates\bundles\default\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.3"
-        sha1="e118dd0900e4a18fb928ebb8df2d9fbda78f2b5d">
-        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\gson-2.8.0_9ccc26673ac2b7d7eadccb4f92d91751f2397160.jar" />
+        revision="26.0.2"
+        sha1="36f5ef793d879dc86f4e4a3f969dc2d40ca658f5">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_eff8d66ebe07bc4065cd9d105db93789d16166af.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kameron\.android\build-cache\a86372a8b0a420399197e3d5b470b00f6fe49b73\output\jars\libs\javac.jar"
+        jar="C:\Users\Kameron\.android\build-cache\39c20388b423b66c3c7cac6b151081e0a3d628a3\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.3"
-        sha1="c576121aac49e547b39aedfb1daa29782db4166c">
-        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\javac_4e2e68bb1fce236698a2e284b4c3226a20a56fe7.jar" />
+        revision="26.0.2"
+        sha1="6c6d1584a392ebfee01efd98e6caaf6a9e5ac51d">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_8fb0de36576c4d480490ac3ba2a61cda0fd46cca.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kameron\.android\build-cache\7ebef7df15deb2b3a0c0d6a8e2052f87890e4486\output\jars\classes.jar"
+        jar="C:\Users\Kameron\.android\build-cache\56e02c36e531d40ea65518d21f5dd9ebe7680a11\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.3"
-        sha1="96cbbea552fe9bf3c56540c7e4912eb5cf72301e">
-        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_43bec7edafa03c052c113ae25e30ab65d5f0ccad.jar" />
+        revision="26.0.2"
+        sha1="9dafed45e330aec14abcce05bdb7bbdb2a2d7092">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_0c86c07ddb27955ab736c2d1c4ef81d8cfa1ab94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kameron\.android\build-cache\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7558c70f3b0b473ca494059b37f16ca880ac43fd">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_ccef60ca9d726388221aeebc1c1c18b346ac5d30.jar" />
     </item>
     <item
         is-multidex="false"
@@ -39,6 +48,24 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\Kameron\.android\build-cache\e6d6f423641116671db08d2d624d163c3f07b815\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="5d8f95b7b91c8a132c514f5dbe75340305e6883b">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_bdc2f899c7d645f3527a63d163931ab1200e569b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kameron\.android\build-cache\18e9a4908d6147a3deeb15f82b27366b296ff0bf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9403be210676ed196cdcc64c7391b9ae2361c174">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_6bf8f87e7d9bf13f472c7e07be5077cb1491b9d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\FtcRobotController\build\intermediates\bundles\default\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -48,39 +75,39 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kameron\.android\build-cache\faa5d1cdb775b2e2950592a2e4a4a92579520434\output\jars\classes.jar"
+        jar="C:\Users\Kameron\.android\build-cache\e6d6f423641116671db08d2d624d163c3f07b815\output\jars\libs\support-annotations-23.4.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.3"
-        sha1="c2abba0621a5319232804767218216568263aa37">
-        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_26e9a5e41dac4fa1e0fcf860e7978c0e959dce22.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Kameron\.android\build-cache\a86372a8b0a420399197e3d5b470b00f6fe49b73\output\jars\libs\support-annotations-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
+        revision="26.0.2"
         sha1="5a214d3b1b12e72f4fb0d5d5d8d0ec43c96de2b5">
-        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_b67144e374e878cdb106e316062797f2c8e56418.jar" />
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_40b7df5aaeb0c81c733a8221aa5684a1cda2c13b.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kameron\.android\build-cache\a86372a8b0a420399197e3d5b470b00f6fe49b73\output\jars\classes.jar"
+        jar="C:\Users\Kameron\.android\build-cache\e6d6f423641116671db08d2d624d163c3f07b815\output\jars\libs\gson-2.8.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.3"
-        sha1="e259d01a014f392930432e85cc1ac9bf807a92df">
-        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_12d9bd7dd6c2c5d0fd075c2ddc0e79e4503cdaa1.jar" />
+        revision="26.0.2"
+        sha1="e118dd0900e4a18fb928ebb8df2d9fbda78f2b5d">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\gson-2.8.0_7e9011e6a8ed7f7c40755da6b340b649423a5561.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kameron\.android\build-cache\d1740ed077aa81a59d307d812ded0e490c0846cb\output\jars\classes.jar"
+        jar="C:\Users\Kameron\.android\build-cache\e6d6f423641116671db08d2d624d163c3f07b815\output\jars\libs\gson-extras-0.2.1.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.3"
-        sha1="75bdc736b17d8f39d246beac357cb3a0e007fcfa">
-        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_4251189c30b0bfe5a19205a2b52fa5e97f018b48.jar" />
+        revision="26.0.2"
+        sha1="b30c2655badcc7ce97f84e49f777b7dd154bad57">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\gson-extras-0.2.1_267aa5c6a10b5351c5ca6319c57d1561d5e35b37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kameron\.android\build-cache\e6d6f423641116671db08d2d624d163c3f07b815\output\jars\libs\Vuforia.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="91b46366eb9f8203073ee2935087c097c888c0ed">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\Vuforia_d6c46f48977bda595f167c3fb787ff69e9bb11b3.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,30 +120,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kameron\.android\build-cache\cd91d1d0f1d95b25d280bec1e05406da8ffd1ad6\output\jars\classes.jar"
+        jar="C:\Users\Kameron\.android\build-cache\e6d6f423641116671db08d2d624d163c3f07b815\output\jars\libs\javac.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.3"
-        sha1="9da82f9829b6cafb8407989729481220ca06c905">
-        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_fd0ab098642675e1f8599d083efd2552ee7a544b.jar" />
+        revision="26.0.2"
+        sha1="c576121aac49e547b39aedfb1daa29782db4166c">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\javac_3d35a9f4511774343f7b196cd7525d99c2680652.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kameron\.android\build-cache\a86372a8b0a420399197e3d5b470b00f6fe49b73\output\jars\libs\Vuforia.jar"
+        jar="C:\Users\Kameron\.android\build-cache\f7987bce99f5501a217085986254d443a86c533c\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.3"
-        sha1="91b46366eb9f8203073ee2935087c097c888c0ed">
-        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\Vuforia_4acf8254f9fd830b33ec17652fd5a2eedfb6f15e.jar" />
+        revision="26.0.2"
+        sha1="1ce86a6340781abf3d876eba190efa34ae92d2f9">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_e2213de307dbed182dc74fb572e121f7b90e57f9.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Kameron\.android\build-cache\a86372a8b0a420399197e3d5b470b00f6fe49b73\output\jars\libs\gson-extras-0.2.1.jar"
+        jar="C:\Users\Kameron\.android\build-cache\1e21fda2b2c98bcdbd2780d14d76d59fb8ce9c52\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.3"
-        sha1="b30c2655badcc7ce97f84e49f777b7dd154bad57">
-        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\gson-extras-0.2.1_96d00e94717b0d7349ac360275edc8231649abc3.jar" />
+        revision="26.0.2"
+        sha1="e444b561b0feba789cac93c5db61f08ef8c25ee6">
+        <dex dex="C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\build\intermediates\pre-dexed\debug\classes_e0e7da3d82215de89d684511c33fc624b36c43dd.jar" />
     </item>
 
 </items>
