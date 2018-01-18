@@ -121,8 +121,8 @@ public class woRMhole_tele extends OpMode {
         }
 
         if (gamepad1.y){
-            clawTL.setPosition(0.1);
-            clawTR.setPosition(0.8);
+            clawTL.setPosition(0.4);
+            clawTR.setPosition(0.5);
         }
 
         if (gamepad2.right_stick_y < 0)
