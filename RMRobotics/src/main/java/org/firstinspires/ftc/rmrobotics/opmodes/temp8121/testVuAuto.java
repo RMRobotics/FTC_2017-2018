@@ -43,10 +43,14 @@ public class testVuAuto extends LinearOpMode{
         telemetry.update();
         waitForStart();
         relicTrackables.activate();
+        float mmPerInch        = 25.4f;
+        float mmBotWidth       = 18 * mmPerInch;            // ... or whatever is right for your robot
+        float mmFTCFieldWidth  = (12*12 - 2) * mmPerInch;   // the FTC field is ~11'10" center-to-center of the glass panels
+
 
         //0,0,0 is front left bottom corner. phone is a matrix of where the phone is relative to the robot
         OpenGLMatrix camera2bot = OpenGLMatrix
-                .translation(3.75f, 5.37f, 6.248f) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
+                .translation(3.75f*mmPerInch, 5.37f*mmPerInch, 6.248f*mmPerInch) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
                 .multiplied(Orientation.getRotationMatrix(
                         AxesReference.EXTRINSIC, AxesOrder.XZY,
                         AngleUnit.DEGREES, 0, 0, 0));
@@ -57,7 +61,7 @@ public class testVuAuto extends LinearOpMode{
         //rot: (0,0,90) (0,0,-90), (0,0,0), (0,0,0)
         //this program is testing red top
         OpenGLMatrix pic2field = OpenGLMatrix
-                .translation(0,106,0) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
+                .translation(0,106.0f*mmPerInch,0) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
                 .multiplied(Orientation.getRotationMatrix(
                         AxesReference.EXTRINSIC, AxesOrder.XZY,
                         AngleUnit.DEGREES, 0, 0, 90));
@@ -71,6 +75,7 @@ public class testVuAuto extends LinearOpMode{
                 //pic2phone.translation(0.0f, 0.0f, -90.0f);
 
                 if (camera2pic != null) {
+                    camera2pic.rotated(AngleUnit.DEGREES, -90, 0, 1, 0);
                     OpenGLMatrix bot2pic = camera2pic.multiplied(camera2bot);
                     bot2field = bot2pic.multiplied(pic2field);
                     telemetry.addData("c2p", format(camera2pic));
