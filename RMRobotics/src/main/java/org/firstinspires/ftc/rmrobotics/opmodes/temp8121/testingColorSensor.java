@@ -15,6 +15,7 @@ import org.firstinspires.ftc.rmrobotics.util.enums.Color;
  * Created by rotom on 11/30/2017.
  */
 @Autonomous(name="testingColorSensors", group ="sensorTestConfig")
+
 public class testingColorSensor extends LinearOpMode{
 
     ColorSensor colorSensor;

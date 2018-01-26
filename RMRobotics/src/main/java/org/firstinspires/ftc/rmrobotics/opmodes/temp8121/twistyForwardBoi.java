@@ -1,6 +1,7 @@
 package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -27,6 +28,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  */
 
 @Autonomous(name="twistyForwardBoi", group ="woRMholeConfig")
+@Disabled
 public class twistyForwardBoi extends LinearOpMode {
 
     private DcMotor wheelFL;
