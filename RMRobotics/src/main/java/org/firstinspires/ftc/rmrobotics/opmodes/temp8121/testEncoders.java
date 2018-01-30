@@ -26,8 +26,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by rotom on 10/17/2017.
  */
 
-@Autonomous(name="testVuAuto", group ="woRMholeConfig")
-public class testVuAuto extends LinearOpMode{
+@Autonomous(name="testEncoders", group ="woRMholeConfig")
+public class testEncoders extends LinearOpMode{
 
     //hardware declarations
     private ColorSensor colorSensor;
@@ -53,10 +53,6 @@ public class testVuAuto extends LinearOpMode{
             (diameterBoi * 3.1415);
     private ElapsedTime runtime = new ElapsedTime();
 
-    //vuforia initialization
-    public static final String TAG = "Vuforia VuMark Sample";
-    OpenGLMatrix lastLocation = null;
-    VuforiaLocalizer vuforia;
 
     @Override public void runOpMode() {
 
@@ -81,101 +77,15 @@ public class testVuAuto extends LinearOpMode{
         wheelFL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         wheelFR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
-        //starting vuforia
-        int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
-        VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
-        parameters.vuforiaLicenseKey = "AckoWtn/////AAAAGan7WAnq/0UVmQZG3sp7smBgRCNBnU1p+HmsTrC+W9TyxqaMlhFirDXglelvJCX4yBiO8oou6n7UWBfdRFbKHDqz0NIo5VcNHyhelmm0yK0vGKxoU0NZbQzjh5qVWnI/HRoFjM3JOq/LB/FTXgCcEaNGhXAqnz7nalixMeP8oRQlgX5nRVX4uE6w0K4yqIc5/FIDh1tn7PldiflmvNPhOW6FukPQD3d02wEnZB/JEchSSBzDbFA10XSgtYzXiweQI5tj+D5llLRrLh0mcWeouv55oSmya5RxUC26uEuO7bCAwyolWIuUr2Wh5oAG483nTD4vFhdjVMT7f0ovLO73C6xr2AXpNwen9IExRxBeosQ4";
-        parameters.cameraDirection = VuforiaLocalizer.CameraDirection.FRONT;
-        this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
-        VuforiaTrackables relicTrackables = this.vuforia.loadTrackablesFromAsset("RelicVuMark");
-        VuforiaTrackable relicTemplate = relicTrackables.get(0);
-        relicTemplate.setName("relicVuMarkTemplate");
-        telemetry.update();
-        waitForStart();
-        relicTrackables.activate();
-
         //values used for vuforia navigation
         float mmPerInch        = 25.4f;
         float mmBotWidth       = 18 * mmPerInch;            // ... or whatever is right for your robot
         float mmFTCFieldWidth  = (12*12 - 2) * mmPerInch;   // the FTC field is ~11'10" center-to-center of the glass panels
 
-
-
-        //0,0,0 is front left bottom corner. phone is a matrix of where the phone is relative to the robot
-        OpenGLMatrix camera2bot = OpenGLMatrix
-                .translation(3.75f*mmPerInch, 5.37f*mmPerInch, 6.248f*mmPerInch) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
-                .multiplied(Orientation.getRotationMatrix(
-                        AxesReference.EXTRINSIC, AxesOrder.XZY,
-                        AngleUnit.DEGREES, 0, 0, 0));
-        //theoretically should have phone upright, screen facing out towards the right
-        //RobotLog.ii(TAG, "phone=%s", format(phoneLocationOnRobot));
-
-        //trans: bottom left of field is 0,0. red bottom picture is (0,34,0) in inches. blue bottom (144,34,0) red top (0,106,0) blue top (144,106,0)
-        //rot: (0,0,90) (0,0,-90), (0,0,0), (0,0,0)
-        //this program is testing red top
-        OpenGLMatrix pic2field = OpenGLMatrix
-                .translation(0,106.0f*mmPerInch,0) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
-                .multiplied(Orientation.getRotationMatrix(
-                        AxesReference.EXTRINSIC, AxesOrder.XZY,
-                        AngleUnit.DEGREES, 0, 0, 90));
-
         //actual actions performed in the autonomous
         waitForStart();
         while (opModeIsActive()) {
 
-            //gemBar
-
-            //gyro alignment
-
-            //loops until the camera can find the vuforia image
-            OpenGLMatrix camera2pic = null;
-            RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.UNKNOWN;
-            while(vuMark == RelicRecoveryVuMark.UNKNOWN) {
-                vuMark = RelicRecoveryVuMark.from(relicTemplate);
-                if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
-                    telemetry.addData("VuMark", "%s visible", vuMark);
-                    camera2pic = ((VuforiaTrackableDefaultListener) relicTemplate.getListener()).getPose(); //creates an openGLMatrix for the position of the picture relative to the phone
-                } else {
-                    telemetry.addData("VuMark", "not visible");
-                }
-            }
-
-            //pic2phone.translation(0.0f, 0.0f, -90.0f);
-            camera2pic.rotated(AngleUnit.DEGREES, -90, 0, 1, 0); //puts the picture on the right axis
-
-            //finds bot 2 pic and bot 2 field using the measurements from camera 2 pic
-            OpenGLMatrix bot2pic = camera2pic.multiplied(camera2bot);
-            OpenGLMatrix bot2field = new OpenGLMatrix();
-            bot2field = bot2pic.multiplied(pic2field);
-            telemetry.addData("c2p", format(camera2pic));
-            telemetry.addData("b2p", format(bot2pic));
-            telemetry.addData("b2f", format(bot2field));
-
-            //setting the movement vectors for getting to the right column
-            if (vuMark == RelicRecoveryVuMark.LEFT) {
-                VectorF move = getVector(bot2field, 609.6f, 1939.798f);
-            }
-            if (vuMark == RelicRecoveryVuMark.CENTER) {
-                VectorF move = getVector(bot2field, 609.6f, 2133.6f);
-            }
-            if (vuMark == RelicRecoveryVuMark.RIGHT) {
-                VectorF move = getVector(bot2field, 609.6f, 2327.402f);
-            }
-
-
-//                    Orientation rot = Orientation.getOrientation(pose, AxesReference.EXTRINSIC, AxesOrder.XYZ, AngleUnit.DEGREES);
-//                    double tX = trans.get(0);
-//                    double tY = trans.get(1);
-//                    double tZ = trans.get(2);
-//                    double rX = rot.firstAngle;
-//                    double rY = rot.secondAngle;
-//                    double rZ = rot.thirdAngle;
-
-
-                    //offset picture from phone
-                    //we need robot to picture
-
-            telemetry.update();
 
             wheelFL.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
             wheelFR.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
@@ -190,7 +100,7 @@ public class testVuAuto extends LinearOpMode{
 
             // Step through each leg of the path,
             // Note: Reverse movement is obtained by setting a negative distance (not speed)
-            encoderDrive(0.5,48,5.0);  // S1: Forward 47 Inches with 5 Sec timeout
+            encoderDrive(0.3,6,5.0);  // S1: Forward 47 Inches with 5 Sec timeout
         }
     }
     String format(OpenGLMatrix transformationMatrix) {
@@ -264,13 +174,6 @@ public class testVuAuto extends LinearOpMode{
 
             //  sleep(250);   // optional pause after each move
         }
-    }
-
-    public VectorF getVector(OpenGLMatrix bot, float desX, float desY)
-    {
-        VectorF amHere = bot.getTranslation();
-        VectorF goThere = new VectorF(0, desX ,desY);
-        return goThere.subtracted(amHere);
     }
 
 }
