@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.ColorSensor;
@@ -26,6 +27,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
 
 //red easy
 @Autonomous(name="workingBlue", group ="woRMholeConfig")
+@Disabled
 public class autoMark5 extends LinearOpMode {
 
 

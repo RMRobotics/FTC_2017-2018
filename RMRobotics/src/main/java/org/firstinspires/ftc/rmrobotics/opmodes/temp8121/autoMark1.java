@@ -197,6 +197,7 @@ public class autoMark1 extends LinearOpMode {
                 if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
                     telemetry.addData("VuMark", "%s visible", vuMark);
                     telemetry.update();
+                    parameters = new VuforiaLocalizer.Parameters();
                 }
             }
 
