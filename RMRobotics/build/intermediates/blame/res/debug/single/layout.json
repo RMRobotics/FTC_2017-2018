@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\port_attached_row.xml",
-        "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\port_attached_row.xml"
-    },
-    {
         "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ftc_lynx_fw_update.xml",
         "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\activity_ftc_lynx_fw_update.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\port_attached_row.xml",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\port_attached_row.xml"
     },
     {
         "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\analog_outputs.xml",
@@ -32,16 +32,16 @@
         "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\lynx_module.xml"
     },
     {
-        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\button_list.xml",
-        "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\button_list.xml"
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\red_line.xml",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\red_line.xml"
     },
     {
         "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\banner_parent.xml",
         "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\banner_parent.xml"
     },
     {
-        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\red_line.xml",
-        "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\red_line.xml"
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\button_list.xml",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\button_list.xml"
     },
     {
         "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\file_info.xml",
@@ -56,12 +56,12 @@
         "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\activity_ftc_wifi_remembered_groups.xml"
     },
     {
-        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\analog_inputs.xml",
-        "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\analog_inputs.xml"
-    },
-    {
         "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\info_button.xml",
         "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\info_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\analog_inputs.xml",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\analog_inputs.xml"
     },
     {
         "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\motor_controller_banner.xml",
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\motor_list.xml"
     },
     {
-        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\activity_blocks.xml",
-        "source": "C:\\Users\\Kameron\\.android\\build-cache\\f7987bce99f5501a217085986254d443a86c533c\\output\\res\\layout\\activity_blocks.xml"
-    },
-    {
         "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\motor.xml",
         "source": "C:\\Users\\Kameron\\.android\\build-cache\\dd0436e82894cdcda63e0ac15c37d1386c4f67cd\\output\\res\\layout\\motor.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\activity_blocks.xml",
+        "source": "C:\\Users\\Kameron\\.android\\build-cache\\f7987bce99f5501a217085986254d443a86c533c\\output\\res\\layout\\activity_blocks.xml"
     },
     {
         "merged": "C:\\Users\\Kameron\\Desktop\\Robotics\\FTC_2017-2018\\RMRobotics\\build\\intermediates\\res\\merged\\debug\\layout\\device_interface_module.xml",

@@ -22,12 +22,21 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackable;
 import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackableDefaultListener;
 import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
 
+import android.util.Log;
+import com.kauailabs.navx.ftc.*;
+import java.text.DecimalFormat;
+
 /**
  * Created by rotom on 10/17/2017.
  */
 
 @Autonomous(name="testVuAuto", group ="woRMholeConfig")
 public class testVuAuto extends LinearOpMode{
+
+    //initialization of navx stuff
+    private final int NAVX_DIM_I2C_PORT = 0; //port on the dim
+    private AHRS navx_device;
+    private navXPIDController yawPIDController;
 
     //hardware declarations
     private ColorSensor colorSensor;
@@ -271,6 +280,90 @@ public class testVuAuto extends LinearOpMode{
         VectorF amHere = bot.getTranslation();
         VectorF goThere = new VectorF(0, desX ,desY);
         return goThere.subtracted(amHere);
+    }
+
+    public void rotateToAngle (double angle)  {
+
+        ElapsedTime runtime = new ElapsedTime();
+        double TARGET_ANGLE_DEGREES = angle;
+        double TOLERANCE_DEGREES = 2.0;
+        double MIN_MOTOR_OUTPUT_VALUE = -1.0;
+        double MAX_MOTOR_OUTPUT_VALUE = 1.0;
+        double YAW_PID_P = 0.005;
+        double YAW_PID_I = 0.0;
+        double YAW_PID_D = 0.0;
+
+
+        navx_device = AHRS.getInstance(hardwareMap.deviceInterfaceModule.get("dim"),
+                NAVX_DIM_I2C_PORT,
+                AHRS.DeviceDataType.kProcessedData);
+
+        /* If possible, use encoders when driving, as it results in more */
+        /* predicatable drive system response.                           */
+
+
+        /* Create a PID Controller which uses the Yaw Angle as input. */
+        yawPIDController = new navXPIDController( navx_device,
+                navXPIDController.navXTimestampedDataSource.YAW);
+
+        /* Configure the PID controller */
+        yawPIDController.setSetpoint(TARGET_ANGLE_DEGREES);
+        yawPIDController.setContinuous(true);
+        yawPIDController.setOutputRange(MIN_MOTOR_OUTPUT_VALUE, MAX_MOTOR_OUTPUT_VALUE);
+        yawPIDController.setTolerance(navXPIDController.ToleranceType.ABSOLUTE, TOLERANCE_DEGREES);
+        yawPIDController.setPID(YAW_PID_P, YAW_PID_I, YAW_PID_D);
+        yawPIDController.enable(true);
+
+
+
+    /* Wait for new Yaw PID output values, then update the motors
+       with the new PID value with each new output value.
+     */
+
+
+
+        double TOTAL_RUN_TIME_SECONDS = 30.0;
+        int timeout = 1000;
+        navXPIDController.PIDResult yawPIDResult = new navXPIDController.PIDResult();
+
+        while ( runtime.time() < TOTAL_RUN_TIME_SECONDS ) {
+            try {
+                if ( yawPIDController.waitForNewUpdate(yawPIDResult, timeout)) {
+                    if ( yawPIDResult.isOnTarget() ) {
+                        wheelFL.setPower(0);
+                        wheelFL.setPower(0);
+                        wheelFL.setPower(0);
+                        wheelFL.setPower(0);
+                    } else {
+                        double output = yawPIDResult.getOutput();
+                        if ( output < 0 ) {
+                    /* Rotate Left */
+                            wheelFL.setPower(-output);
+                            wheelFR.setPower(output);
+                            wheelBL.setPower(-output);
+                            wheelBR.setPower(output);
+                        } else {
+                    /* Rotate Right */
+                            wheelFL.setPower(output);
+                            wheelFR.setPower(-output);
+                            wheelBL.setPower(output);
+                            wheelBR.setPower(-output);
+                        }
+                    }
+                }
+                else {
+                  /* A timeout occurred */
+                    Log.w("navXRotateToAnglePIDOp", "Yaw PID waitForNewUpdate() TIMEOUT.");
+                }
+            } catch (InterruptedException e)
+            {
+                telemetry.addData("Interrupt boi","PID trolling");
+            }
+
+
+
+        }
+
     }
 
 }
