@@ -26,7 +26,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by rotom on 10/17/2017.
  */
 
-@Autonomous(name="testEncoders", group ="woRMholeConfig")
+@Autonomous(name="testEncoders", group ="encoderFig")
 public class testEncoders extends LinearOpMode{
 
     //hardware declarations
@@ -35,15 +35,6 @@ public class testEncoders extends LinearOpMode{
     private DcMotor wheelFR;
     private DcMotor wheelBL;
     private DcMotor wheelBR;
-    private DcMotor lift;
-    //    private DcMotor arm;
-    private Servo clawBL;
-    private Servo clawBR;
-    private Servo clawTL;
-    private Servo clawTR;
-    //    private Servo armT;
-    private Servo gemBar;
-    //    private CRServo armB;
 
     //Set up for encoders
     static final double  tickRev = 1120 ;    // The number of ticks or counts in per revolution in our neverest 40 motors
@@ -57,17 +48,10 @@ public class testEncoders extends LinearOpMode{
     @Override public void runOpMode() {
 
         //hardware map in wormhole config in the UTIL folder
-        colorSensor = hardwareMap.get(ColorSensor.class, "sensor_color");
         wheelFL = hardwareMap.dcMotor.get("wheelFL");
         wheelFR = hardwareMap.dcMotor.get("wheelFR");
         wheelBL = hardwareMap.dcMotor.get("wheelBL");
         wheelBR = hardwareMap.dcMotor.get("wheelBR");
-        lift = hardwareMap.dcMotor.get("lift");
-        clawBL = hardwareMap.servo.get("clawBL");
-        clawBR = hardwareMap.servo.get("clawBR");
-        clawTL = hardwareMap.servo.get("clawTL");
-        clawTR = hardwareMap.servo.get("clawTR");
-        gemBar = hardwareMap.servo.get("gemBar");
 
         //encoder setup and reset
         telemetry.addData("Status", "Resetting Encoders");
