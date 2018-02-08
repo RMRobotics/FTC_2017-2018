@@ -11,7 +11,6 @@ MERGED from [:FtcCommon-release:] C:\Users\Kameron\.gradle\caches\transforms-1\f
 MERGED from [:Analytics-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\Analytics-release.aar\acce3cdfae325a5732583feb1dd3cf4a\AndroidManifest.xml:2:1-26:12
 MERGED from [:WirelessP2p-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\WirelessP2p-release.aar\ab2902946da626a1b19289d5ff851315\AndroidManifest.xml:2:1-11:12
 MERGED from [:navx_ftc-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\navx_ftc-release.aar\91d291cc8afa52a9d095acf214d90af0\AndroidManifest.xml:2:1-16:12
-MERGED from [:navx_ftc-debug:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\navx_ftc-debug.aar\a33e2628bacf95fbc34004e6442cd402\AndroidManifest.xml:2:1-16:12
 MERGED from [:Inspection-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\Inspection-release.aar\cd0c700cc7cf07df6f3d99d574857f7d\AndroidManifest.xml:2:1-32:12
 MERGED from [:Blocks-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\Blocks-release.aar\4fe71b4a276d043d06ef4cf344e21ed3\AndroidManifest.xml:2:1-41:12
 INJECTED from C:\Users\Kameron\Desktop\Robotics\FTC_2017-2018\RMRobotics\src\main\AndroidManifest.xml:8:1-12:12
@@ -43,8 +42,6 @@ MERGED from [:Analytics-release:] C:\Users\Kameron\.gradle\caches\transforms-1\f
 MERGED from [:Analytics-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\Analytics-release.aar\acce3cdfae325a5732583feb1dd3cf4a\AndroidManifest.xml:19:5-24:19
 MERGED from [:navx_ftc-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\navx_ftc-release.aar\91d291cc8afa52a9d095acf214d90af0\AndroidManifest.xml:11:5-14:19
 MERGED from [:navx_ftc-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\navx_ftc-release.aar\91d291cc8afa52a9d095acf214d90af0\AndroidManifest.xml:11:5-14:19
-MERGED from [:navx_ftc-debug:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\navx_ftc-debug.aar\a33e2628bacf95fbc34004e6442cd402\AndroidManifest.xml:11:5-14:19
-MERGED from [:navx_ftc-debug:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\navx_ftc-debug.aar\a33e2628bacf95fbc34004e6442cd402\AndroidManifest.xml:11:5-14:19
 MERGED from [:Inspection-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\Inspection-release.aar\cd0c700cc7cf07df6f3d99d574857f7d\AndroidManifest.xml:19:5-30:19
 MERGED from [:Inspection-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\Inspection-release.aar\cd0c700cc7cf07df6f3d99d574857f7d\AndroidManifest.xml:19:5-30:19
 MERGED from [:Blocks-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\Blocks-release.aar\4fe71b4a276d043d06ef4cf344e21ed3\AndroidManifest.xml:18:5-39:19
@@ -81,8 +78,6 @@ MERGED from [:WirelessP2p-release:] C:\Users\Kameron\.gradle\caches\transforms-1
 MERGED from [:WirelessP2p-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\WirelessP2p-release.aar\ab2902946da626a1b19289d5ff851315\AndroidManifest.xml:5:5-7:41
 MERGED from [:navx_ftc-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\navx_ftc-release.aar\91d291cc8afa52a9d095acf214d90af0\AndroidManifest.xml:7:5-9:41
 MERGED from [:navx_ftc-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\navx_ftc-release.aar\91d291cc8afa52a9d095acf214d90af0\AndroidManifest.xml:7:5-9:41
-MERGED from [:navx_ftc-debug:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\navx_ftc-debug.aar\a33e2628bacf95fbc34004e6442cd402\AndroidManifest.xml:7:5-9:41
-MERGED from [:navx_ftc-debug:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\navx_ftc-debug.aar\a33e2628bacf95fbc34004e6442cd402\AndroidManifest.xml:7:5-9:41
 MERGED from [:Inspection-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\Inspection-release.aar\cd0c700cc7cf07df6f3d99d574857f7d\AndroidManifest.xml:7:5-9:41
 MERGED from [:Inspection-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\Inspection-release.aar\cd0c700cc7cf07df6f3d99d574857f7d\AndroidManifest.xml:7:5-9:41
 MERGED from [:Blocks-release:] C:\Users\Kameron\.gradle\caches\transforms-1\files-1.1\Blocks-release.aar\4fe71b4a276d043d06ef4cf344e21ed3\AndroidManifest.xml:7:5-9:41

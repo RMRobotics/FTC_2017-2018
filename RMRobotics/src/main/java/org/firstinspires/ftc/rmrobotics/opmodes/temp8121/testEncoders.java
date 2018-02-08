@@ -2,8 +2,8 @@ package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.RobotLog;
@@ -30,7 +30,6 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
 public class testEncoders extends LinearOpMode{
 
     //hardware declarations
-    private ColorSensor colorSensor;
     private DcMotor wheelFL;
     private DcMotor wheelFR;
     private DcMotor wheelBL;
@@ -52,6 +51,8 @@ public class testEncoders extends LinearOpMode{
         wheelFR = hardwareMap.dcMotor.get("wheelFR");
         wheelBL = hardwareMap.dcMotor.get("wheelBL");
         wheelBR = hardwareMap.dcMotor.get("wheelBR");
+        wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
+        wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
 
         //encoder setup and reset
         telemetry.addData("Status", "Resetting Encoders");
@@ -77,9 +78,9 @@ public class testEncoders extends LinearOpMode{
             wheelBR.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
             // Send telemetry message to indicate successful Encoder reset
-            telemetry.addData("Path0",  "Starting at %7d :%7d",
-                    wheelFL.getCurrentPosition());
-            telemetry.update();
+            //telemetry.addData("Path0",  "Starting at %7d :%7d",
+            //        wheelFL.getCurrentPosition());
+            //telemetry.update();
 
 
             // Step through each leg of the path,
