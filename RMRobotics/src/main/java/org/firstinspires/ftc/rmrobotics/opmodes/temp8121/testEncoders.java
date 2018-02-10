@@ -42,6 +42,7 @@ public class testEncoders extends LinearOpMode{
     static final double  tickMM  = (tickRev * invGearRatio) /
             (diameterBoi * 3.1415);
     private ElapsedTime runtime = new ElapsedTime();
+    private ElapsedTime time = new ElapsedTime();
 
 
     @Override public void runOpMode() {
@@ -53,6 +54,18 @@ public class testEncoders extends LinearOpMode{
         wheelBR = hardwareMap.dcMotor.get("wheelBR");
         wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
         wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
+
+        wheelFL.setPower(0.5);
+        wheelBL.setPower(0.5);
+        wheelFR.setPower(0.5);
+        wheelBR.setPower(0.5);
+
+        holdUp(0.5);
+
+        wheelFL.setPower(0);
+        wheelBL.setPower(0);
+        wheelFR.setPower(0);
+        wheelBR.setPower(0);
 
         //encoder setup and reset
         telemetry.addData("Status", "Resetting Encoders");
@@ -68,6 +81,9 @@ public class testEncoders extends LinearOpMode{
         float mmFTCFieldWidth  = (12*12 - 2) * mmPerInch;   // the FTC field is ~11'10" center-to-center of the glass panels
 
         //actual actions performed in the autonomous
+        telemetry.addData("Status", "Checkpoint 1");
+        telemetry.update();
+
         waitForStart();
         while (opModeIsActive()) {
 
@@ -86,10 +102,17 @@ public class testEncoders extends LinearOpMode{
             // Step through each leg of the path,
             // Note: Reverse movement is obtained by setting a negative distance (not speed)
             encoderDrive(0.3,6,5.0);  // S1: Forward 47 Inches with 5 Sec timeout
+            stop();
         }
     }
     String format(OpenGLMatrix transformationMatrix) {
         return (transformationMatrix != null) ? transformationMatrix.formatAsTransform() : "null";
+    }
+
+    public void holdUp(double num)
+    {
+        time.reset();
+        while (time.seconds() < num) {}
     }
 
     /*
@@ -108,18 +131,21 @@ public class testEncoders extends LinearOpMode{
         // Ensure that the opmode is still active
         if (opModeIsActive()) {
 
-            // Determine new target position, and pass to motor controller
-            target = wheelFL.getCurrentPosition() + (int)(dist * tickMM);
-            wheelFL.setTargetPosition(target);
-            wheelBL.setTargetPosition(target);
-            wheelFR.setTargetPosition(target);
-            wheelBR.setTargetPosition(target);
-
             // Turn On RUN_TO_POSITION
             wheelFL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
             wheelFR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
             wheelBL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
             wheelBR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+
+            // Determine new target position, and pass to motor controller
+            target = wheelFL.getCurrentPosition() + (int)(dist * tickMM);
+            wheelFL.setTargetPosition(target);
+            target = wheelBL.getCurrentPosition() + (int)(dist * tickMM);
+            wheelBL.setTargetPosition(target);
+            target = wheelFR.getCurrentPosition() + (int)(dist * tickMM);
+            wheelFR.setTargetPosition(target);
+            target = wheelBR.getCurrentPosition() + (int)(dist * tickMM);
+            wheelBR.setTargetPosition(target);
 
             // reset the timeout time and start motion.
             runtime.reset();
@@ -135,21 +161,27 @@ public class testEncoders extends LinearOpMode{
             // always end the motion as soon as possible.
             // However, if you require that BOTH motors have finished their moves before the robot continues
             // onto the next step, use (isBusy() || isBusy()) in the loop test.
+            telemetry.addData("Checkpoint 1.5",runtime.seconds());
+            telemetry.update();
             while (opModeIsActive() &&
                     (runtime.seconds() < timeoutS) &&
-                    (wheelFL.isBusy() && wheelFR.isBusy() && wheelBL.isBusy() && wheelBR.isBusy())) {
+                    (wheelFL.isBusy() || wheelFR.isBusy() || wheelBL.isBusy() || wheelBR.isBusy())) {
 
                 // Display it for the driver.
                 telemetry.addData("Path1",  "Running to ", target);
                 telemetry.addData("Path2",  "Running at ", wheelFL.getCurrentPosition());
+                telemetry.addData("Checkpoint 2",runtime.seconds());
                 telemetry.update();
             }
 
             // Stop all motion;
             wheelFL.setPower(0);
-            wheelFL.setPower(0);
-            wheelFL.setPower(0);
-            wheelFL.setPower(0);
+            wheelFR.setPower(0);
+            wheelBL.setPower(0);
+            wheelBR.setPower(0);
+
+            telemetry.addData("Status","Checkpoint 3");
+            telemetry.update();
 
             // Turn off RUN_TO_POSITION
             wheelFL.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
