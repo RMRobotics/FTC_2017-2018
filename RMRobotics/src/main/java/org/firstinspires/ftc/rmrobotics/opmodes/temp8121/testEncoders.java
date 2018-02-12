@@ -2,8 +2,8 @@ package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.RobotLog;
@@ -26,54 +26,40 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by rotom on 10/17/2017.
  */
 
-@Autonomous(name="testEncoders", group ="woRMholeConfig")
+@Autonomous(name="testEncoders", group ="encoderFig")
 public class testEncoders extends LinearOpMode{
 
     //hardware declarations
-    private ColorSensor colorSensor;
     private DcMotor wheelFL;
     private DcMotor wheelFR;
     private DcMotor wheelBL;
     private DcMotor wheelBR;
-    private DcMotor lift;
-    //    private DcMotor arm;
-    private Servo clawBL;
-    private Servo clawBR;
-    private Servo clawTL;
-    private Servo clawTR;
-    //    private Servo armT;
-    private Servo gemBar;
-    //    private CRServo armB;
 
     //Set up for encoders
     static final double  tickRev = 1120 ;    // The number of ticks or counts in per revolution in our neverest 40 motors
     static final double  invGearRatio = 0.5 ;     // This is < 1.0 if geared UP, our drive train is geared 2:1
-    static final double  diameterBoi = 101.6 ;     // The circumference of our mecanums in millimeters
+    static final double  diameterBoi = 101.6;     // The circumference of our mecanums in millimeters 101.6
     static final double  tickMM  = (tickRev * invGearRatio) /
             (diameterBoi * 3.1415);
     private ElapsedTime runtime = new ElapsedTime();
+    private ElapsedTime time = new ElapsedTime();
 
 
     @Override public void runOpMode() {
 
         //hardware map in wormhole config in the UTIL folder
-        colorSensor = hardwareMap.get(ColorSensor.class, "sensor_color");
         wheelFL = hardwareMap.dcMotor.get("wheelFL");
         wheelFR = hardwareMap.dcMotor.get("wheelFR");
         wheelBL = hardwareMap.dcMotor.get("wheelBL");
         wheelBR = hardwareMap.dcMotor.get("wheelBR");
-        lift = hardwareMap.dcMotor.get("lift");
-        clawBL = hardwareMap.servo.get("clawBL");
-        clawBR = hardwareMap.servo.get("clawBR");
-        clawTL = hardwareMap.servo.get("clawTL");
-        clawTR = hardwareMap.servo.get("clawTR");
-        gemBar = hardwareMap.servo.get("gemBar");
+        wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
+        wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
 
         //encoder setup and reset
         telemetry.addData("Status", "Resetting Encoders");
         telemetry.update();
         wheelBL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        wheelBL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        wheelBR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         wheelFL.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         wheelFR.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
 
@@ -83,6 +69,9 @@ public class testEncoders extends LinearOpMode{
         float mmFTCFieldWidth  = (12*12 - 2) * mmPerInch;   // the FTC field is ~11'10" center-to-center of the glass panels
 
         //actual actions performed in the autonomous
+        telemetry.addData("Status", "Checkpoint 1");
+        telemetry.update();
+
         waitForStart();
         while (opModeIsActive()) {
 
@@ -93,18 +82,25 @@ public class testEncoders extends LinearOpMode{
             wheelBR.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
 
             // Send telemetry message to indicate successful Encoder reset
-            telemetry.addData("Path0",  "Starting at %7d :%7d",
-                    wheelFL.getCurrentPosition());
-            telemetry.update();
+            //telemetry.addData("Path0",  "Starting at %7d :%7d",
+            //        wheelFL.getCurrentPosition());
+            //telemetry.update();
 
 
             // Step through each leg of the path,
             // Note: Reverse movement is obtained by setting a negative distance (not speed)
-            encoderDrive(0.3,6,5.0);  // S1: Forward 47 Inches with 5 Sec timeout
+            encoderDrive(0.3,24 * mmPerInch,10);  // S1: Forward 47 Inches with 5 Sec timeout
+            stop();
         }
     }
     String format(OpenGLMatrix transformationMatrix) {
         return (transformationMatrix != null) ? transformationMatrix.formatAsTransform() : "null";
+    }
+
+    public void holdUp(double num)
+    {
+        time.reset();
+        while (time.seconds() < num) {}
     }
 
     /*
@@ -123,18 +119,18 @@ public class testEncoders extends LinearOpMode{
         // Ensure that the opmode is still active
         if (opModeIsActive()) {
 
+            // Turn On RUN_TO_POSITION
+            wheelFL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+            wheelFR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+            wheelBL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+            wheelBR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+
             // Determine new target position, and pass to motor controller
             target = wheelFL.getCurrentPosition() + (int)(dist * tickMM);
             wheelFL.setTargetPosition(target);
             wheelBL.setTargetPosition(target);
             wheelFR.setTargetPosition(target);
             wheelBR.setTargetPosition(target);
-
-            // Turn On RUN_TO_POSITION
-            wheelFL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            wheelFR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            wheelBL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            wheelBR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
 
             // reset the timeout time and start motion.
             runtime.reset();
@@ -150,21 +146,30 @@ public class testEncoders extends LinearOpMode{
             // always end the motion as soon as possible.
             // However, if you require that BOTH motors have finished their moves before the robot continues
             // onto the next step, use (isBusy() || isBusy()) in the loop test.
+            telemetry.addData("Checkpoint 1.5",runtime.seconds());
+            telemetry.update();
             while (opModeIsActive() &&
                     (runtime.seconds() < timeoutS) &&
                     (wheelFL.isBusy() && wheelFR.isBusy() && wheelBL.isBusy() && wheelBR.isBusy())) {
 
                 // Display it for the driver.
-                telemetry.addData("Path1",  "Running to ", target);
-                telemetry.addData("Path2",  "Running at ", wheelFL.getCurrentPosition());
+                telemetry.addData("Running to ", target);
+                telemetry.addData("Running at ", wheelFL.getCurrentPosition());
+                telemetry.addData("Running at ", wheelBL.getCurrentPosition());
+                telemetry.addData("Running at ", wheelFR.getCurrentPosition());
+                telemetry.addData("Running at ", wheelBR.getCurrentPosition());
+                telemetry.addData("Checkpoint 2",runtime.seconds());
                 telemetry.update();
             }
 
             // Stop all motion;
             wheelFL.setPower(0);
-            wheelFL.setPower(0);
-            wheelFL.setPower(0);
-            wheelFL.setPower(0);
+            wheelFR.setPower(0);
+            wheelBL.setPower(0);
+            wheelBR.setPower(0);
+
+            telemetry.addData("Status","Checkpoint 3");
+            telemetry.update();
 
             // Turn off RUN_TO_POSITION
             wheelFL.setMode(DcMotor.RunMode.RUN_USING_ENCODER);

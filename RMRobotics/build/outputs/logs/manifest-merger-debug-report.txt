@@ -10,6 +10,7 @@ MERGED from [:Hardware-release:] C:\Users\rotom\.gradle\caches\transforms-1\file
 MERGED from [:FtcCommon-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\FtcCommon-release.aar\815b0a73c872853ac0006329bc1b0835\AndroidManifest.xml:3:1-224:12
 MERGED from [:Analytics-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Analytics-release.aar\bc81b73703fd13e45224868a17349c28\AndroidManifest.xml:2:1-26:12
 MERGED from [:WirelessP2p-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\WirelessP2p-release.aar\a405c0dbab391ce55d792b1d7f0339ff\AndroidManifest.xml:2:1-11:12
+MERGED from [:navx_ftc-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\navx_ftc-release.aar\7e600931ec8d9deb61284bc7caf65f6a\AndroidManifest.xml:2:1-16:12
 MERGED from [:Inspection-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Inspection-release.aar\03ae4383d655a604a1c60b1ffdbce405\AndroidManifest.xml:2:1-32:12
 MERGED from [:Blocks-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Blocks-release.aar\daa8d79d627a2a032706562a895e6ecc\AndroidManifest.xml:2:1-41:12
 INJECTED from C:\Users\rotom\OneDrive\Documents\Robotics\FTC_2017-2018\RMRobotics\src\main\AndroidManifest.xml:8:1-12:12
@@ -39,6 +40,8 @@ MERGED from [:FtcCommon-release:] C:\Users\rotom\.gradle\caches\transforms-1\fil
 MERGED from [:FtcCommon-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\FtcCommon-release.aar\815b0a73c872853ac0006329bc1b0835\AndroidManifest.xml:22:5-222:19
 MERGED from [:Analytics-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Analytics-release.aar\bc81b73703fd13e45224868a17349c28\AndroidManifest.xml:19:5-24:19
 MERGED from [:Analytics-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Analytics-release.aar\bc81b73703fd13e45224868a17349c28\AndroidManifest.xml:19:5-24:19
+MERGED from [:navx_ftc-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\navx_ftc-release.aar\7e600931ec8d9deb61284bc7caf65f6a\AndroidManifest.xml:11:5-14:19
+MERGED from [:navx_ftc-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\navx_ftc-release.aar\7e600931ec8d9deb61284bc7caf65f6a\AndroidManifest.xml:11:5-14:19
 MERGED from [:Inspection-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Inspection-release.aar\03ae4383d655a604a1c60b1ffdbce405\AndroidManifest.xml:19:5-30:19
 MERGED from [:Inspection-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Inspection-release.aar\03ae4383d655a604a1c60b1ffdbce405\AndroidManifest.xml:19:5-30:19
 MERGED from [:Blocks-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Blocks-release.aar\daa8d79d627a2a032706562a895e6ecc\AndroidManifest.xml:18:5-39:19
@@ -73,6 +76,8 @@ MERGED from [:Analytics-release:] C:\Users\rotom\.gradle\caches\transforms-1\fil
 MERGED from [:Analytics-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Analytics-release.aar\bc81b73703fd13e45224868a17349c28\AndroidManifest.xml:5:5-7:41
 MERGED from [:WirelessP2p-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\WirelessP2p-release.aar\a405c0dbab391ce55d792b1d7f0339ff\AndroidManifest.xml:5:5-7:41
 MERGED from [:WirelessP2p-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\WirelessP2p-release.aar\a405c0dbab391ce55d792b1d7f0339ff\AndroidManifest.xml:5:5-7:41
+MERGED from [:navx_ftc-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\navx_ftc-release.aar\7e600931ec8d9deb61284bc7caf65f6a\AndroidManifest.xml:7:5-9:41
+MERGED from [:navx_ftc-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\navx_ftc-release.aar\7e600931ec8d9deb61284bc7caf65f6a\AndroidManifest.xml:7:5-9:41
 MERGED from [:Inspection-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Inspection-release.aar\03ae4383d655a604a1c60b1ffdbce405\AndroidManifest.xml:7:5-9:41
 MERGED from [:Inspection-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Inspection-release.aar\03ae4383d655a604a1c60b1ffdbce405\AndroidManifest.xml:7:5-9:41
 MERGED from [:Blocks-release:] C:\Users\rotom\.gradle\caches\transforms-1\files-1.1\Blocks-release.aar\daa8d79d627a2a032706562a895e6ecc\AndroidManifest.xml:7:5-9:41
