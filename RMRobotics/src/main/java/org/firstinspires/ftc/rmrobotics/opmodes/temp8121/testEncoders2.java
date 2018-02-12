@@ -26,8 +26,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by rotom on 10/17/2017.
  */
 
-@Autonomous(name="testEncoders", group ="encoderFig")
-public class testEncoders extends LinearOpMode{
+@Autonomous(name="testEncoders2", group ="encoderFig")
+public class testEncoders2 extends LinearOpMode{
 
     //hardware declarations
     private DcMotor wheelFL;
@@ -89,7 +89,7 @@ public class testEncoders extends LinearOpMode{
 
             // Step through each leg of the path,
             // Note: Reverse movement is obtained by setting a negative distance (not speed)
-            encoderDrive(0.3,24 * mmPerInch,10);  // S1: Forward 47 Inches with 5 Sec timeout
+            encoderDrive(0.3, 0, 0, 24 * mmPerInch,10);  // S1: Forward 47 Inches with 5 Sec timeout
             stop();
         }
     }
@@ -111,7 +111,9 @@ public class testEncoders extends LinearOpMode{
      *  2) Move runs out of time
      *  3) Driver stops the opmode running.
      */
-    public void encoderDrive(double speed,
+    public void encoderDrive(double forward,
+                             double strafe,
+                             double rotate,
                              double dist,
                              double timeoutS) {
         int target;
@@ -135,10 +137,12 @@ public class testEncoders extends LinearOpMode{
             // reset the timeout time and start motion.
             runtime.reset();
 
-            wheelFL.setPower(Math.abs(speed));
-            wheelFR.setPower(Math.abs(speed));
-            wheelBL.setPower(Math.abs(speed));
-            wheelBR.setPower(Math.abs(speed));
+            double max = 1;
+            forward = Math.abs(forward);
+            wheelFL.setPower((forward + strafe + rotate) / max);
+            wheelFR.setPower((forward + strafe - rotate) / max);
+            wheelBL.setPower((forward - strafe + rotate) / max);
+            wheelBR.setPower((forward - strafe - rotate) / max);
 
             // keep looping while we are still active, and there is time left, and both motors are running.
             // Note: We use (isBusy() && isBusy()) in the loop test, which means that when EITHER motor hits
