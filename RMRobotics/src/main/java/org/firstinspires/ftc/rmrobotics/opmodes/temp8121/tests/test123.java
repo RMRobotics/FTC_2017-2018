@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
+package org.firstinspires.ftc.rmrobotics.opmodes.temp8121.tests;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -120,6 +120,7 @@ public class test123 extends LinearOpMode {
                     wheelFL.setPower(0);
                     wheelFL.setPower(0);
                     wheelFL.setPower(0);
+                    telemetry.addData("Config on point yeet", "");
                 } else {
                     double output = yawPIDResult.getOutput();
                     if ( output < 0 ) {
@@ -128,12 +129,14 @@ public class test123 extends LinearOpMode {
                         wheelFR.setPower(output);
                         wheelBL.setPower(-output);
                         wheelBR.setPower(output);
+                        telemetry.addData("configuring L:", output);
                     } else {
                 /* Rotate Right */
                         wheelFL.setPower(output);
                         wheelFR.setPower(-output);
                         wheelBL.setPower(output);
                         wheelBR.setPower(-output);
+                        telemetry.addData("configuring R:", output);
                     }
                 }
             }
@@ -189,6 +192,8 @@ public class test123 extends LinearOpMode {
 
         /* Drive straight forward at 1/2 of full drive speed */
         double drive_speed = power;
+        double strafe = 0;
+        double max = 1;
 
         while ( runtime.seconds() < TOTAL_RUN_TIME_SECONDS ) {
             if ( yawPIDController.waitForNewUpdate(yawPIDResult, DEVICE_TIMEOUT_MS) ) {
@@ -201,16 +206,18 @@ public class test123 extends LinearOpMode {
                     double output = yawPIDResult.getOutput();
                     if ( output < 0 ) {
                         /* Rotate Left */
-                        wheelFL.setPower(drive_speed - output);
-                        wheelBL.setPower(drive_speed - output);
-                        wheelBR.setPower(drive_speed + output);
-                        wheelFR.setPower(drive_speed + output);
+                        wheelFL.setPower((drive_speed + strafe + output) / max);
+                        wheelFR.setPower((drive_speed + strafe - output) / max);
+                        wheelBL.setPower((drive_speed - strafe + output) / max);
+                        wheelBR.setPower((drive_speed - strafe - output) / max);
+                        telemetry.addData("turning L", output);
                     } else {
                         /* Rotate Right */
-                        wheelFL.setPower(drive_speed + output);
-                        wheelBL.setPower(drive_speed + output);
-                        wheelBR.setPower(drive_speed - output);
-                        wheelFR.setPower(drive_speed - output);
+                        wheelFL.setPower((drive_speed + strafe - output) / max);
+                        wheelFR.setPower((drive_speed + strafe + output) / max);
+                        wheelBL.setPower((drive_speed - strafe - output) / max);
+                        wheelBR.setPower((drive_speed - strafe + output) / max);
+                        telemetry.addData("turning R", output);
                     }
                 }
             } else {
