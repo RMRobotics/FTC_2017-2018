@@ -1,6 +1,5 @@
-package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
+package org.firstinspires.ftc.rmrobotics.opmodes.temp8121.tests;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
-import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.ColorSensor;
@@ -26,9 +25,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  */
 
 //red easy
-@Autonomous(name="workingBlue", group ="woRMholeConfig")
-@Disabled
-public class autoMark5 extends LinearOpMode {
+@Autonomous(name="autoMark1", group ="woRMholeConfig")
+public class autoMark1 extends LinearOpMode {
 
 
     private ColorSensor colorSensor;
@@ -37,12 +35,12 @@ public class autoMark5 extends LinearOpMode {
     private DcMotor wheelBL;
     private DcMotor wheelBR;
     private DcMotor lift;
-    //    private DcMotor arm;
+//    private DcMotor arm;
     private Servo clawBL;
     private Servo clawBR;
     private Servo clawTL;
     private Servo clawTR;
-    //    private Servo armT;
+//    private Servo armT;
     private Servo gemBar;
 //    private CRServo armB;
 
@@ -122,7 +120,7 @@ public class autoMark5 extends LinearOpMode {
             lift.setPower(0);
 
             //Drop gemBar
-            gemBar.setPosition(-1);
+            gemBar.setPosition(-0.96);
             holdUp(1.5);
 
             //Scan color of the jewel to the right
@@ -152,6 +150,10 @@ public class autoMark5 extends LinearOpMode {
             }
             holdUp(1);
 
+            if (color.equals("")){
+                gemBar.setPosition(1);
+            }
+
             //Move backwards to topple jewel if necessary (if we need to move forward, it would be knocked off by going to read vuforia)
             if (color.equals("Red"))
             {
@@ -175,18 +177,12 @@ public class autoMark5 extends LinearOpMode {
             }
 
             //Move to a spot where we can read Vuforia
-            move(0.4, 0.3, 180.0, 0.0);
+            move(0.4, 0.5, 0.0, 0.0);
             wheelBL.setPower(0);
             wheelBR.setPower(0);
             wheelFL.setPower(0);
             wheelFR.setPower(0);
             holdUp(1);
-            move(0.3, 0.3, 0.0, 25.0);
-            wheelBL.setPower(0);
-            wheelBR.setPower(0);
-            wheelFL.setPower(0);
-            wheelFR.setPower(0);
-            holdUp(0.5);
 
             //If we went forward, retract gemBar
             if (color.equals("Blue")) {
@@ -201,25 +197,13 @@ public class autoMark5 extends LinearOpMode {
                 if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
                     telemetry.addData("VuMark", "%s visible", vuMark);
                     telemetry.update();
+                    parameters = new VuforiaLocalizer.Parameters();
                 }
             }
-            //get to other side of balance stone
-            move(0.3, 0.3, 0.0, -25.0);
-            wheelBL.setPower(0);
-            wheelBR.setPower(0);
-            wheelFL.setPower(0);
-            wheelFR.setPower(0);
-            holdUp(0.5);
-            move(0.5, 0.8, 0.0, 0.0);
-            wheelBL.setPower(0);
-            wheelBR.setPower(0);
-            wheelFL.setPower(0);
-            wheelFR.setPower(0);
-            holdUp(1);
 
             //Get in front of respective Cryptobox
             if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-                move(0.65, 0.5, 0.0, 0.0);
+                move(0.70, 0.5, 0.0, 0.0);
             if (vuMark.equals(RelicRecoveryVuMark.CENTER))
                 move(0.55, 0.5, 0.0, 0.0);
             if (vuMark.equals(RelicRecoveryVuMark.RIGHT))

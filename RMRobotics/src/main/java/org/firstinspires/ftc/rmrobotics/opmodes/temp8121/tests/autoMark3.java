@@ -1,5 +1,6 @@
-package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
+package org.firstinspires.ftc.rmrobotics.opmodes.temp8121.tests;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.hardware.ColorSensor;
@@ -25,8 +26,9 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  */
 
 //red easy
-@Autonomous(name="autoMark1", group ="woRMholeConfig")
-public class autoMark1 extends LinearOpMode {
+@Autonomous(name="autoMarkBlue", group ="woRMholeConfig")
+@Disabled
+public class autoMark3 extends LinearOpMode {
 
 
     private ColorSensor colorSensor;
@@ -35,12 +37,12 @@ public class autoMark1 extends LinearOpMode {
     private DcMotor wheelBL;
     private DcMotor wheelBR;
     private DcMotor lift;
-//    private DcMotor arm;
+    //    private DcMotor arm;
     private Servo clawBL;
     private Servo clawBR;
     private Servo clawTL;
     private Servo clawTR;
-//    private Servo armT;
+    //    private Servo armT;
     private Servo gemBar;
 //    private CRServo armB;
 
@@ -133,12 +135,12 @@ public class autoMark1 extends LinearOpMode {
                 telemetry.addData("Blue ", colorSensor.blue());
                 telemetry.update();
 
-                if ((colorSensor.blue() > 0) && (colorSensor.red()<1))
+                if ((colorSensor.blue() < 1) && (colorSensor.red()>0))
                 {
                     detected = true;
                     color = "Red";
                 }
-                else if ((colorSensor.blue() < 1) && (colorSensor.red()>0))
+                else if ((colorSensor.blue() > 0) && (colorSensor.red()<1))
                 {
                     detected = true;
                     color = "Blue";
@@ -158,7 +160,7 @@ public class autoMark1 extends LinearOpMode {
             if (color.equals("Red"))
             {
                 //Knock off jewel
-                move(0.15, -0.5, 0.0, 0.0);
+                move(0.18, -0.5, 0.0, 0.0);
                 wheelBL.setPower(0);
                 wheelBR.setPower(0);
                 wheelFL.setPower(0);
@@ -168,7 +170,7 @@ public class autoMark1 extends LinearOpMode {
                 //Retract gemBar and return to Start
                 gemBar.setPosition(1);
                 holdUp(3);
-                move(0.23, 0.5, 0.0, 0.0);
+                move(0.22, 0.5, 0.0, 0.0);
                 wheelBL.setPower(0);
                 wheelBR.setPower(0);
                 wheelFL.setPower(0);
@@ -197,13 +199,12 @@ public class autoMark1 extends LinearOpMode {
                 if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
                     telemetry.addData("VuMark", "%s visible", vuMark);
                     telemetry.update();
-                    parameters = new VuforiaLocalizer.Parameters();
                 }
             }
 
             //Get in front of respective Cryptobox
             if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-                move(0.70, 0.5, 0.0, 0.0);
+                move(0.7, 0.5, 0.0, 0.0);
             if (vuMark.equals(RelicRecoveryVuMark.CENTER))
                 move(0.55, 0.5, 0.0, 0.0);
             if (vuMark.equals(RelicRecoveryVuMark.RIGHT))

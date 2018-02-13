@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
+package org.firstinspires.ftc.rmrobotics.opmodes.temp8121.tests;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -26,10 +26,9 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  */
 
 //red easy
-
-@Autonomous(name="jewelOnlyRed", group ="woRMholeConfig")
+@Autonomous(name="jewelOnlyBlue", group ="woRMholeConfig")
 @Disabled
-public class autoMark2 extends LinearOpMode {
+public class autoMark4 extends LinearOpMode {
 
 
     private ColorSensor colorSensor;
@@ -136,12 +135,12 @@ public class autoMark2 extends LinearOpMode {
                 telemetry.addData("Blue ", colorSensor.blue());
                 telemetry.update();
 
-                if ((colorSensor.blue() > 0) && (colorSensor.red()<1))
+                if ((colorSensor.blue() < 1) && (colorSensor.red()>0))
                 {
                     detected = true;
                     color = "Red";
                 }
-                else if ((colorSensor.blue() < 1) && (colorSensor.red()>0))
+                else if ((colorSensor.blue() > 0) && (colorSensor.red()<1))
                 {
                     detected = true;
                     color = "Blue";

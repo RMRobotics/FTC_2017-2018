@@ -493,14 +493,23 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.common.gradle" afterPath="$PROJECT_DIR$/build.common.gradle" />
+=======
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" afterPath="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" />
 =======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
 =======
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
 >>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+<<<<<<< HEAD
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
+=======
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
     </list>
     <ignored path="ftc_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -555,15 +564,31 @@
         <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+            <state relative-caret-position="-357">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.common.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.common.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+=======
             <state relative-caret-position="-95">
               <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
 =======
             <state relative-caret-position="477">
               <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
               <folding />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
             </state>
@@ -3243,9 +3268,13 @@
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/dummyConfig.java" />
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testingColorSensor.java" />
 <<<<<<< HEAD
+        <option value="$PROJECT_DIR$/build.common.gradle" />
+=======
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/autoMark1.java" />
 =======
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
         <option value="$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java" />
       </list>
     </option>
@@ -3277,6 +3306,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+      <pane id="Scratches" />
+=======
       <pane id="PackagesPane" />
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3287,6 +3319,7 @@
       <pane id="Scratches" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
       <pane id="ProjectPane" />
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3347,16 +3380,24 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+<<<<<<< HEAD
+      <pane id="PackagesPane" />
+=======
+<<<<<<< HEAD
       <pane id="Scratches" />
 =======
       <pane id="Scope" />
 <<<<<<< HEAD
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
 =======
 <<<<<<< HEAD
       <pane id="Scratches" />
 =======
 >>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3448,13 +3489,20 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515528714625" />
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242541" />
 =======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183210184" />
 >>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183155383" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3504,13 +3552,20 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515528714625" />
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242542" />
 =======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183210184" />
 >>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183155383" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3674,13 +3729,20 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515528714628" />
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242546" />
 =======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183210184" />
 >>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183155384" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
       </method>
     </configuration>
     <configuration default="false" name="RMRobotics" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -3731,13 +3793,20 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515528714628" />
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183242546" />
 =======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183210184" />
 >>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 =======
         <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1515183155384" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
       </method>
     </configuration>
     <list size="2">
@@ -3800,8 +3869,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32451254" sideWeight="0.509715" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32729805" sideWeight="0.4935567" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -3809,16 +3878,20 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2631016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26368877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26363635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4163,6 +4236,8 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/temp8121.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -4176,10 +4251,13 @@
         </state>
       </provider>
     </entry>
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest">
         <state />
       </provider>
+<<<<<<< HEAD
+=======
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
@@ -4188,9 +4266,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.common.gradle">
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4286,9 +4366,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.common.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/util/config/temp8121.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RMRobotics/src/main/java/org/firstinspires/ftc/rmrobotics/opmodes/temp8121/testVuAuto.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="-357">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
         <state relative-caret-position="-95">
           <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
@@ -4296,6 +4398,7 @@
             <element signature="imports" expanded="true" />
           </folding>
 =======
+>>>>>>> 81d761b5bb897eb7c6e5ca1ac767ea141eacc2d2
         <state relative-caret-position="275">
           <caret line="11" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding />
@@ -4311,6 +4414,7 @@
         <state relative-caret-position="477">
           <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
           <folding />
 >>>>>>> d118fb6a8d449c1eb830241cfa0ccbda41677750
         </state>
