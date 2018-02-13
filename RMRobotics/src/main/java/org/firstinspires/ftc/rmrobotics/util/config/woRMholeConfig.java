@@ -33,9 +33,10 @@ public class woRMholeConfig extends Robot {
     private servo clawBR;
     private servo clawTL;
     private servo clawTR;
-//    private servo armT;
-//    private crservo armB;
-    private servo gemBar;
+    private servo armT;
+    private crservo armB;
+    private servo gemBar2;
+    private servo gemBar1;
 
     public woRMholeConfig(final HardwareMap h, final Op o) {
         super(h);
@@ -66,17 +67,19 @@ public class woRMholeConfig extends Robot {
 
         clawBL = new servo(hMap.servo.get("clawBL"), Servo.Direction.FORWARD, -1, 1, -1);
         clawBR = new servo(hMap.servo.get("clawBR"), Servo.Direction.FORWARD, -1, 1, -1);
-        //armT = new servo(hMap.servo.get("armT"), Servo.Direction.FORWARD, 0, 1, 0);
+        armT = new servo(hMap.servo.get("armT"), Servo.Direction.FORWARD, 0, 1, 0);
         clawTL = new servo(hMap.servo.get("clawTL"), Servo.Direction.FORWARD, -1, 1, 0);
         clawTR = new servo(hMap.servo.get("clawTR"), Servo.Direction.FORWARD, -1, 1, 0);
 
-        gemBar = new servo(hMap.servo.get("gemBar"), Servo.Direction.FORWARD, -1, 1.5, 0);
+        gemBar1 = new servo(hMap.servo.get("gemBar"), Servo.Direction.FORWARD, -1, 1.5, 0);
+        gemBar2 = new servo(hMap.servo.get("gemBar"), Servo.Direction.FORWARD, -1, 1.5, 0);
 
-        servos.addAll(Arrays.asList(clawBL, clawBR, gemBar/*armT*/, clawTL, clawTR));
 
-        //armB = new crservo(hMap.crservo.get("armB"), CRServo.Direction.FORWARD);
+        servos.addAll(Arrays.asList(clawBL, clawBR, gemBar1, gemBar2, armT, clawTL, clawTR));
 
-        //crservos.addAll(Arrays.asList(armB));
+        armB = new crservo(hMap.crservo.get("armB"), CRServo.Direction.FORWARD);
+
+        crservos.addAll(Arrays.asList(armB));
 
     }
     public motor wheelBR() {return wheelBR;}
@@ -87,10 +90,12 @@ public class woRMholeConfig extends Robot {
     public motor arm() {return arm;}
     public servo clawBL() {return clawBL;}
     public servo clawBR() {return clawBR;}
-    //public servo armT() {return armT;}
-    //public crservo armB() {return armB;}
+    public servo armT() {return armT;}
+    public crservo armB() {return armB;}
     public servo clawTL() {return clawTL;}
     public servo clawTR() {return clawTR;}
-    public servo gemBar() {return gemBar;}
+    public servo gemBar1() {return gemBar2;}
+    public servo gemBar2() {return gemBar1;}
+
 
 }

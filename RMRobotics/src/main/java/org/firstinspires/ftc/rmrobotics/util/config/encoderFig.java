@@ -15,6 +15,8 @@ import org.firstinspires.ftc.rmrobotics.util.enums.MotorType;
 import org.firstinspires.ftc.rmrobotics.util.enums.Op;
 import org.firstinspires.ftc.rmrobotics.util.enums.Sensors;
 
+import com.kauailabs.navx.ftc.*;
+
 import java.util.Arrays;
 
 /**
@@ -22,6 +24,7 @@ import java.util.Arrays;
  */
 
 public class encoderFig extends Robot {
+
 
     private motor wheelBR;
     private motor wheelBL;
