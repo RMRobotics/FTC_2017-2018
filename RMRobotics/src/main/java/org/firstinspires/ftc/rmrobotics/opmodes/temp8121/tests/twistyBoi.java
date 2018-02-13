@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
+package org.firstinspires.ftc.rmrobotics.opmodes.temp8121.tests;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
@@ -27,9 +27,9 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by Kameron on 10/24/2017.
  */
 
-@Autonomous(name="forBack", group ="woRMholeConfig")
+@Autonomous(name="twist", group ="woRMholeConfig")
 @Disabled
-public class forBack extends LinearOpMode {
+public class twistyBoi extends LinearOpMode {
 
     private DcMotor wheelFL;
     private DcMotor wheelFR;
@@ -72,6 +72,7 @@ public class forBack extends LinearOpMode {
         clawTR = hardwareMap.servo.get("clawTR");
         armB.setDirection(CRServo.Direction.FORWARD);
 //        gemBar = hardwareMap.servo.get("gemBar");
+
         clawTR.setPosition(1);
         clawTL.setPosition(-1);
         armT.setPosition(0.5);
@@ -85,33 +86,49 @@ public class forBack extends LinearOpMode {
 
         timeToStance = 2;
         timeToColumn = 0.75;
-        rotate90 = 0.87;//0.82
+        rotate90 = 3;
 
-        int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
-        VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
-        parameters.vuforiaLicenseKey = "AckoWtn/////AAAAGan7WAnq/0UVmQZG3sp7smBgRCNBnU1p+HmsTrC+W9TyxqaMlhFirDXglelvJCX4yBiO8oou6n7UWBfdRFbKHDqz0NIo5VcNHyhelmm0yK0vGKxoU0NZbQzjh5qVWnI/HRoFjM3JOq/LB/FTXgCcEaNGhXAqnz7nalixMeP8oRQlgX5nRVX4uE6w0K4yqIc5/FIDh1tn7PldiflmvNPhOW6FukPQD3d02wEnZB/JEchSSBzDbFA10XSgtYzXiweQI5tj+D5llLRrLh0mcWeouv55oSmya5RxUC26uEuO7bCAwyolWIuUr2Wh5oAG483nTD4vFhdjVMT7f0ovLO73C6xr2AXpNwen9IExRxBeosQ4";
-        parameters.cameraDirection = VuforiaLocalizer.CameraDirection.FRONT;
-        this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
-        VuforiaTrackables relicTrackables = this.vuforia.loadTrackablesFromAsset("RelicVuMark");
-        VuforiaTrackable relicTemplate = relicTrackables.get(0);
-        relicTemplate.setName("relicVuMarkTemplate");
-        telemetry.update();
-        waitForStart();
-        relicTrackables.activate();
+//        int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
+//        VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
+//        parameters.vuforiaLicenseKey = "AckoWtn/////AAAAGan7WAnq/0UVmQZG3sp7smBgRCNBnU1p+HmsTrC+W9TyxqaMlhFirDXglelvJCX4yBiO8oou6n7UWBfdRFbKHDqz0NIo5VcNHyhelmm0yK0vGKxoU0NZbQzjh5qVWnI/HRoFjM3JOq/LB/FTXgCcEaNGhXAqnz7nalixMeP8oRQlgX5nRVX4uE6w0K4yqIc5/FIDh1tn7PldiflmvNPhOW6FukPQD3d02wEnZB/JEchSSBzDbFA10XSgtYzXiweQI5tj+D5llLRrLh0mcWeouv55oSmya5RxUC26uEuO7bCAwyolWIuUr2Wh5oAG483nTD4vFhdjVMT7f0ovLO73C6xr2AXpNwen9IExRxBeosQ4";
+//        parameters.cameraDirection = VuforiaLocalizer.CameraDirection.FRONT;
+//        this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
+//        VuforiaTrackables relicTrackables = this.vuforia.loadTrackablesFromAsset("RelicVuMark");
+//        VuforiaTrackable relicTemplate = relicTrackables.get(0);
+//        relicTemplate.setName("relicVuMarkTemplate");
+//        telemetry.update();
+//        waitForStart();
+//        relicTrackables.activate();
 
         waitForStart();
 
         while(opModeIsActive()) {
-
-
-            move(0.9, 0.5, 0.0, 0.0);
-            move(0.9, -0.5, 0.0, 0.0);
-
-            wheelBL.setPower(0);
-            wheelBR.setPower(0);
-            wheelFL.setPower(0);
-            wheelFR.setPower(0);
-
+            move(rotate90, 0.05, 0.0, 90.0);
+//            clawBL.setPosition(0.7);
+//            clawBR.setPosition(0.3);
+//            clawTR.setPosition(-0.2);
+//            clawTL.setPosition(0.5);
+//
+//            time.reset();
+//
+//            while (time.seconds() < 0.5) {
+//            }
+//
+//            lift.setPower(-0.2);
+//
+//            time.reset();
+//
+//            while (time.seconds() < 0.5) {
+//            }
+//
+//            lift.setPower(0);
+//
+//            move(0.4, 0.5, 0.0, 0.0);
+//            wheelBL.setPower(0);
+//            wheelBR.setPower(0);
+//            wheelFL.setPower(0);
+//            wheelFR.setPower(0);
+//
 //            RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
 //            while (vuMark == RelicRecoveryVuMark.UNKNOWN){
 //                vuMark = RelicRecoveryVuMark.from(relicTemplate);
@@ -123,7 +140,7 @@ public class forBack extends LinearOpMode {
 //
 //            if (vuMark.equals(RelicRecoveryVuMark.LEFT))
 //            {
-//                move(0.90, 0.5, 0.0, 0.0);
+//                move(0.95, 0.5, 0.0, 0.0);
 //            }
 //
 //            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
@@ -138,7 +155,7 @@ public class forBack extends LinearOpMode {
 //
 //            move(rotate90, 0.05, 0.0, 90.0);
 //
-//            move(0.5, 0.5, 0, 0);
+//            move(0.55, 0.5, 0, 0);
 //
 //            clawTR.setPosition(1);
 //            clawTL.setPosition(-1);
@@ -146,8 +163,13 @@ public class forBack extends LinearOpMode {
 //            clawBR.setPosition(1);
 //
 //            move(0.2, -0.5, 0, 0);
-
-
+//
+//            wheelBL.setPower(0);
+//            wheelBR.setPower(0);
+//            wheelFL.setPower(0);
+//            wheelFR.setPower(0);
+//
+//
             break;
         }
         /*
@@ -168,6 +190,7 @@ public class forBack extends LinearOpMode {
                 telemetry.addData("VuMark", "%s visible", vuMark);
                 telemetry.update();
             }
+>>>>>>> ad0070b3b4754098fabb38296687ea6389203edf
 
             if (vuMark.equals("LEFT")) {
                 move(0.75, 0.5, 0.0, 0.0);
@@ -190,6 +213,7 @@ public class forBack extends LinearOpMode {
         //move(timeToStance, 0.05, 0.0, 0.0);
 
         //move(timeToColumn, 0.5, 0.0, 0.0);
+
 
         //move(rotate90, 0.05, 0.0, 90.0); //if left turn
 

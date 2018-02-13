@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
+package org.firstinspires.ftc.rmrobotics.opmodes.temp8121.tests;
 
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;

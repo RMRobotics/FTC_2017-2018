@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
+package org.firstinspires.ftc.rmrobotics.opmodes.temp8121.tests;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -26,9 +26,9 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  */
 
 //red easy
-@Autonomous(name="jewelOnlyBlue", group ="woRMholeConfig")
+@Autonomous(name="workingBlue", group ="woRMholeConfig")
 @Disabled
-public class autoMark4 extends LinearOpMode {
+public class autoMark5 extends LinearOpMode {
 
 
     private ColorSensor colorSensor;
@@ -110,19 +110,19 @@ public class autoMark4 extends LinearOpMode {
             //Grab the glyph
             //clawBL.setPosition(0.7);
             //clawBR.setPosition(0.3);
-//            clawTR.setPosition(-0.2);
-//            clawTL.setPosition(0.5);
-//            holdUp(1.5);
-//
-//            //Lift the lift so the block doesn't drag
-//            lift.setPower(-0.2);
-//            holdUp(0.5);
-//
-//            //Stop lifting
-//            lift.setPower(0);
+            clawTR.setPosition(-0.2);
+            clawTL.setPosition(0.5);
+            holdUp(1.5);
+
+            //Lift the lift so the block doesn't drag
+            lift.setPower(-0.2);
+            holdUp(0.5);
+
+            //Stop lifting
+            lift.setPower(0);
 
             //Drop gemBar
-            gemBar.setPosition(-0.92);
+            gemBar.setPosition(-1);
             holdUp(1.5);
 
             //Scan color of the jewel to the right
@@ -135,12 +135,12 @@ public class autoMark4 extends LinearOpMode {
                 telemetry.addData("Blue ", colorSensor.blue());
                 telemetry.update();
 
-                if ((colorSensor.blue() < 1) && (colorSensor.red()>0))
+                if ((colorSensor.blue() > 0) && (colorSensor.red()<1))
                 {
                     detected = true;
                     color = "Red";
                 }
-                else if ((colorSensor.blue() > 0) && (colorSensor.red()<1))
+                else if ((colorSensor.blue() < 1) && (colorSensor.red()>0))
                 {
                     detected = true;
                     color = "Blue";
@@ -152,15 +152,11 @@ public class autoMark4 extends LinearOpMode {
             }
             holdUp(1);
 
-            if (color.equals("")){
-                gemBar.setPosition(1);
-            }
-
             //Move backwards to topple jewel if necessary (if we need to move forward, it would be knocked off by going to read vuforia)
             if (color.equals("Red"))
             {
                 //Knock off jewel
-                move(0.18, -0.5, 0.0, 0.0);
+                move(0.15, -0.5, 0.0, 0.0);
                 wheelBL.setPower(0);
                 wheelBR.setPower(0);
                 wheelFL.setPower(0);
@@ -170,7 +166,7 @@ public class autoMark4 extends LinearOpMode {
                 //Retract gemBar and return to Start
                 gemBar.setPosition(1);
                 holdUp(3);
-                move(0.22, 0.5, 0.0, 0.0);
+                move(0.23, 0.5, 0.0, 0.0);
                 wheelBL.setPower(0);
                 wheelBR.setPower(0);
                 wheelFL.setPower(0);
@@ -179,12 +175,18 @@ public class autoMark4 extends LinearOpMode {
             }
 
             //Move to a spot where we can read Vuforia
-            move(0.4, 0.5, 0.0, 0.0);
+            move(0.4, 0.3, 180.0, 0.0);
             wheelBL.setPower(0);
             wheelBR.setPower(0);
             wheelFL.setPower(0);
             wheelFR.setPower(0);
             holdUp(1);
+            move(0.3, 0.3, 0.0, 25.0);
+            wheelBL.setPower(0);
+            wheelBR.setPower(0);
+            wheelFL.setPower(0);
+            wheelFR.setPower(0);
+            holdUp(0.5);
 
             //If we went forward, retract gemBar
             if (color.equals("Blue")) {
@@ -193,39 +195,52 @@ public class autoMark4 extends LinearOpMode {
             }
 
             //Decode the Vuforia
-//            RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
-//            while (vuMark == RelicRecoveryVuMark.UNKNOWN){
-//                vuMark = RelicRecoveryVuMark.from(relicTemplate);
-//                if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
-//                    telemetry.addData("VuMark", "%s visible", vuMark);
-//                    telemetry.update();
-//                }
-//            }
-//
-//            //Get in front of respective Cryptobox
-//            if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-//                move(0.65, 0.5, 0.0, 0.0);
-//            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
-//                move(0.55, 0.5, 0.0, 0.0);
-//            if (vuMark.equals(RelicRecoveryVuMark.RIGHT))
-//                move(0.33, 0.5, 0.0, 0.0);
-//
-//            //Orient to face Cryptobox
-//            move(rotate90, 0.05, 0.0, 90.0);
-//
-//            //Go in Cryptobox and release glyphs
-//            move(0.6, 0.25, 0, 0);
-//            clawTR.setPosition(1);
-//            clawTL.setPosition(-1);
-//            clawBL.setPosition(-0.7);
-//            clawBR.setPosition(1);
-//
-//            //Move back
-//            move(0.3, -0.5, 0, 0);
-//            wheelBL.setPower(0);
-//            wheelBR.setPower(0);
-//            wheelFL.setPower(0);
-//            wheelFR.setPower(0);
+            RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
+            while (vuMark == RelicRecoveryVuMark.UNKNOWN){
+                vuMark = RelicRecoveryVuMark.from(relicTemplate);
+                if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
+                    telemetry.addData("VuMark", "%s visible", vuMark);
+                    telemetry.update();
+                }
+            }
+            //get to other side of balance stone
+            move(0.3, 0.3, 0.0, -25.0);
+            wheelBL.setPower(0);
+            wheelBR.setPower(0);
+            wheelFL.setPower(0);
+            wheelFR.setPower(0);
+            holdUp(0.5);
+            move(0.5, 0.8, 0.0, 0.0);
+            wheelBL.setPower(0);
+            wheelBR.setPower(0);
+            wheelFL.setPower(0);
+            wheelFR.setPower(0);
+            holdUp(1);
+
+            //Get in front of respective Cryptobox
+            if (vuMark.equals(RelicRecoveryVuMark.LEFT))
+                move(0.65, 0.5, 0.0, 0.0);
+            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
+                move(0.55, 0.5, 0.0, 0.0);
+            if (vuMark.equals(RelicRecoveryVuMark.RIGHT))
+                move(0.33, 0.5, 0.0, 0.0);
+
+            //Orient to face Cryptobox
+            move(rotate90, 0.05, 0.0, 90.0);
+
+            //Go in Cryptobox and release glyphs
+            move(0.6, 0.25, 0, 0);
+            clawTR.setPosition(1);
+            clawTL.setPosition(-1);
+            clawBL.setPosition(-0.7);
+            clawBR.setPosition(1);
+
+            //Move back
+            move(0.3, -0.5, 0, 0);
+            wheelBL.setPower(0);
+            wheelBR.setPower(0);
+            wheelFL.setPower(0);
+            wheelFR.setPower(0);
 
             //Fin
             break;
