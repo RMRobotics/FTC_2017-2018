@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.rmrobotics.opmodes.temp8121.tests;
+package org.firstinspires.ftc.rmrobotics.opmodes.temp8121;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -30,7 +30,7 @@ import java.text.DecimalFormat;
  * Created by rotom on 10/17/2017.
  */
 
-@Autonomous(name="test123", group ="woRMholeConfig")
+@Autonomous(name="test1234", group ="woRMholeConfig")
 public class test123 extends LinearOpMode {
 
     //initialization of navx stuff
@@ -46,7 +46,7 @@ public class test123 extends LinearOpMode {
     private ElapsedTime runtime = new ElapsedTime();
 
 
-    @Override public void runOpMode() throws InterruptedException {
+    @Override public void runOpMode() throws InterruptedException{
 
         //hardware map in wormhole config in the UTIL folder
         wheelFL = hardwareMap.dcMotor.get("wheelFL");

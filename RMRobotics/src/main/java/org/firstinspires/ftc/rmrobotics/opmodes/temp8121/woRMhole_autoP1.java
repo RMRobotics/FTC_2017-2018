@@ -28,7 +28,7 @@ import static com.sun.tools.javac.util.Constants.format;
  * Created by rotom on 10/17/2017.
  */
 
-@Autonomous(name="testVuAuto", group ="woRMholeConfig")
+@Autonomous(name="testVuAutoP1", group ="woRMholeConfig")
 public class woRMhole_autoP1 extends LinearOpMode {
     private ColorSensor colorSensor;
     private DcMotor wheelFL;

@@ -51,13 +51,13 @@ public class woRMhole_tele extends OpMode {
         armB.setDirection(CRServo.Direction.FORWARD);
         gemBar1 = hardwareMap.servo.get("gemBar1");
         gemBar2 = hardwareMap.servo.get("gemBar2");
-        clawBL.setPosition(-0.7);
-        clawBR.setPosition(1);
+        clawBL.setPosition(0.1);
+        clawBR.setPosition(0.5);
         armT.setPosition(0.5);
         armB.setPower(0);
-        clawTR.setPosition(1);
-        clawTL.setPosition(-0.6);
-        gemBar1.setPosition(0);
+        clawTR.setPosition(0.7);
+        clawTL.setPosition(0.1);
+        gemBar1.setPosition(1);
         gemBar2.setPosition(0);
     }
 
@@ -79,29 +79,29 @@ public class woRMhole_tele extends OpMode {
 
         double max = 1;
         wheelFL.setPower((forward + strafe + rotate) / max);
-        wheelFR.setPower((forward + strafe - rotate) / max);
+        wheelFR.setPower((forward - strafe - rotate) / max);
         wheelBL.setPower((forward - strafe + rotate) / max);
-        wheelBR.setPower((forward - strafe - rotate) / max);
+        wheelBR.setPower((forward + strafe - rotate) / max);
         if (gamepad1.right_bumper)
         {
-            clawTR.setPosition(0.2);
-            clawTL.setPosition(0.75);
+            clawTR.setPosition(-0.1);
+            clawTL.setPosition(0.9);
         }
         if (gamepad1.left_bumper)
         {
-            clawTR.setPosition(1);
-            clawTL.setPosition(-0.6);
+            clawTR.setPosition(0.7);
+            clawTL.setPosition(0.1);
         }
         if (gamepad1.right_trigger != 0)
         {
-            clawBL.setPosition(0.7);
-            clawBR.setPosition(0.3);
+            clawBL.setPosition(0.75);
+            clawBR.setPosition(0);
         }
         if (gamepad1.left_trigger != 0)
         {
 
-            clawBL.setPosition(-0.7);
-            clawBR.setPosition(1);
+            clawBL.setPosition(0.1);
+            clawBR.setPosition(0.5);
         }
 
         if (gamepad1.y){

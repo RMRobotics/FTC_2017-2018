@@ -26,7 +26,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  * Created by rotom on 10/17/2017.
  */
 
-@Autonomous(name="testEncoders2", group ="encoderFig")
+@Autonomous(name="testEncoders69", group ="encoderFig")
 public class testEncoders2 extends LinearOpMode{
 
     //hardware declarations
