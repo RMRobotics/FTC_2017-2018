@@ -91,11 +91,11 @@ public class testEncoders2 extends LinearOpMode{
 
             // Step through each leg of the path,
             // Note: Reverse movement is obtained by setting a negative distance (not speed)
-            encoderDrive(0.3, 6 * mmPerInch,10);  // S1: Forward 47 Inches with 5 Sec timeout
+            encoderDrive(0.3, 6 * mmPerInch, 10);
             holdUp(8);
-            encoderDrive(0.3, 12 * mmPerInch, 10);
+            encoderDrive(0.3, 12 * mmPerInch,10);  // S1: Forward 47 Inches with 5 Sec timeout
             holdUp(8);
-            encoderDrive(0.3, 24 * mmPerInch, 10);
+            encoderDrive(0.3, 18 * mmPerInch, 10);
             holdUp(8);
 //            encoderTurn(0.3, 24*mmPerInch,10);
 //            holdUp(8);
@@ -226,10 +226,10 @@ public class testEncoders2 extends LinearOpMode{
             wheelBR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
 
             // Determine new target position, and pass to motor controller
-            target[0] = wheelFL.getCurrentPosition() + (int)(dist * tickMM);
-            target[1] = wheelFR.getCurrentPosition() + (int)(dist * tickMM);
-            target[2] = wheelBL.getCurrentPosition() + (int)(dist * tickMM);
-            target[3] = wheelBR.getCurrentPosition() + (int)(dist * tickMM);
+            target[0] = wheelFL.getCurrentPosition() + (int)((dist+((dist-6)/3)) * tickMM);
+            target[1] = wheelFR.getCurrentPosition() + (int)((dist+((dist-6)/3)) * tickMM);
+            target[2] = wheelBL.getCurrentPosition() + (int)((dist+((dist-6)/3)) * tickMM);
+            target[3] = wheelBR.getCurrentPosition() + (int)((dist+((dist-6)/3)) * tickMM);
             wheelFL.setTargetPosition(target[0]);
             wheelBL.setTargetPosition(target[1]);
             wheelFR.setTargetPosition(target[2]);

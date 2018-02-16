@@ -106,6 +106,7 @@ public class woRMhole_autoP1 extends LinearOpMode {
             lift.setPower(0);
             holdUp(0.5);
             gemKnock();
+            deadR(0.1, 0.3, 0.0, 0.0);
             VectorF move = vuRead(r);
             encoderDrive(0.5, move.get(2), 10);
             holdUp(1);
@@ -170,7 +171,7 @@ public class woRMhole_autoP1 extends LinearOpMode {
         }
         holdUp(1);
         if (color.equals("")){
-            gemBar1.setPosition(0);
+            gemBar1.setPosition(1);
         }
         else if (color.equals("Red"))
         {
