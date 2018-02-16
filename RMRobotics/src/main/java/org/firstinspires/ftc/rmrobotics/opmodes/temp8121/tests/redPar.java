@@ -25,8 +25,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
  */
 
 //red easy
-@Autonomous(name="redPerp", group ="woRMholeConfig")
-public class redPerp extends LinearOpMode {
+@Autonomous(name="redPar", group ="woRMholeConfig")
+public class redPar extends LinearOpMode {
 
 
     private ColorSensor colorSensor;
@@ -82,15 +82,15 @@ public class redPerp extends LinearOpMode {
         clawBR = hardwareMap.servo.get("clawBR");
         clawTL = hardwareMap.servo.get("clawTL");
         clawTR = hardwareMap.servo.get("clawTR");
-        clawBL.setPosition(0.2);
+        clawBL.setPosition(0.1);
         clawBR.setPosition(0.5);
         clawTR.setPosition(0.7);
-        clawTL.setPosition(0.35);
+        clawTL.setPosition(0.1);
 
         gemBar1 = hardwareMap.servo.get("gemBar1");
         gemBar2 = hardwareMap.servo.get("gemBar2");
-        gemBar1.setPosition(1);
-        gemBar2.setPosition(0.4);
+        gemBar1.setPosition(0);
+        gemBar2.setPosition(0);
 
 
 
@@ -124,7 +124,7 @@ public class redPerp extends LinearOpMode {
             lift.setPower(0);
 
             //Drop gemBar
-            gemBar1.setPosition(-1);
+            gemBar1.setPosition(1);
             holdUp(1.5);
 
             //Scan color of the jewel to the right
@@ -162,72 +162,72 @@ public class redPerp extends LinearOpMode {
             else if (color.equals("Red"))
             {
                 //Knock off jewel
-                gemBar2.setPosition(-0.5);
+                gemBar2.setPosition(1);
                 holdUp(1.5);
 
                 //Retract gemBars
-                gemBar2.setPosition(0.4);
+                gemBar1.setPosition(0);
                 holdUp(1.5);
-                gemBar1.setPosition(1);
+                gemBar2.setPosition(0);
             }
 
             else {
                 //Knock off jewel
-                gemBar2.setPosition(0.8);
+                gemBar2.setPosition(-1);
                 holdUp(1.5);
 
                 //Retract gemBars
-                gemBar2.setPosition(0.4);
+                gemBar1.setPosition(0);
                 holdUp(1.5);
-                gemBar1.setPosition(1);
+                gemBar2.setPosition(0);
             }
 
-//            holdUp(1.5);
-//            //Move to a spot where we can read Vuforia
-//            move(0.4, 0.5, 0.0, 0.0);
-//            wheelBL.setPower(0);
-//            wheelBR.setPower(0);
-//            wheelFL.setPower(0);
-//            wheelFR.setPower(0);
-//            holdUp(1);
-//
-//            //Decode the Vuforia
-//            RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
-//            while (vuMark == RelicRecoveryVuMark.UNKNOWN){
-//                vuMark = RelicRecoveryVuMark.from(relicTemplate);
-//                if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
-//                    telemetry.addData("VuMark", "%s visible", vuMark);
-//                    telemetry.update();
-//                    parameters = new VuforiaLocalizer.Parameters();
-//                }
-//            }
-//
-//            //move off stone
-//            move(0.3, 0.5, 0.0, 0.0);
-//
-//            //stafe to correct collumn
-//            if (vuMark.equals(RelicRecoveryVuMark.LEFT))
-//                move(0.70, 0.5, 270.0, 0.0);
-//            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
-//                move(0.55, 0.5, 270.0, 0.0);
-//            if (vuMark.equals(RelicRecoveryVuMark.RIGHT))
-//                move(0.33, 0.5, 270.0, 0.0);
-//
-//            //Go in Cryptobox and release glyphs
-//            move(0.3, 0.25, 0, 0);
-//            clawTR.setPosition(0.7);
-//            clawTL.setPosition(0.1);
-//            clawBL.setPosition(0.1);
-//            clawBR.setPosition(0.5);
-//
-//            //Move back
-//            move(0.3, -0.5, 0, 0);
-//            wheelBL.setPower(0);
-//            wheelBR.setPower(0);
-//            wheelFL.setPower(0);
-//            wheelFR.setPower(0);
-//
-//            //Fin
+            holdUp(1.5);
+            //Move to a spot where we can read Vuforia
+            move(0.4, 0.5, 0.0, 0.0);
+            wheelBL.setPower(0);
+            wheelBR.setPower(0);
+            wheelFL.setPower(0);
+            wheelFR.setPower(0);
+            holdUp(1);
+
+            //Decode the Vuforia
+            RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.from(relicTemplate);
+            while (vuMark == RelicRecoveryVuMark.UNKNOWN){
+                vuMark = RelicRecoveryVuMark.from(relicTemplate);
+                if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
+                    telemetry.addData("VuMark", "%s visible", vuMark);
+                    telemetry.update();
+                    parameters = new VuforiaLocalizer.Parameters();
+                }
+            }
+
+            //move off stone
+            move(0.3, 0.5, 0.0, 0.0);
+
+            //stafe to correct collumn
+            if (vuMark.equals(RelicRecoveryVuMark.LEFT))
+                move(0.70, 0.5, 270.0, 0.0);
+            if (vuMark.equals(RelicRecoveryVuMark.CENTER))
+                move(0.55, 0.5, 270.0, 0.0);
+            if (vuMark.equals(RelicRecoveryVuMark.RIGHT))
+                move(0.33, 0.5, 270.0, 0.0);
+
+            //Go in Cryptobox and release glyphs
+            move(0.3, 0.25, 0, 0);
+            clawTR.setPosition(0.7);
+            clawTL.setPosition(0.1);
+            clawBL.setPosition(0.1);
+            clawBR.setPosition(0.5);
+
+            //Move back
+            move(0.3, -0.5, 0, 0);
+            wheelBL.setPower(0);
+            wheelBR.setPower(0);
+            wheelFL.setPower(0);
+            wheelFR.setPower(0);
+
+            //Fin
             break;
         }
 

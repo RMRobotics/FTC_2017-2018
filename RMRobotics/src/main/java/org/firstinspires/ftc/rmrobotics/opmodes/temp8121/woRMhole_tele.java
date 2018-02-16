@@ -51,14 +51,14 @@ public class woRMhole_tele extends OpMode {
         armB.setDirection(CRServo.Direction.FORWARD);
         gemBar1 = hardwareMap.servo.get("gemBar1");
         gemBar2 = hardwareMap.servo.get("gemBar2");
-        clawBL.setPosition(0.1);
-        clawBR.setPosition(0.5);
+        clawBL.setPosition(0.2);
+        clawBR.setPosition(0.85);
         armT.setPosition(0.5);
         armB.setPower(0);
-        clawTR.setPosition(0.7);
-        clawTL.setPosition(0.1);
+        clawTR.setPosition(0.75);
+        clawTL.setPosition(0.35);
         gemBar1.setPosition(1);
-        gemBar2.setPosition(0);
+        gemBar2.setPosition(0.4);
     }
 
     public void loop()
@@ -90,7 +90,7 @@ public class woRMhole_tele extends OpMode {
         if (gamepad1.left_bumper)
         {
             clawTR.setPosition(0.7);
-            clawTL.setPosition(0.1);
+            clawTL.setPosition(0.35);
         }
         if (gamepad1.right_trigger != 0)
         {
@@ -100,8 +100,8 @@ public class woRMhole_tele extends OpMode {
         if (gamepad1.left_trigger != 0)
         {
 
-            clawBL.setPosition(0.1);
-            clawBR.setPosition(0.5);
+            clawBL.setPosition(0.2);
+            clawBR.setPosition(0.85);
         }
 
         if (gamepad1.y){
@@ -115,36 +115,43 @@ public class woRMhole_tele extends OpMode {
             lift.setPower(gamepad2.right_stick_y/3);
 
         arm.setPower(gamepad2.left_stick_y/2);
-        if (gamepad2.y)
+        if (gamepad2.a)
         {
-            armT.setPosition(0);
+            armT.setPosition(-1);
         }
-        if (gamepad2.x)
+        if (gamepad2.b)
         {
-            armT.setPosition(0.5);
+            armT.setPosition(1);
         }
-        if (gamepad2.left_trigger > 0 && gamepad2.right_trigger == 0)
+        if (gamepad2.left_trigger != 0)
         {
             armB.setPower(-1);
         }
-        else if (gamepad2.right_trigger > 0 && gamepad2.left_trigger == 0)
-        {
-            armB.setPower(1);
-        }
         else{
             armB.setPower(0);
+        }
+        if (gamepad2.right_trigger != 0)
+        {
+            armB.setPower(1);
         }
         if (gamepad1.b){
             slowMo = !slowMo;
         }
 
-        if (gamepad2.x)
+        if (gamepad2.x)//down y
         {
-            gemBar1.setPosition(0);
+            gemBar1.setPosition(-1);
         }
         if (gamepad2.y)
         {
             gemBar1.setPosition(1);
         }
+        if (gamepad2.left_bumper){ //front
+            gemBar2.setPosition(-0.5);
+        }
+        if (gamepad2.right_bumper){ //behind
+            gemBar2.setPosition(0.8);
+        }
+
     }
 }
