@@ -113,7 +113,10 @@ public class woRMhole_autoP1 extends LinearOpMode {
             holdUp(1);
             encoderDrive(0.5, move.get(1), 10);
             holdUp(1);
-            //open sesame
+            clawTR.setPosition(0.7);
+            clawTL.setPosition(0.35);
+            clawBL.setPosition(0.2);
+            clawBR.setPosition(0.85);
         }
     }
     public VuforiaTrackable vuInit() {
@@ -148,7 +151,6 @@ public class woRMhole_autoP1 extends LinearOpMode {
                         AngleUnit.DEGREES, 0, 0, 90));
         return relicTemplate;
     }
-
     public void gemKnock() {
         boolean detected = false;
         String color = "";
