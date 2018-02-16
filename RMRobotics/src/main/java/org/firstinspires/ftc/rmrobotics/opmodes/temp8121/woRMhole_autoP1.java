@@ -80,10 +80,15 @@ public class woRMhole_autoP1 extends LinearOpMode {
         telemetry.update();
         VuforiaTrackable r = vuInit();
         waitForStart();
-        //gemmethod
-        VectorF move = vuRead(r);
-        
-
+        while(opModeIsActive()) {
+            //gemmethod
+            VectorF move = vuRead(r);
+            //move to cryptosquare
+            encoderDrive(0.5, move.get(2), 10);
+            deadR(0.4, 0.05, 0.0, 90.0);
+            encoderDrive(0.5, move.get(1), 10);
+            //open sesame
+        }
     }
 
     public VuforiaTrackable vuInit() {
@@ -112,7 +117,7 @@ public class woRMhole_autoP1 extends LinearOpMode {
         //rot: (0,0,90) (0,0,-90), (0,0,0), (0,0,0)
         //this program is testing red top
         pic2field = OpenGLMatrix
-                .translation(0, 106.0f * mmPerInch, 0) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
+                .translation(0, 111.5f * mmPerInch, 5.75f*mmPerInch) //temporary and arbitrary values. goal is roughly closer to the front, far right side, near the bottom ish
                 .multiplied(Orientation.getRotationMatrix(
                         AxesReference.EXTRINSIC, AxesOrder.XZY,
                         AngleUnit.DEGREES, 0, 0, 90));
@@ -168,87 +173,60 @@ public class woRMhole_autoP1 extends LinearOpMode {
         double  diameterBoi = 101.6;     // The circumference of our mecanums in millimeters 101.6
         double  tickMM  = (tickRev * invGearRatio) /
                 (diameterBoi * 3.1415);
+        // Turn On RUN_TO_POSITION
+        wheelFL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        wheelFR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        wheelBL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        wheelBR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        // Determine new target position, and pass to motor controller
+        target[0] = wheelFL.getCurrentPosition() + (int)(dist * tickMM);
+        target[1] = wheelFR.getCurrentPosition() + (int)(dist * tickMM);
+        target[2] = wheelBL.getCurrentPosition() + (int)(dist * tickMM);
+        target[3] = wheelBR.getCurrentPosition() + (int)(dist * tickMM);
+        wheelFL.setTargetPosition(target[0]);
+        wheelBL.setTargetPosition(target[1]);
+        wheelFR.setTargetPosition(target[2]);
+        wheelBR.setTargetPosition(target[3]);
+        // reset the timeout time and start motion.
+        runtime.reset();
+        wheelFL.setPower(Math.abs(speed));
+        wheelFR.setPower(Math.abs(speed));
+        wheelBL.setPower(Math.abs(speed));
+        wheelBR.setPower(Math.abs(speed));
 
-        // Ensure that the opmode is still active
-        if (opModeIsActive()) {
-
-            // Turn On RUN_TO_POSITION
-            wheelFL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            wheelFR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            wheelBL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-            wheelBR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-
-            // Determine new target position, and pass to motor controller
-            target[0] = wheelFL.getCurrentPosition() + (int)(dist * tickMM);
-            target[1] = wheelFR.getCurrentPosition() + (int)(dist * tickMM);
-            target[2] = wheelBL.getCurrentPosition() + (int)(dist * tickMM);
-            target[3] = wheelBR.getCurrentPosition() + (int)(dist * tickMM);
-            wheelFL.setTargetPosition(target[0]);
-            wheelBL.setTargetPosition(target[1]);
-            wheelFR.setTargetPosition(target[2]);
-            wheelBR.setTargetPosition(target[3]);
-
-            // reset the timeout time and start motion.
-            runtime.reset();
-
-            wheelFL.setPower(Math.abs(speed));
-            wheelFR.setPower(Math.abs(speed));
-            wheelBL.setPower(Math.abs(speed));
-            wheelBR.setPower(Math.abs(speed));
-
-            // keep looping while we are still active, and there is time left, and both motors are running.
-            // Note: We use (isBusy() && isBusy()) in the loop test, which means that when EITHER motor hits
-            // its target position, the motion will stop.  This is "safer" in the event that the robot will
-            // always end the motion as soon as possible.
-            // However, if you require that BOTH motors have finished their moves before the robot continues
-            // onto the next step, use (isBusy() || isBusy()) in the loop test.
-            telemetry.addData("Checkpoint 1.5",runtime.seconds());
-            telemetry.update();
-            while (opModeIsActive() &&
-                    (runtime.seconds() < timeoutS) &&
-                    ((wheelFL.isBusy() && wheelBL.isBusy()) || (wheelFR.isBusy() && wheelBR.isBusy()))) {
-
-
-                // Display it for the driver.
-                telemetry.addData("Checkpoint 2", "Running to %d: %d: %d: %d", target[0], target[1], target[2], target[3]);
-//                telemetry.addData("Running at ", wheelFL.getCurrentPosition());
-//                telemetry.addData("Running at ", wheelBL.getCurrentPosition());
-//                telemetry.addData("Running at ", wheelFR.getCurrentPosition());
-//                telemetry.addData("Running at ", wheelBR.getCurrentPosition());
-//                telemetry.addData("Runtime ",runtime.seconds());
-
-                currPos[0] = wheelFL.getCurrentPosition();
-                currPos[1] = wheelBL.getCurrentPosition();
-                currPos[2] = wheelFR.getCurrentPosition();
-                currPos[3] = wheelBR.getCurrentPosition();
-                pos.add(currPos);
-                telemetry.update();
-            }
-
-            // Stop all motion;
-            wheelFL.setPower(0);
-            wheelFR.setPower(0);
-            wheelBL.setPower(0);
-            wheelBR.setPower(0);
-
-            telemetry.addData("Status","Checkpoint 3");
-            telemetry.update();
-
-            // Turn off RUN_TO_POSITION
-            wheelFL.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-            wheelFR.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-            wheelBL.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-            wheelBR.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-
-            telemetry.addData("List size: ", pos.size());
-            telemetry.addData("1/5", "Running to %d: %d: %d: %d", pos.get(200)[0], pos.get(200)[1], pos.get(200)[2], pos.get(200)[3]);
-            telemetry.addData("2/5", "Running to %d: %d: %d: %d", pos.get(pos.size()/4)[0], pos.get(pos.size()/4)[1], pos.get(pos.size()/4)[2], pos.get(pos.size()/4)[3]);
-            telemetry.addData("3/5", "Running to %d: %d: %d: %d", pos.get(pos.size()/2)[0], pos.get(pos.size()/2)[1], pos.get(pos.size()/2)[2], pos.get(pos.size()/2)[3]);
-            telemetry.addData("4/5", "Running to %d: %d: %d: %d", pos.get((pos.size()*3)/4)[0], pos.get((pos.size()*3)/4)[1], pos.get((pos.size()*3)/4)[2], pos.get((pos.size()*3)/4)[3]);
-            telemetry.addData("5/5", "Running to %d: %d: %d: %d", pos.get(pos.size()-200)[0], pos.get(pos.size()-200)[1], pos.get(pos.size()-200)[2], pos.get(pos.size()-200)[3]);
-            telemetry.update();
-
-            //  sleep(250);   // optional pause after each move
+        while ((runtime.seconds() < timeoutS) && ((wheelFL.isBusy() && wheelBL.isBusy()) || (wheelFR.isBusy() && wheelBR.isBusy()))) {
+            currPos[0] = wheelFL.getCurrentPosition();
+            currPos[1] = wheelBL.getCurrentPosition();
+            currPos[2] = wheelFR.getCurrentPosition();
+            currPos[3] = wheelBR.getCurrentPosition();
+            pos.add(currPos);
+        }
+        // Stop all motion;
+        wheelFL.setPower(0);
+        wheelFR.setPower(0);
+        wheelBL.setPower(0);
+        wheelBR.setPower(0);
+        // Turn off RUN_TO_POSITION
+        wheelFL.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        wheelFR.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        wheelBL.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        wheelBR.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+//            telemetry.addData("List size: ", pos.size());
+//            telemetry.addData("1/5", "Running to %d: %d: %d: %d", pos.get(200)[0], pos.get(200)[1], pos.get(200)[2], pos.get(200)[3]);
+//            telemetry.addData("2/5", "Running to %d: %d: %d: %d", pos.get(pos.size()/4)[0], pos.get(pos.size()/4)[1], pos.get(pos.size()/4)[2], pos.get(pos.size()/4)[3]);
+//            telemetry.addData("3/5", "Running to %d: %d: %d: %d", pos.get(pos.size()/2)[0], pos.get(pos.size()/2)[1], pos.get(pos.size()/2)[2], pos.get(pos.size()/2)[3]);
+//            telemetry.addData("4/5", "Running to %d: %d: %d: %d", pos.get((pos.size()*3)/4)[0], pos.get((pos.size()*3)/4)[1], pos.get((pos.size()*3)/4)[2], pos.get((pos.size()*3)/4)[3]);
+//            telemetry.addData("5/5", "Running to %d: %d: %d: %d", pos.get(pos.size()-200)[0], pos.get(pos.size()-200)[1], pos.get(pos.size()-200)[2], pos.get(pos.size()-200)[3]);
+//            telemetry.update();
+        }
+    public void deadR(double duration, double power, double angle, double rotate) {
+        angle *= (Math.PI / 180);
+        runtime.reset();
+        while (runtime.seconds() < duration) {
+            wheelFL.setPower(power * Math.sin(angle + (Math.PI / 4)) + rotate);
+            wheelFR.setPower(power * Math.cos(angle + (Math.PI / 4)) - rotate);
+            wheelBL.setPower(power * Math.cos(angle + (Math.PI / 4)) + rotate);
+            wheelBR.setPower(power * Math.sin(angle + (Math.PI / 4)) - rotate);
         }
     }
 }
