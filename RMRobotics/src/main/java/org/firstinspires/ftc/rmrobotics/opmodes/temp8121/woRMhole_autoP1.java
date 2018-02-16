@@ -4,6 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.RobotLog;
@@ -42,7 +43,8 @@ public class woRMhole_autoP1 extends LinearOpMode {
     private Servo clawBR;
     private Servo clawTL;
     private Servo clawTR;
-    private Servo gemBar;
+    private Servo gemBar1;
+    private Servo gemBar2;
     private ElapsedTime runtime = new ElapsedTime();
     public static final String TAG = "Vuforia VuMark Sample";
     //pic2field*camera2pic=camera2field*bot2camera=bot2field
@@ -61,7 +63,23 @@ public class woRMhole_autoP1 extends LinearOpMode {
         clawBR = hardwareMap.servo.get("clawBR");
         clawTL = hardwareMap.servo.get("clawTL");
         clawTR = hardwareMap.servo.get("clawTR");
-        gemBar = hardwareMap.servo.get("gemBar");
+        gemBar1 = hardwareMap.servo.get("gemBar1");
+        gemBar2 = hardwareMap.servo.get("gemBar2");
+        clawBL = hardwareMap.servo.get("clawBL");
+        clawBR = hardwareMap.servo.get("clawBR");
+        clawTL = hardwareMap.servo.get("clawTL");
+        clawTR = hardwareMap.servo.get("clawTR");
+
+        wheelFL.setDirection(DcMotorSimple.Direction.REVERSE);
+        wheelBL.setDirection(DcMotorSimple.Direction.REVERSE);
+        clawBL.setPosition(0.2);
+        clawBR.setPosition(0.5);
+        clawTR.setPosition(0.7);
+        clawTL.setPosition(0.35);
+        gemBar1.setPosition(1);
+        gemBar2.setPosition(0.4);
+        colorSensor = hardwareMap.get(ColorSensor.class, "sensor_color");
+        colorSensor.enableLed(true);
 
         //encoder setup and reset
         telemetry.addData("Status", "Resetting Encoders");
@@ -76,21 +94,28 @@ public class woRMhole_autoP1 extends LinearOpMode {
         wheelBR.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         // Send telemetry message to indicate successful Encoder reset
         telemetry.addData("Path0", "Starting at %7d :%7d :%7d :%7d",
-                wheelFL.getCurrentPosition(),wheelFR.getCurrentPosition(),wheelBL.getCurrentPosition(),wheelBR.getCurrentPosition());
+                wheelFL.getCurrentPosition(), wheelFR.getCurrentPosition(), wheelBL.getCurrentPosition(), wheelBR.getCurrentPosition());
         telemetry.update();
+
+        //Actual stuff that happens and is awesome and dope and cool and yeet
         VuforiaTrackable r = vuInit();
         waitForStart();
-        while(opModeIsActive()) {
-            //gemmethod
+        while (opModeIsActive()) {
+            lift.setPower(0.2);
+            holdUp(0.5);
+            lift.setPower(0);
+            holdUp(0.5);
+            gemKnock();
             VectorF move = vuRead(r);
-            //move to cryptosquare
             encoderDrive(0.5, move.get(2), 10);
+            holdUp(1);
             deadR(0.4, 0.05, 0.0, 90.0);
+            holdUp(1);
             encoderDrive(0.5, move.get(1), 10);
+            holdUp(1);
             //open sesame
         }
     }
-
     public VuforiaTrackable vuInit() {
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
@@ -123,10 +148,48 @@ public class woRMhole_autoP1 extends LinearOpMode {
                         AngleUnit.DEGREES, 0, 0, 90));
         return relicTemplate;
     }
-    public VectorF vuRead(VuforiaTrackable relicTemplate) {
 
+    public void gemKnock() {
+        boolean detected = false;
+        String color = "";
+
+        runtime.reset();
+        gemBar1.setPosition(-1);
+        holdUp(1.5);
+        while ((!detected) && (runtime.seconds() < 5)) {
+            if ((colorSensor.blue() > 0) && (colorSensor.red() < 1)) {
+                detected = true;
+                color = "Blue";
+            } else if ((colorSensor.blue() < 1) && (colorSensor.red() > 0)) {
+                detected = true;
+                color = "Red";
+            } else
+                telemetry.addData("Not yet bois", "");
+        }
+        holdUp(1);
+        if (color.equals("")){
+            gemBar1.setPosition(0);
+        }
+        else if (color.equals("Red"))
+        {
+            gemBar2.setPosition(-0.5);
+            holdUp(1);
+            gemBar2.setPosition(0.4);
+            holdUp(1);
+            gemBar1.setPosition(1);
+        }
+        else {
+            gemBar2.setPosition(0.8);
+            holdUp(1);
+            gemBar2.setPosition(0.4);
+            holdUp(1);
+            gemBar1.setPosition(1);
+        }
+    }
+    public VectorF vuRead(VuforiaTrackable relicTemplate) {
         VectorF move = new VectorF(0, 0, 0);
         RelicRecoveryVuMark vuMark = RelicRecoveryVuMark.UNKNOWN;
+
         while (vuMark == RelicRecoveryVuMark.UNKNOWN) {
             vuMark = RelicRecoveryVuMark.from(relicTemplate);
             if (vuMark != RelicRecoveryVuMark.UNKNOWN) {
@@ -137,14 +200,11 @@ public class woRMhole_autoP1 extends LinearOpMode {
                 telemetry.addData("VuMark", "not visible");
             }
         }
-        camera2pic.rotated(AngleUnit.DEGREES, -90, 0, 1, 0); //puts the picture on the right axis
-
+//        camera2pic.rotated(AngleUnit.DEGREES, -90, 0, 1, 0); //puts the picture on the right axis
         //finds bot 2 pic and bot 2 field using the measurements from camera 2 pic
         bot2pic = camera2pic.multiplied(bot2camera);
         bot2field = bot2pic.multiplied(pic2field);
         telemetry.addData("b2f", format(bot2field));
-
-        //setting the movement vectors for getting to the right column
         if (vuMark == RelicRecoveryVuMark.LEFT) {
             move = getVector(bot2field, 609.6f, 1939.798f);
         }
@@ -157,28 +217,20 @@ public class woRMhole_autoP1 extends LinearOpMode {
         telemetry.update();
         return move;
     }
-    public VectorF getVector(OpenGLMatrix bot, float desX, float desY) {
-        VectorF amHere = bot.getTranslation();
-        VectorF goThere = new VectorF(0, desX, desY);
-        return goThere.subtracted(amHere);
-    }
-    public void encoderDrive(double speed,
-                             double dist,
-                             double timeoutS) {
+    public void encoderDrive(double speed, double dist, double timeoutS) {
         int[] target = new int[4];
         ArrayList<int[]> pos = new ArrayList<>();
         int[] currPos = new int[4];
         double  tickRev = 1120 ;    // The number of ticks or counts in per revolution in our neverest 40 motors
-        double  invGearRatio = 0.5 ;     // This is < 1.0 if geared UP, our drive train is geared 2:1
+        double  invGearRatio = 0.5 ;     // This is < 1.0 if geared UP
         double  diameterBoi = 101.6;     // The circumference of our mecanums in millimeters 101.6
         double  tickMM  = (tickRev * invGearRatio) /
                 (diameterBoi * 3.1415);
-        // Turn On RUN_TO_POSITION
+
         wheelFL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         wheelFR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         wheelBL.setMode(DcMotor.RunMode.RUN_TO_POSITION);
         wheelBR.setMode(DcMotor.RunMode.RUN_TO_POSITION);
-        // Determine new target position, and pass to motor controller
         target[0] = wheelFL.getCurrentPosition() + (int)(dist * tickMM);
         target[1] = wheelFR.getCurrentPosition() + (int)(dist * tickMM);
         target[2] = wheelBL.getCurrentPosition() + (int)(dist * tickMM);
@@ -187,7 +239,6 @@ public class woRMhole_autoP1 extends LinearOpMode {
         wheelBL.setTargetPosition(target[1]);
         wheelFR.setTargetPosition(target[2]);
         wheelBR.setTargetPosition(target[3]);
-        // reset the timeout time and start motion.
         runtime.reset();
         wheelFL.setPower(Math.abs(speed));
         wheelFR.setPower(Math.abs(speed));
@@ -201,12 +252,10 @@ public class woRMhole_autoP1 extends LinearOpMode {
             currPos[3] = wheelBR.getCurrentPosition();
             pos.add(currPos);
         }
-        // Stop all motion;
         wheelFL.setPower(0);
         wheelFR.setPower(0);
         wheelBL.setPower(0);
         wheelBR.setPower(0);
-        // Turn off RUN_TO_POSITION
         wheelFL.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         wheelFR.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
         wheelBL.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
@@ -229,4 +278,15 @@ public class woRMhole_autoP1 extends LinearOpMode {
             wheelBR.setPower(power * Math.sin(angle + (Math.PI / 4)) - rotate);
         }
     }
+    public VectorF getVector(OpenGLMatrix bot, float desX, float desY) {
+        VectorF amHere = bot.getTranslation();
+        VectorF goThere = new VectorF(0, desX, desY);
+        return goThere.subtracted(amHere);
+    }
+    public void holdUp(double num)
+    {
+        runtime.reset();
+        while (runtime.seconds() < num) {}
+    }
+
 }
